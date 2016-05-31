@@ -55,7 +55,7 @@ function videoInit() {
 				$('.vInit').eq(3).find('.vGif').show();
                 break;
         }
-       
+
     }, function() {
         v3.pause();
         $('.vInit video').hide();
@@ -376,6 +376,7 @@ function submitL2() {
             else{
                 changeF4();
             }
+            $('.abs sb1').attr('data-qr', 'qrcodes/'+data.id+'.png');
         },
         complete: function(xhr) {
             //alert(xhr.responseText);
@@ -449,8 +450,9 @@ function playAgain() {
     window.location.reload();
 }
 
-function showQc() {
-    $('.qcImg').attr('src', 'pc/images/testQc.png'); //当前内容的二维码图片绑定进页面
+function showQc(e) {
+    var qr = $(e).attr('data-qr');
+    $('.qcImg').attr('src', qr); //当前内容的二维码图片绑定进页面
     $('.qcBlock').stop().animate({
         right: 300,
         top: 85
@@ -479,6 +481,7 @@ function closeQc() {
 function showBottom(e) {
     var cType = $(e).attr('cType');
     var url = $(e).attr('data-url');
+    var qr = $(e).attr('data-qr');
     if (cType == 'img') {
         $('.bottomGif').attr('src', url); //把图片绑定到底部弹框中
         $('.imgBlock').show();
@@ -486,7 +489,7 @@ function showBottom(e) {
         var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
         $('.videoBlock').append(vHtml).show(); //把视屏绑定到底部弹框中
     }
-    $('.bottomQc').attr('src', 'pc/images/testQc.png'); //当前内容的二维码图片绑定进页面
+    $('.bottomQc').attr('src', qr); //当前内容的二维码图片绑定进页面
     $('.bottomBg').show();
 }
 
@@ -508,47 +511,47 @@ function closeBottom() {
 function topGoPage3(){
 	window.top.window.scrollTo(0,770)
 	}
-	
+
 var noWechatShareTitle='多陪伴1小时';
 var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
 var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
 var noWechatSharlUrl='http://www.ikea.com/cn/zh/campaigns/2016_awgc/index_tech_test.html';
-	
+
 var target_str='_blank';
 //打开窗口的大小
-var window_size="scrollbars=no,width=600,height=450,"+"left=75,top=20,status=no,resizable=yes";	
+var window_size="scrollbars=no,width=600,height=450,"+"left=75,top=20,status=no,resizable=yes";
 
 //分享到新浪网
 function shareToSina(sharetext, pageurl, picUrl) {
 		window.open("http://v.t.sina.com.cn/share/share.php?title=" + encodeURIComponent(sharetext) + "&url=" + encodeURIComponent(pageurl)+"&pic="+encodeURIComponent(picUrl)+'&searchPic=false', target_str,window_size)}
-	
-	
+
+
 //分享到腾讯微博
 function shareToTencent(title, pageurl, sharetext) {
 		window.open('http://share.v.t.qq.com/index.php?c=share&a=index&title='+encodeURIComponent(sharetext)+'&url='+encodeURIComponent(pageurl), target_str,window_size)}
-	
+
 //分享到豆瓣网
 function shareToDouban(title, pageurl, sharetext,picurl) {
 		window.open('http://www.douban.com/recommend/?title=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(pageurl) +"&image="+encodeURIComponent(picurl), target_str,window_size);}
-		
+
 //分享到QQ空间
-function shareToQzone(title, pageurl, sharetext,picurl) {	
+function shareToQzone(title, pageurl, sharetext,picurl) {
 		window.open("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+encodeURIComponent(pageurl)+"&title="+encodeURIComponent(title)+"&pics="+encodeURIComponent(picurl)+"&summary="+encodeURIComponent(sharetext), target_str,window_size);
 	}
-	
-	
+
+
 //share to renren
 function shareToRenRen(title, pageurl,sharetext,picurl){
-		
+
 	window.open("http://widget.renren.com/dialog/share?url="+encodeURIComponent(pageurl)+"&title="+encodeURIComponent(title)+"&content="+encodeURIComponent(sharetext)+"&pic="+encodeURIComponent(picurl)+"&message="+encodeURIComponent(sharetext), target_str,window_size);
 	}
-	
+
 function shareNoWeichat(){
 	var _title=noWechatShareTitle;
 	var _pageurl=noWechatSharlUrl;
 	var _picurl=noWechatShareImg;
 	var _sharetext=noWechatShareTxt;
-	
+
 		$(".douban").click(function(){
 
 			shareToDouban(_title,_pageurl,_sharetext,_picurl);
@@ -569,15 +572,15 @@ function shareNoWeichat(){
 			shareToTencent(_title,_pageurl,_sharetext);
 			// ga('send', 'event', 'Social', 'share','Tencent')
 		});
-		
+
 		$('.sinaShare').click(function(){
 			shareToSina(_sharetext,_pageurl,_picurl);
 			});
-			
+
 		$('.qqShare').click(function(){
 			shareToTencent(_title,_pageurl,_sharetext);
 			});
-			
+
 		$('.qzoneShare').click(function(){
 			shareToQzone(_title,_pageurl,_sharetext,_picurl);
 			});

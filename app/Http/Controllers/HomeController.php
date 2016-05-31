@@ -23,26 +23,6 @@ class HomeController extends Controller
     }
     public function share($id)
     {
-        $url = urldecode(url('/'));
-        $options = [
-            'app_id' => env('WECHAT_APPID'),
-            'secret' => env('WECHAT_SECRET'),
-            'token' => 'ikea',
-        ];
-        $wx = new Application($options);
-        $js = $wx->js;
-        $js->setUrl($url);
-        $config = json_decode($js->config(array('onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ'), false), true);
-
-        $share = [
-            'title' => env('WECHAT_SHARE_TITLE'),
-            'desc' => env('WECHAT_SHARE_DESC'),
-            'link' => env('APP_URL'),
-            'imgUrl' => env('APP_URL').env('WECHAT_SHARE_IMG'),
-        ];
-        $wx_data = json_encode(array_merge($share, $config));
-
-
         $info = \App\Info::find($id);
         if (null == $info) {
             return redirect('/');
@@ -166,6 +146,11 @@ class HomeController extends Controller
                 $info->file = $file_name;
                 $info->status = 1;
                 $result['url'] = $info->animation = url('storage/animation/'.$array_file[0].'.gif');
+                $result['wxUrl'] = url('share/'.$info->id);
+                $result['id'] = $info->id;
+                \QrCode::format('png')->size(600)->generate('http://community.ikea.cn/family/2016activity_awgc/public/share/'.$info->id,public_path('qrcodes/'.$info->id.'.png'));
+                //$result['qr'] = url('qrcodes/'.$info->id.'.png');
+
                 $info->thumb = asset('storage/thumb/'.$file_name);
             } else {
                 $info->file = $request->input('vid');

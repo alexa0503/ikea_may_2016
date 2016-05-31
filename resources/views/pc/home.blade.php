@@ -45,7 +45,7 @@
                             <div class="innerDiv">
                                 <img src="" class="abs f3EndGif">
                                 <div class="shareBtns">
-                                    <a href="javascript:void(0);" class="abs sb1" onClick="showQc();"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" class="abs sb1" data-qr="" onClick="showQc(this);"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
@@ -59,7 +59,7 @@
                         	<div class="innerDiv">
                                 <img src="" class="abs f3EndGif">
                                 <div class="shareBtns">
-                                    <a href="javascript:void(0);" class="abs sb1" onClick="showQc();"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" class="abs sb1" data-qr='' onClick="showQc();"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
@@ -227,8 +227,8 @@ function getInfos(url,params){
         for (var i = 0; i < json.data.length; i++) {
             html += '<div class="pInit">';
             html += '<div class="innerDiv">';
-            html += '<div class="pTopImg"><a href="javascript:void(0);" onClick="showBottom(this);"';
-			if(json.data[i].file_type == 0 ){
+            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("public/qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);"';
+		if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
             }
             else{
