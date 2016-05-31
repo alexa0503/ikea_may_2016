@@ -52,7 +52,7 @@
                                 </div>
                                 <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();">
                                     <img src="{{asset('pc/images/space.gif')}}" width="164" height="56"></a>
-                                <a href="javascript:void(0);" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
+                                <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
                             </div>
                         </div>
                         <div class="f4" style="display:none;">
@@ -66,7 +66,7 @@
                                 </div>
                                 <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();">
                                     <img src="{{asset('pc/images/space.gif')}}" width="164" height="56"></a>
-                                <a href="javascript:void(0);" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
+                                <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
                             </div>
                         </div>
                         <div class="fTop">
@@ -101,7 +101,7 @@
                                 <a href="javascript:void(0);" class="abs youkuBtn" onClick="uploadVideo();"><img src="{{asset('pc/images/space.gif')}}" width="174" height="62"></a>
 
                                 <input type="text" name="name" class="fInput fInput1" maxlength="20">
-                                <input type="text" name="mobile" class="fInput fInput2" maxlength="20">
+                                <input type="text" name="mobile" class="fInput fInput2" maxlength="11">
                                 <input type="text" name="province" class="fInput fInput3" maxlength="10" placeholder="省">
                                 <input type="text" name="city" class="fInput fInput4" maxlength="10" placeholder="市">
                                 <input type="text" name="address" class="fInput fInput5" maxlength="40" placeholder="详细地址">

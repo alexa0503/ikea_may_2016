@@ -304,6 +304,7 @@ function submitL2() {
     var fProvince = $.trim($('.fInput3').val());
     var fCity = $.trim($('.fInput4').val());
     var fAddress = $.trim($('.fInput5').val());
+	var pattern = /^1[3456789]\d{9}$/;
     $('.fTxt1,.fTxt2,.fTxt3').removeClass('fRed');
 
     var isChecked = $('.fLice input').prop('checked');
@@ -316,7 +317,7 @@ function submitL2() {
         $('.fTxt1').addClass('fRed');
         return false;
     }
-    if (fTel == '') {
+    if (fTel == ''||!pattern.test(fTel)) {
         $('.fTxt2').addClass('fRed');
         return false;
     }
