@@ -16,15 +16,45 @@ function randomNumb(minNumb, maxNumb) {
 
 var ffType;
 
+var v3=document.getElementById('v3');
+
 function l2Swiper() {
     var swiper1 = new Swiper('.swiper-container1', {
         nextButton: '.btnRight1',
         prevButton: '.btnLeft1',
         spaceBetween: 1,
         loop: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
+        /*autoplay: 2500,
+        autoplayDisableOnInteraction: true,*/
+		onSlideChangeStart:function(e){
+			v3.pause();
+			$('.swiper-slide video').hide();
+			$('.swiper-slide .vGif').hide();
+			}
     });
+	
+	$('.sBlock1 a').click(function(){
+		var vIndex = parseInt($(this).attr('vir'));
+        v3.pause();
+        $('.swiper-slide video').hide();
+		$('.swiper-slide .vGif').hide();
+		//alert(vIndex);
+        switch (vIndex) {
+            case 1:
+				$('.vGif'+vIndex).show();
+                break;
+            case 2:
+				$('.vGif'+vIndex).show();
+                break;
+            case 3:
+                v3.play();
+				$('#v' + vIndex).show();
+                break;
+            case 4:
+				$('.vGif'+vIndex).show();
+                break;
+        	}
+		});
 }
 
 function l3Swiper() {
@@ -113,7 +143,7 @@ function submitL2() {
                         data.link = data.wxUrl;
                         wxShare(data);
                     }
-                });
+                );
             }
         });
     }
@@ -153,7 +183,7 @@ function dedSubmit() {
                         data.link = data.wxUrl;
                         wxShare(data);
                     }
-                });
+                );
             } else {
                 alert(data.msg);
             }

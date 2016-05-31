@@ -5,7 +5,7 @@
 	<div class="line1">
     	<div class="innerDiv">
         	<img src="{{asset('mobile/images/logo.png')}}" class="abs logo">
-            <a href="javascript:void(0);" class="abs btn1"><img src="{{asset('mobile/images/btn1.png')}}"></a>
+            <a href="javascript:void(0);" onclick="window.scrollTo(0,1040);" class="abs btn1"><img src="{{asset('mobile/images/btn1.png')}}"></a>
         </div>
     </div>
     <!--line1 end-->
@@ -17,22 +17,32 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l11.png')}}"></a>
+                                <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.png')}}"></a>
+                                <div class="vGif vGif1" style="display:none;">
+                                	<img src="{{asset('mobile/images/v1.gif')}}" />
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l12.png')}}"></a>
+                                <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.png')}}"></a>
+                                <div class="vGif vGif2" style="display:none;">
+                                	<img src="{{asset('mobile/images/v2.gif')}}" />
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l13.png')}}"></a>
+                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.png')}}"></a>
+                                <video id="v3" src="{{asset('pc/images/v3.mp4?v=1')}}" preload="auto" style="display:none;"></video>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l14.png')}}"></a>
+                                <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.png')}}"></a>
+                                <div class="vGif vGif4" style="display:none;">
+                                	<img src="{{asset('mobile/images/v4.gif')}}" />
+                                </div>
                             </div>
                         </div>
                     </div>

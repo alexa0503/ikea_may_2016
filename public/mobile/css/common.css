@@ -25,6 +25,9 @@ select,input,textarea{font-family:inherit; outline:none;}
 .sBlock1{ width:472px; height:354px; overflow:hidden; left:85px; top:0; position:absolute;}
 .swiper-container1 .swiper-wrapper{ width:3500px; height:354px;}
 .swiper-container1 .swiper-slide{ background:none; float:left; width:472px; height:354px;}
+.vGif{ position:absolute; left:0; top:0; width:472px; height:354px; text-align:center; overflow:hidden; background:#000;}
+.vGif img{ width:auto; height:354px;}
+.swiper-container1 .swiper-slide video{ position:absolute; left:0; top:0; width:472px; height:354px;}
 .btnLeft1{ left:36px; top:160px;}
 .btnRight1{ left:584px; top:160px;}
 
@@ -97,8 +100,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 
 .line4{ background:url(../images/line4.jpg) 0 0 no-repeat; width:640px; height:458px;}
 .sBlock2{ left:53px; top:128px; width:538px; height:316px; overflow:hidden;}
-.swiper-wrapper{width:6000px;height:316px;}
-.swiper-slide{background:none; float:left; width:538px; height:316px;}
+.sBlock2 .swiper-wrapper{width:6000px;height:316px;}
+.sBlock2 .swiper-slide{background:none; float:left; width:538px; height:316px;}
 .btnLeft2{ top:230px; left:10px;}
 .btnRight2{ top:230px; left:595px;}
 .sLink{ position:absolute;}
