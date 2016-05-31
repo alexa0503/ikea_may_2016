@@ -601,7 +601,7 @@ var window_size="scrollbars=no,width=600,height=450,"+"left=75,top=20,status=no,
 
 //分享到新浪网
 function shareToSina(sharetext, pageurl, picUrl) {
-		window.open("http://v.t.sina.com.cn/share/share.php?title=" + encodeURIComponent(sharetext) + "&url=" + encodeURIComponent(pageurl)+"&pic="+encodeURIComponent(picUrl)+'&searchPic=false', target_str,window_size)}
+		window.open("http://service.weibo.com/share/share.php?title=" + encodeURIComponent(sharetext) + "&url=" + encodeURIComponent(pageurl)+"&pic="+encodeURIComponent(picUrl)+'&searchPic=false', target_str,window_size)}
 	
 	
 //分享到腾讯微博
