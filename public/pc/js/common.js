@@ -511,7 +511,7 @@ function topGoPage3(){
 	
 var noWechatShareTitle='多陪伴1小时';
 var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
-var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pShare.png';
+var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
 var noWechatSharlUrl='http://www.ikea.com/cn/zh/campaigns/2016_awgc/index_tech_test.html';
 	
 var target_str='_blank';
