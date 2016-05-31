@@ -5,7 +5,7 @@
 	<div class="line1">
     	<div class="innerDiv">
         	<img src="{{asset('mobile/images/logo.png')}}" class="abs logo">
-            <a href="javascript:void(0);" class="abs btn1"><img src="{{asset('mobile/images/btn1.png')}}"></a>
+            <a href="javascript:void(0);" onclick="window.scrollTo(0,1040);" class="abs btn1"><img src="{{asset('mobile/images/btn1.png')}}"></a>
         </div>
     </div>
     <!--line1 end-->
@@ -17,22 +17,32 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l11.png')}}"></a>
+                                <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.png')}}"></a>
+                                <div class="vGif vGif1" style="display:none;">
+                                	<img src="{{asset('mobile/images/v1.gif')}}" />
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l12.png')}}"></a>
+                                <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.png')}}"></a>
+                                <div class="vGif vGif2" style="display:none;">
+                                	<img src="{{asset('mobile/images/v2.gif')}}" />
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l13.png')}}"></a>
+                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.png')}}"></a>
+                                <video id="v3" src="{{asset('pc/images/v3.mp4?v=1')}}" preload="auto" style="display:none;"></video>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);"><img src="{{asset('mobile/images/l14.png')}}"></a>
+                                <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.png')}}"></a>
+                                <div class="vGif vGif4" style="display:none;">
+                                	<img src="{{asset('mobile/images/v4.gif')}}" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -44,7 +54,7 @@
     </div>
     <!--line2 end-->
 
-    <div class="line3">
+    <div class="line3" id="uploadBlock">
     	<div class="innerDiv">
         	<div class="abs fBlock">
                     <div class="innerDiv">
@@ -58,24 +68,24 @@
                             <img src="" class="abs saveImg" id="saveImg">
                             <div class="shareBtns">
                                 <a href="javascript:void(0);" class="abs sb1" onClick="showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb2"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb3"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb4"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
                             </div>
                             <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
-                            <a href="javascript:void(0);" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
+                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
                         </div>
                     </div>
                     <div class="f4" style="display:none;">
                     	<div class="innerDiv">
                         	<div class="shareBtns">
                                 <a href="javascript:void(0);" class="abs sb1" onClick="showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb2"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb3"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb4"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
                             </div>
                             <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
-                            <a href="javascript:void(0);" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
+                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
                         </div>
                     </div>
                     <div class="fTop">
@@ -112,7 +122,7 @@
                             <a href="javascript:void(0);" class="abs youkuBtn" onClick="uploadVideo();"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
 
                             <input type="text" name="name" class="fInput fInput1" maxlength="20">
-                            <input type="text" name="mobile" class="fInput fInput2" maxlength="20">
+                            <input type="tel" name="mobile" class="fInput fInput2" maxlength="11">
                             <input type="text" name="province" class="fInput fInput3" maxlength="10" placeholder="省">
                             <input type="text" name="city" class="fInput fInput4" maxlength="10" placeholder="市">
                             <input type="text" name="address" class="fInput fInput5" maxlength="40" placeholder="详细地址">
@@ -153,8 +163,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="##" target="_blank"><img src="{{asset('mobile/images/s1.png')}}"></a>
-                                <a href="##" class="sLink sLink1">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_blank"><img src="{{asset('mobile/images/s1.gif')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_blank" class="sLink sLink1">
                                     <span class="sName">IKEA 365 瓦福<br>肉凿，黑色</span><br>
                                     <span class="sPrice">¥&nbsp;49.00</span>
                                 </a>
@@ -162,8 +172,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="##" target="_blank"><img src="{{asset('mobile/images/s2.png')}}"></a>
-                                <a href="##" class="sLink sLink2">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_blank"><img src="{{asset('mobile/images/s2.gif')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_blank" class="sLink sLink2">
                                     <span class="sName">RÅSKOG 拉斯克<br>手推车, 天蓝色</span><br>
                                     <span class="sPrice">¥&nbsp;299.00</span>
                                 </a>
@@ -171,8 +181,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="##" target="_blank"><img src="{{asset('mobile/images/s3.png')}}"></a>
-                                <a href="##" class="sLink sLink3">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_blank"><img src="{{asset('mobile/images/s3.gif')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_blank" class="sLink sLink3">
                                     <span class="sName">IKEA PS 2002<br>洒水壶, 灰色</span><br>
                                     <span class="sPrice">¥&nbsp;9.90</span>
                                 </a>
@@ -202,7 +212,7 @@
                 <div class="l4BtnLine">
                 	<a href="javascript:void(0);" class="btn5" style="display:none;"><img src="{{asset('mobile/images/btn5.png')}}"></a>
                 	<br><br>
-                    <a href="javascript:void(0);"><img src="{{asset('mobile/images/btn4.png')}}"></a>
+                    <a href="javascript:void(0);" onClick="playAgain();"><img src="{{asset('mobile/images/btn4.png')}}"></a>
                 </div>
             </div>
         </div>
@@ -253,6 +263,10 @@ $(document).ready(function(){
     l2Swiper();
     l3Swiper();
     resizeImg();
+	
+	$('#mMask').on('touchmove', function (e) {
+        e.preventDefault();
+    });
 
     var url = '{{url("infos")}}';
     var params = {};
@@ -271,12 +285,26 @@ $(document).ready(function(){
         params = {keywords:keywords};
         getInfos(url, params);
     });
-
-    $(window).scroll(function() {
-        if (null != next_page_url && $(window).scrollTop() == $(document).height() - $(window).height()) {
-            getInfos(next_page_url,params);
-        }
-    });
+	
+	try{
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+	//移动端
+		$(window).scroll(function() {
+			//alert($(window).scrollTop()+' - '+$(document).height()+' - '+$(window).height());
+			if (null != next_page_url && $(window).scrollTop() <= (parseInt($(document).height()) - parseInt($(window).height())+50)) {
+				getInfos(next_page_url,params);
+			}
+		});
+	}else{
+	//pc端
+		$(window).scroll(function() {
+			//alert($(window).scrollTop()+' - '+$(document).height()+' - '+$(window).height());
+			if (null != next_page_url && $(window).scrollTop() == (parseInt($(document).height()) - parseInt($(window).height()))) {
+				getInfos(next_page_url,params);
+				}
+			});
+		}
+	}catch(e){}
 })
 </script>
 @endsection

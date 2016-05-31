@@ -19,6 +19,10 @@
     <script src="http://cloud.youku.com/assets/lib/jquery-1.8.1.min.js"></script>
     <script src="{{asset('pc/js/youku.js')}}"></script>
     <script>
+	function closeVideo(){
+		window.parent.document.getElementById('fUploadVideo').style.display='none';
+		}
+	
         //document.domain = "youku.com";
         var USE_STREAM_UPLOAD = true;
         jQuery(document).ready(function() {
@@ -85,6 +89,10 @@
                         <button type="submit" class="btn btn-primary start" id="btn-upload-start">
                             <i class="icon-upload icon-white"></i>
                             <span>开始上传</span>
+                        </button><br><br>
+                        <button type="button" class="btn btn-primary" onClick="closeVideo();">
+                            <i class="icon-upload icon-white"></i>
+                            <span>取消上传</span>
                         </button>
                     </div>
                 </fieldset>
