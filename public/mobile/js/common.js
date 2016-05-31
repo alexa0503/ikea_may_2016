@@ -32,7 +32,7 @@ function l2Swiper() {
 			$('.swiper-slide .vGif').hide();
 			}
     });
-	
+
 	$('.sBlock1 a').click(function(){
 		var vIndex = parseInt($(this).attr('vir'));
         v3.pause();
@@ -141,11 +141,9 @@ function submitL2() {
             },
             success: function(data) {
                 changeF4();
-                $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
-                        data.link = data.wxUrl;
-                        wxShare(data);
-                    }
-                );
+                wxData.link = data.wxUrl;
+                wxShare(wxData);
+                noWechatSharlUrl=data.wxUrl;
             }
         });
     }
@@ -181,11 +179,12 @@ function dedSubmit() {
             $('.fLoadImg').css('background-position', '-1592px 0');
             if (data.ret == 0) {
                 changeF3();
-                $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
-                        data.link = data.wxUrl;
-                        wxShare(data);
-                    }
-                );
+                wxData.link = data.wxUrl;
+                wxData.imgUrl = data.shareImg;
+                wxShare(wxData);
+                noWechatShareImg=data.shareImg;
+                noWechatSharlUrl=data.wxUrl;
+
             } else {
                 alert(data.msg);
             }
@@ -224,7 +223,7 @@ function getYouku() {
             }, 600);
         }, 500);
     }, 400);
-	
+
     //上传成功
     clearTimeout(st1);
     clearTimeout(st2);
@@ -597,33 +596,33 @@ function initShare(url) {
 
 var target_str='_blank';
 //打开窗口的大小
-var window_size="scrollbars=no,width=600,height=450,"+"left=75,top=20,status=no,resizable=yes";	
+var window_size="scrollbars=no,width=600,height=450,"+"left=75,top=20,status=no,resizable=yes";
 
 //分享到新浪网
 function shareToSina(sharetext, pageurl, picUrl) {
 		window.open("http://service.weibo.com/share/share.php?title=" + encodeURIComponent(sharetext) + "&url=" + encodeURIComponent(pageurl)+"&pic="+encodeURIComponent(picUrl)+'&searchPic=false', target_str,window_size)}
-	
-	
+
+
 //分享到腾讯微博
 function shareToTencent(title, pageurl, sharetext) {
 		window.open('http://share.v.t.qq.com/index.php?c=share&a=index&title='+encodeURIComponent(sharetext)+'&url='+encodeURIComponent(pageurl), target_str,window_size)}
-	
+
 //分享到豆瓣网
 function shareToDouban(title, pageurl, sharetext,picurl) {
 		window.open('http://www.douban.com/recommend/?title=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(pageurl) +"&image="+encodeURIComponent(picurl), target_str,window_size);}
-		
+
 //分享到QQ空间
-function shareToQzone(title, pageurl, sharetext,picurl) {	
+function shareToQzone(title, pageurl, sharetext,picurl) {
 		window.open("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+encodeURIComponent(pageurl)+"&title="+encodeURIComponent(title)+"&pics="+encodeURIComponent(picurl)+"&summary="+encodeURIComponent(sharetext), target_str,window_size);
 	}
-	
-	
+
+
 //share to renren
 function shareToRenRen(title, pageurl,sharetext,picurl){
-		
+
 	window.open("http://widget.renren.com/dialog/share?url="+encodeURIComponent(pageurl)+"&title="+encodeURIComponent(title)+"&content="+encodeURIComponent(sharetext)+"&pic="+encodeURIComponent(picurl)+"&message="+encodeURIComponent(sharetext), target_str,window_size);
 	}
-	
+
 function shareNoWeichat(){
 		$(".douban").click(function(){
 			var _title=noWechatShareTxt;
@@ -658,7 +657,7 @@ function shareNoWeichat(){
 			shareToTencent(_title,_pageurl,_sharetext);
 			// ga('send', 'event', 'Social', 'share','Tencent')
 		});
-		
+
 		$('.sinaShare').click(function(){
 			var _title=noWechatShareTitle;
 			var _pageurl=noWechatSharlUrl;
@@ -666,7 +665,7 @@ function shareNoWeichat(){
 			var _sharetext=noWechatShareTxt;
 			shareToSina(_sharetext,_pageurl,_picurl);
 			});
-			
+
 		$('.qqShare').click(function(){
 			var _title=noWechatShareTitle;
 			var _pageurl=noWechatSharlUrl;
@@ -674,7 +673,7 @@ function shareNoWeichat(){
 			var _sharetext=noWechatShareTxt;
 			shareToTencent(_title,_pageurl,_sharetext);
 			});
-			
+
 		$('.qzoneShare').click(function(){
 			var _title=noWechatShareTitle;
 			var _pageurl=noWechatSharlUrl;
@@ -683,7 +682,7 @@ function shareNoWeichat(){
 			shareToQzone(_title,_pageurl,_sharetext,_picurl);
 			});
 	}
-	
+
 $(document).ready(function(){
 	shareNoWeichat();
 	});

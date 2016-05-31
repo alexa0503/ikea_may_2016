@@ -224,6 +224,13 @@
 <img src="{{asset('mobile/images/shareNote.png')}}" style="display:none;" class="shareNote" onClick="closeShareWx();">
 @endsection
 @section('scripts')
+<script>
+wxData = {};
+var noWechatShareTitle='多陪伴1小时';
+var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
+var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
+var noWechatSharlUrl='{{url("/")}}';
+</script>
 <script src="{{asset('mobile/js/swiper.min.js')}}"></script>
 <script src="{{asset('mobile/js/exif.js')}}"></script>
 <script src="{{asset('mobile/js/hammer.js')}}"></script>
@@ -232,7 +239,8 @@
 <script>
 $(document).ready(function() {
     $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
-        wxShare(data);
+        wxData = data;
+        wxShare(wxData);
     })
 });
 </script>
