@@ -19,9 +19,11 @@ Route::get('/youku', function(){
 Route::get('/like/{id}', 'HomeController@like');
 Route::get('/share/{id}', 'HomeController@share');
 Route::get('/test', function(){
-    $response = \App\Helper\HttpClient::get('https://openapi.youku.com/v2/videos/show.json?client_id='.env('YOUKU_CLIENT_ID').'&video_id=XMTU5MDM0MDA4MA==');
-    //$result = json_decode($response);
-    return $response;
+    for($i=0; $i< 100; $i++){
+        \QrCode::format('png')->size(600)->generate('http://community.ikea.cn/family/2016activity_awgc/public/share/'.$i,public_path('qrcodes/'.$i.'.png'));
+    }
+
+    return '';
 });
 
 Route::post('/post', 'HomeController@post');

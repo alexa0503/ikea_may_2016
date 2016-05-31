@@ -227,7 +227,7 @@ function getInfos(url,params){
         for (var i = 0; i < json.data.length; i++) {
             html += '<div class="pInit">';
             html += '<div class="innerDiv">';
-            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("public/qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);"';
+            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);"';
 		if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
             }

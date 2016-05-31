@@ -27,7 +27,7 @@ class HomeController extends Controller
         if (null == $info) {
             return redirect('/');
         }
-        return view('mobile/info',['info'=>$info,'wxData'=>$wx_data]);
+        return view('mobile/info',['info'=>$info]);
     }
 
     public function index()
