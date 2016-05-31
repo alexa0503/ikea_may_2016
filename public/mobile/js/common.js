@@ -595,11 +595,6 @@ function initShare(url) {
     }
 }
 
-var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
-var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
-var noWechatSharlUrl='http://www.ikea.com/cn/zh/campaigns/2016_awgc/index_tech_test.html';
-	
 var target_str='_blank';
 //打开窗口的大小
 var window_size="scrollbars=no,width=600,height=450,"+"left=75,top=20,status=no,resizable=yes";	
@@ -635,6 +630,7 @@ function shareNoWeichat(){
 			var _pageurl=noWechatSharlUrl;
 			var _picurl=noWechatShareImg;
 			var _sharetext=noWechatShareTxt;
+			_sharetext=_sharetext.replace('#','').replace('#','');
 			shareToDouban(_title,_pageurl,_sharetext,_picurl);
 			// ga('send', 'event', 'Social', 'share','douban')
 		});
