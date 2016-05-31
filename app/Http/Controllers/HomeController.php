@@ -1,0 +1,186 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Requests;
+use Illuminate\Http\Request;
+use Carbon\Carbon;
+use DB;
+use Mockery\CountValidator\Exception;
+use Intervention\Image\ImageManagerStatic as Image;
+
+
+class HomeController extends Controller
+{
+    public function __construct()
+    {
+        $this->middleware('web');
+        //$this->middleware('wechat.auth');
+    }
+
+
+    public function mobile()
+    {
+        return view('mobile/home');
+    }
+
+    public function index()
+    {
+        return view('pc/home');
+    }
+    public function like($id)
+    {
+        $result = ['ret'=>0,'msg'=>''];
+        $info = \App\Info::find($id);
+        if( null == $info ){
+            return json_encode(['ret'=>1001,'msg'=>'此信息不存在~']);
+        }
+
+        DB::beginTransaction();
+        try{
+            $log = new \App\LikeLog;
+            $log->info_id = $info->id;
+            $log->created_time = Carbon::now();
+            $log->created_ip = \Request::getClientIp();
+            $log->save();
+
+            $info->like_num += 1;
+            $info->save();
+            DB::commit();
+            $result = ['ret'=>0,'msg'=>'','num'=>$info->like_num];
+        }catch (Exception $e){
+            $result['ret'] = 2001;
+            $result['msg'] = $e->getMessage();
+            DB::rollback();
+        }
+
+        return json_encode($result);
+    }
+
+    public function post(Request $request)
+    {
+        $result = array('ret'=>0,'msg'=>'');
+        if( !preg_match('/^1\d{10}$/', $request->input('mobile')) ){
+            $result['ret'] = 1001;
+            $result['msg'] = '请输入正确的手机号~';
+        }
+        elseif( null == $request->input('name') || "" == $request->input('name') ){
+            $result['ret'] = 1002;
+            $result['msg'] = '姓名不能为空~';
+        }
+        else{
+            $t = $request->input('t') ? : 1;
+            $info = new \App\Info;
+            if( $request->input('file_type') == 0 ){
+                if( $request->hasFile('photo') && $request->input('from') != 'mobile'){
+                    $x = $request->input('x') ? : 0;
+                    $y = $request->input('y') ? : 0;
+                    $file_name = date('YmdHis').uniqid().'.'.$request->file('photo')->extension();
+                    $request->file('photo')->move(public_path('storage'), $file_name);
+
+                    #生成缩略图 279*279
+                    $image = Image::make(public_path('storage/').$file_name);
+                    if( $image->height() > $image->width() ){
+                        $width = 279;
+                        $height = null;
+                    }
+                    else{
+                        $width = null;
+                        $height = 279;
+                    }
+                    $image->resize($width, $height, function ($constraint) {
+                        $constraint->aspectRatio();
+                    });
+                    $image->save(public_path('storage/thumb/').$file_name);
+                    $image = Image::make(public_path('storage/thumb/').$file_name);
+                    $left = floor(-1*$x);
+                    $top = floor(-1*$y);
+                    $image->crop(279, 279, $left, $top);
+                    $image->save(public_path('storage/thumb/').$file_name);
+
+                    #生成398*398的缩略图
+                    $image = Image::make(public_path('storage/').$file_name);
+                    if( $image->height() > $image->width() ){
+                        $width = 398;
+                        $height = null;
+                    }
+                    else{
+                        $width = null;
+                        $height = 398;
+                    }
+
+                    $scale = 398/279;
+                    $image->resize($width, $height, function ($constraint) {
+                        $constraint->aspectRatio();
+                    });
+                    $image->save(public_path('storage/animation/').$file_name);
+                    $image = Image::make(public_path('storage/animation/').$file_name);
+                    $left = floor(-1*$x*$scale);
+                    $top = floor(-1*$y*$scale);
+                    $image->crop(398, 398, $left, $top);
+                    $image->save(public_path('storage/animation/').$file_name);
+
+                }
+                else{
+                    $file_name = date('YmdHis').uniqid().'.png';
+                    $canvas = $request->input('canvasData');
+                    $canvas = str_replace('data:image/png;base64,', '', $canvas);
+                    $canvas = str_replace(' ', '+', $canvas);
+                    $canvas_data = base64_decode($canvas);
+                    file_put_contents(public_path('storage/').$file_name, $canvas_data);
+                    file_put_contents(public_path('storage/animation/') .$file_name, $canvas_data);
+
+                    #生成缩略图
+                    $image = Image::make(public_path('storage/').$file_name);
+                    $image->resize(279, 279, function ($constraint) {
+                        $constraint->aspectRatio();
+                    });
+                    $image->save(public_path('storage/thumb/').$file_name);
+                }
+
+                \Artisan::call('animation', [
+                    'file' => $file_name,
+                    'type' => $t,
+                ]);
+                $array_file = explode('.', $file_name);
+                $info->file = $file_name;
+                $info->status = 1;
+                $result['url'] = $info->animation =  url('storage/animation/'.$array_file[0].'.gif');
+                $info->thumb = asset('storage/thumb/'.$file_name);
+            }
+            else{
+                $info->file = $request->input('vid');
+                $info->status = 0;
+                $info->thumb = '';
+            }
+
+
+            $info->name = $request->input('name');
+            $info->mobile = $request->input('mobile');
+            $info->province = $request->input('province');
+            $info->city = $request->input('city');
+            $info->address = $request->input('address');
+            $info->file_type = $request->input('file_type');
+            $info->created_time = Carbon::now();
+            $info->created_ip = $request->getClientIp();
+            $info->save();
+        }
+        return json_encode($result);
+    }
+
+
+    public function image()
+    {
+      $images = [
+        '*.png'
+      ];
+      $gif = public_path('storage/gif/').date('YmdHis').uniqid().'.gif';
+      $cmd = 'convert -delay 50 -loop 10 ';
+      foreach ($images as $image) {
+        $cmd .= public_path('storage/').$image.' ';
+      }
+      $cmd .= $gif;
+      return $cmd;
+      `$cmd`;
+    }
+}

@@ -1,0 +1,134 @@
+/* Global Setting */
+body{margin:0; padding:0;text-align:left; font-size:12px; font-family:'Microsoft YaHei',Arial; background:#FFF;}
+table{border-collapse:collapse;}
+td,th{padding:0;}
+ul,li,dd,dl,dt{margin:0; padding:0; list-style:none; word-break:break-all;}
+img{border:0;}
+p{margin:0; padding:0; word-break:break-all;}
+h1,h2,h3,h4{margin:0;padding:0; font-weight:normal; font-size:14px;}
+em{ font-size:12px; font-style:normal;}
+hr{background:none;border:none;border-bottom:1px solid #CCC;#border-bottom:0;}
+.clear {clear:both;height:0;font-size:1px;line-height: 0px;}
+a{text-decoration:none; border:0; outline:none; blr:expression(this.onFocus=this.blur());}
+select,input,textarea{font-family:inherit; outline:none;}
+
+.wrapper{ width:640px; margin:0 auto; border:none; padding:0;}
+.innerDiv{ width:100%; height:100%; position:relative;}
+.abs{ position:absolute;}
+
+
+.line1{ background:url(../images/line1.jpg) 0 0 no-repeat; width:640px; height:701px;}
+.logo{ left:30px; top:18px;}
+.btn1{ left:24px; top:250px;}
+
+.line2{ background:url(../images/line2.jpg) 0 0 no-repeat; width:640px; height:372px;}
+.sBlock1{ width:472px; height:354px; overflow:hidden; left:85px; top:0; position:absolute;}
+.swiper-container1 .swiper-wrapper{ width:3500px; height:354px;}
+.swiper-container1 .swiper-slide{ background:none; float:left; width:472px; height:354px;}
+.btnLeft1{ left:36px; top:160px;}
+.btnRight1{ left:584px; top:160px;}
+
+.line3{ background:url(../images/line3.jpg) 0 0 no-repeat; width:640px; height:1177px;}
+.fBlock{ left:0; top:0; width:640px; height:1177px; overflow:hidden;}
+.f1{ background:url(../images/f1.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:640px; height:1177px;}
+.f2{ background:url(../images/f2.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:640px; height:1177px;}
+
+.f3{ background:url(../images/f3.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:640px; height:1177px;}
+.f3EndGif{ width:398px; height:398px; left:125px; top:152px;}
+.onBg{ width:398px; height:398px; left:125px; top:152px; background-position:0 0; background-repeat:no-repeat; background-size:auto 398px; -webkit-animation:onBg 0.8s steps(4) infinite;}
+@-webkit-keyframes onBg{
+0%{ background-position:0 0;}
+100%{ background-position:-1592px 0;}
+}
+.saveImg{ width:398px; height:398px; left:125px; top:152px; opacity:0;}
+.sb1{ left:140px; top:639px;}
+.sb2{ left:245px; top:639px;}
+.sb3{ left:342px; top:639px;}
+.sb4{ left:430px; top:639px;}
+.paBtn{ left:198px; top:737px;}
+.moreLink{ left:456px; top:1133px;}
+
+.f4{ background:url(../images/f4.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:640px; height:1177px;}
+
+.f5{ background:url(../images/f5.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:640px; height:1177px;}
+
+.fTop,.fLoading,.fEnd3,.fUploadVideo{ position:absolute; left:0; top:0; width:640px; height:1177px;}
+.fLoadImg{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden; background:url(../images/fLoadImg.png) 0 0 no-repeat; background-size:auto 398px;}
+.uploadImgBlock{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden;}
+#mMask{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden;}
+.stMask{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden; background:url(../images/ft1.png) 0 0 no-repeat; background-size:auto 398px; -webkit-animation:stMask 0.8s steps(4) infinite;}
+@-webkit-keyframes stMask{
+0%{ background-position:0 0;}
+100%{ background-position:-1592px 0;}
+}
+.stMask1{ background-image:url(../images/ft1.png);}
+.stMask2{ background-image:url(../images/ft2.png);}
+.stMask3{ background-image:url(../images/ft3.png);}
+.stMask4{ background-image:url(../images/ft4.png);}
+.fImg1{ left:125px; top:242px;}
+.upLoadImg{ left:0; top:0; width:100%; display:none;}
+.uploadBtn{ display:block; width:220px; height:76px; position:absolute; left:216px; top:365px; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer;}
+.uploadedBtn{ left:95px; top:1010px; width:220px; height:76px;}
+.vPlayAgain{ left:95px; top:1010px;}
+.youkuBtn{ left:216px; top:454px;}
+.fInput{ background:none; border:none; display:block; width:220px; height:44px; line-height:44px; padding:0 14px; position:absolute; left:274px; color:#333; font-size:22px;}
+.fTxt1{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:752px; color:#666666; font-size:22px;}
+.fTxt2{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:798px; color:#666666; font-size:22px;}
+.fTxt3{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:844px; color:#666666; font-size:22px;}
+.fRed{ color:#D30508;}
+.fInput1{ top:752px;}
+.fInput2{ top:798px;}
+.fInput3{ top:844px; width:96px;}
+.fInput4{ top:844px; width:96px; left:412px;}
+.fInput5{ top:890px; width:368px; left:126px;}
+.fNote{ font-size:12px; color:#adadad; line-height:100%; left:110px; top:950px;}
+.fLice{ font-size:16px; color:#666; line-height:100%; left:110px; top:975px;}
+.fLice input{ vertical-align:1px;}
+.fLice label{ font-size:16px; color:#666;}
+.fLice a{ font-size:16px; color:#666; font-weight:bold; text-decoration:underline;}
+.submitBtn{ left:325px; top:1010px;}
+.ft{ top:653px;}
+.ft img{ width:90px; height:90px;}
+.ft1{ left:125px;}
+.ft2{ left:228px;}
+.ft3{ left:329px;}
+.ft4{ left:432px;}
+.fton img{ width:84px; height:84px; border:3px solid #25caff;}
+
+.line4{ background:url(../images/line4.jpg) 0 0 no-repeat; width:640px; height:458px;}
+.sBlock2{ left:53px; top:128px; width:538px; height:316px; overflow:hidden;}
+.swiper-wrapper{width:6000px;height:316px;}
+.swiper-slide{background:none; float:left; width:538px; height:316px;}
+.btnLeft2{ top:230px; left:10px;}
+.btnRight2{ top:230px; left:595px;}
+.sLink{ position:absolute;}
+.sLink1{ left:306px; top:58px;}
+.sLink2{ left:292px; top:48px;}
+.sLink3{ left:290px; top:48px;}
+.sName{ color:#000; font-family: Verdana,sans-serif; font-size:12px; line-height:16px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px;}
+.sPrice{ color:#000; font-family: Verdana,sans-serif; font-size:24px; line-height:28px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px}
+
+.line5{ background:url(../images/line5.jpg) 0 0 no-repeat; width:640px; height:1357px;}
+.btn2{ left:112px; top:183px;}
+.btn3{ left:333px; top:183px;}
+.searchTxt{ padding:0 20px; width:320px; height:46px; line-height:46px; color:#333; font-size:20px; position:absolute; left:112px; top:118px; border:none; background:none;}
+.searchBtn{ left:485px; top:132px;}
+.pBlock{ width:600px; left:34px; top:288px;}
+.pInit{ width:300px; height:400px; float:left; padding:0;}
+.pTopImg img{ width:276px; height:276px; display:block;}
+.pBottomTxt{ padding:0; width:276px; height:64px; line-height:64px; overflow:hidden; background:#f4f4f4; text-align:center;}
+.pBottomTxtName{ width:270px; height:42px; line-height:42px; font-size:22px; color:#666; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.pBottomTXtBtn1{ display:inline-block; margin:0 10px;}
+.pBottomTXtBtn1 img{ vertical-align:-8px;}
+.pBottomTXtBtn2{ display:inline-block; margin:0 10px; color:#989898; font-size:22px;}
+.pBottomTXtBtn2 img{ vertical-align:-8px;}
+.l4BtnLine{ width:100%; padding:30px 0 0 0; text-align:center;}
+
+.popBg{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.8);}
+.shareNote{ position:fixed; left:0; top:0;}
+
+/*share*/
+.sharePage{ background:url(../images/shareBg.jpg) 0 0 no-repeat; width:640px; height:960px;}
+.shareGif{ position:absolute; left:124px; top:359px;}
+.shareVideo{ width:530px; height:400px; overflow:hidden; left:55px; top:359px; position:absolute;}
+.shareBtn1{ left:220px; top:800px;}
