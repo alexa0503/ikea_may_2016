@@ -545,41 +545,60 @@ function shareToRenRen(title, pageurl,sharetext,picurl){
 	}
 	
 function shareNoWeichat(){
-	var _title=noWechatShareTitle;
-	var _pageurl=noWechatSharlUrl;
-	var _picurl=noWechatShareImg;
-	var _sharetext=noWechatShareTxt;
-	
 		$(".douban").click(function(){
-
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToDouban(_title,_pageurl,_sharetext,_picurl);
 			// ga('send', 'event', 'Social', 'share','douban')
 		});
 		$(".renren").click(function(){
-
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToRenRen(_title,_pageurl,_sharetext,_picurl);
 			// ga('send', 'event', 'Social', 'share','Renren')
 		});
 		$(".weibo").click(function(){
-
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToSina(_sharetext,_pageurl,_picurl);
 			// ga('send', 'event', 'Social', 'share','Sina')
 		});
 		$(".tengxun").click(function(){
-
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToTencent(_title,_pageurl,_sharetext);
 			// ga('send', 'event', 'Social', 'share','Tencent')
 		});
 		
 		$('.sinaShare').click(function(){
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToSina(_sharetext,_pageurl,_picurl);
 			});
 			
 		$('.qqShare').click(function(){
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToTencent(_title,_pageurl,_sharetext);
 			});
 			
 		$('.qzoneShare').click(function(){
+			var _title=noWechatShareTitle;
+			var _pageurl=noWechatSharlUrl;
+			var _picurl=noWechatShareImg;
+			var _sharetext=noWechatShareTxt;
 			shareToQzone(_title,_pageurl,_sharetext,_picurl);
 			});
 	}
