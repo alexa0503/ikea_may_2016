@@ -220,8 +220,6 @@
 <script src="{{asset('mobile/js/hammer.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('mobile/js/common.js')}}"></script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script src="{{asset('mobile/js/wx.js')}}"></script>
 
 <script>
 
@@ -281,10 +279,6 @@ $(document).ready(function(){
             getInfos(next_page_url,params);
         }
     });
-
-    $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
-        wxShare(data);
-    })
 })
 </script>
 @endsection

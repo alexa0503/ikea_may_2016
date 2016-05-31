@@ -27,6 +27,15 @@
 </head>
 <body>
 @yield('content')
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="{{asset('mobile/js/wx.js')}}"></script>
+<script>
+$(document).ready(function() {
+    $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
+        wxShare(data);
+    })
+});
+</script>
 @yield('scripts')
 </body>
 </html>
