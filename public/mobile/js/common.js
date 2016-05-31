@@ -626,7 +626,7 @@ function shareToRenRen(title, pageurl,sharetext,picurl){
 	
 function shareNoWeichat(){
 		$(".douban").click(function(){
-			var _title=noWechatShareTitle;
+			var _title=noWechatShareTxt;
 			var _pageurl=noWechatSharlUrl;
 			var _picurl=noWechatShareImg;
 			var _sharetext=noWechatShareTxt;
