@@ -19,7 +19,7 @@
 <script>
 $(document).ready(function() {
     $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
-        data.link = '{{url("share",["id"=>1])}}'
+        data.link = '{{url("share",["id"=>$info->id])}}'
         wxShare(data);
     })
 });
