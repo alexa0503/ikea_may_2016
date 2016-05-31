@@ -379,6 +379,8 @@ function submitL2() {
                 changeF4();
             }
             $('.sb1').attr('data-qr', data.qrUrl);
+            noWechatShareImg=data.shareImg;
+            noWechatSharlUrl=data.shareUrl;
         },
         complete: function(xhr) {
             //alert(xhr.responseText);

@@ -146,12 +146,12 @@ class HomeController extends Controller
                 $info->file = $file_name;
                 $info->status = 1;
                 $result['url'] = $info->animation = url('storage/animation/'.$array_file[0].'.gif');
-
                 $info->thumb = asset('storage/thumb/'.$file_name);
             } else {
                 $info->file = $request->input('vid');
                 $info->status = 0;
                 $info->thumb = '';
+                $info->animation = '';
             }
 
             $info->name = $request->input('name');
@@ -166,6 +166,8 @@ class HomeController extends Controller
             $result['wxUrl'] = url('share/'.$info->id);
             $result['id'] = $info->id;
             $result['qrUrl'] = url('qrcodes/'.$info->id.'.png');
+            $result['shareUrl'] = url('web/').'?id='.$info->id;
+            $result['shareImg'] = $info->status == 1 ? $info->animation : 'http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
             \QrCode::format('png')->size(600)->generate('http://community.ikea.cn/family/2016activity_awgc/public/share/'.$info->id,public_path('qrcodes/'.$info->id.'.png'));
         }
 
