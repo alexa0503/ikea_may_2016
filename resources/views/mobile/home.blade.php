@@ -54,7 +54,7 @@
     </div>
     <!--line2 end-->
 
-    <div class="line3">
+    <div class="line3" id="uploadBlock">
     	<div class="innerDiv">
         	<div class="abs fBlock">
                     <div class="innerDiv">
@@ -285,13 +285,26 @@ $(document).ready(function(){
         params = {keywords:keywords};
         getInfos(url, params);
     });
-
-    $(window).scroll(function() {
-		//alert($(window).scrollTop()+' - '+$(document).height()+' - '+$(window).height());
-        if (null != next_page_url && $(window).scrollTop() <= (parseInt($(document).height()) - parseInt($(window).height())+50)) {
-            getInfos(next_page_url,params);
-        }
-    });
+	
+	try{
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+	//移动端
+		$(window).scroll(function() {
+			//alert($(window).scrollTop()+' - '+$(document).height()+' - '+$(window).height());
+			if (null != next_page_url && $(window).scrollTop() <= (parseInt($(document).height()) - parseInt($(window).height())+50)) {
+				getInfos(next_page_url,params);
+			}
+		});
+	}else{
+	//pc端
+		$(window).scroll(function() {
+			//alert($(window).scrollTop()+' - '+$(document).height()+' - '+$(window).height());
+			if (null != next_page_url && $(window).scrollTop() == (parseInt($(document).height()) - parseInt($(window).height()))) {
+				getInfos(next_page_url,params);
+				}
+			});
+		}
+	}catch(e){}
 })
 </script>
 @endsection
