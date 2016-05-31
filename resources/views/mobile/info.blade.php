@@ -2,11 +2,11 @@
 @section('content')
 <div class="wrapper">
 	<div class="sharePage">
-    	<img src="" class="shareGif" style="display:none;" width="398" height="398">
+    	<img src="{{$info->thumb}}" class="shareGif" style="display:none;" width="398" height="398">
 
         <div class="shareVideo" style="display:none;"></div>
 
-        <a href="#" class="abs shareBtn1"><img src="{{asset('mobile/images/shareBtn1.png')}}"></a>
+        <a href="{{url('/')}}" class="abs shareBtn1"><img src="{{asset('mobile/images/shareBtn1.png')}}"></a>
     </div>
 </div>
 @endsection
@@ -19,9 +19,15 @@
 <script src="{{asset('mobile/js/common.js')}}"></script>
 
 <script>
-var sType='video';//img or video
+@if ($info->file_type == 0)
+var sType = 'img';
+var shareUrl = '{{$info->animation}}';
+@else
+var sType = 'video';
+var shareUrl = 'http://player.youku.com/embed/{{$info->file}}';
+@endif
 $(document).ready(function(){
-	initShare();
+	initShare(shareUrl);
 });
 </script>
 @endsection

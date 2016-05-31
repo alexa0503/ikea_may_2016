@@ -543,11 +543,11 @@ function closeShareWx() {
 
 
 
-function initShare() {
+function initShare(url) {
     if (sType == 'img') {
-        $('.shareGif').attr('src', 'images/testGif.gif').show(); //绑定gif
+        $('.shareGif').attr('src', url).show(); //绑定gif
     } else if (sType == 'video') {
-        var vHtml = '<iframe height=400 width=530 src="http://player.youku.com/embed/XMTU4MTU3NTU5Mg==" frameborder=0 allowfullscreen></iframe>';
+        var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
         $('.shareVideo').append(vHtml).show(); //把视屏绑定到底部弹框中
     }
 }

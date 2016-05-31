@@ -17,6 +17,7 @@ Route::get('/youku', function(){
     return view('pc/youku');
 });
 Route::get('/like/{id}', 'HomeController@like');
+Route::get('/share/{id}', 'HomeController@share');
 Route::get('/test', function(){
     $response = \App\Helper\HttpClient::get('https://openapi.youku.com/v2/videos/show.json?client_id='.env('YOUKU_CLIENT_ID').'&video_id=XMTU5MDM0MDA4MA==');
     //$result = json_decode($response);

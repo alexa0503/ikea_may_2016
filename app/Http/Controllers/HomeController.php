@@ -21,6 +21,14 @@ class HomeController extends Controller
     {
         return view('mobile/home');
     }
+    public function share($id)
+    {
+        $info = \App\Info::find($id);
+        if (null == $info) {
+            return redirect('/');
+        }
+        return view('mobile/info',['info'=>$info]);
+    }
 
     public function index()
     {
