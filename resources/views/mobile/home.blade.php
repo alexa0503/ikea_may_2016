@@ -229,7 +229,13 @@
 <script src="{{asset('mobile/js/hammer.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('mobile/js/common.js')}}"></script>
-
+<script>
+$(document).ready(function() {
+    $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
+        wxShare(data);
+    })
+});
+</script>
 <script>
 var isLock = false;
 var current_page = 1;
@@ -263,7 +269,7 @@ $(document).ready(function(){
     l2Swiper();
     l3Swiper();
     resizeImg();
-	
+
 	$('#mMask').on('touchmove', function (e) {
         e.preventDefault();
     });
@@ -285,7 +291,7 @@ $(document).ready(function(){
         params = {keywords:keywords};
         getInfos(url, params);
     });
-	
+
 	try{
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 	//移动端

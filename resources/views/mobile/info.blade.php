@@ -16,7 +16,14 @@
 <script src="{{asset('mobile/js/hammer.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('mobile/js/common.js')}}"></script>
-
+<script>
+$(document).ready(function() {
+    $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
+        data.link = '{{url("share",["id"=>1])}}'
+        wxShare(data);
+    })
+});
+</script>
 <script>
 @if ($info->file_type == 0)
 var sType = 'img';
