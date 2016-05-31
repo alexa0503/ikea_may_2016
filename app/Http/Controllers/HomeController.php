@@ -159,7 +159,7 @@ class HomeController extends Controller
         return json_encode($result);
     }
     #微信分享
-    public function wxShare()
+    public function wxShare(Request $request)
     {
         $url = urldecode($request->get('url'));
         $options = [

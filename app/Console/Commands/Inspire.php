@@ -32,7 +32,7 @@ class Inspire extends Command
         foreach( $infos as $info){
             $response = \App\Helper\HttpClient::get('https://openapi.youku.com/v2/videos/show.json?client_id='.env('YOUKU_CLIENT_ID').'&video_id='.$info->file);
             $result = json_decode($response);
-            if( !isset($result->error) ){
+            if( !isset($result->error) && $result->state == 'normal' ){
                 $row = \App\Info::find($info->id);
                 $row->thumb = $result->bigThumbnail;
                 $row->status = 1;

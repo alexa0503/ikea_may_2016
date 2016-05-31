@@ -98,11 +98,21 @@ function submitL2() {
                 }, 600);
             }, 500);
         }, 400);
+        $('#file_type').val(0);
     } else if (ffType == 'video') {
-        //提交视表单
-        //
-        changeF4();
+        $('#file_type').val(1);
+        $('#canvasData').val('');
+        $('#form').ajaxSubmit({
+            dataType: 'json',
+            error: function(xhr) {
+                alert('信息提交失败，请重试~');
+            },
+            success: function(data) {
+                changeF4();
+            }
+        });
     }
+    //表单提交
 
 }
 
@@ -122,25 +132,20 @@ function dedSubmit() {
     $('#t').val(iT);
     $('#canvasData').val(document.getElementById("f3EndGif").src);
     //生成的图片id为：f3EndGif
-    //表单提交
     $('#form').ajaxSubmit({
         dataType: 'json',
         error: function(xhr) {
             alert('信息提交失败，请重试~');
         },
         success: function(data) {
-            if (ffType == 'img') {
-                clearTimeout(st1);
-                clearTimeout(st2);
-                clearTimeout(st3);
-                $('.fLoadImg').css('background-position', '-1592px 0');
-                if (data.ret == 0) {
-                    changeF3();
-                } else {
-                    alert(data.msg);
-                }
+            clearTimeout(st1);
+            clearTimeout(st2);
+            clearTimeout(st3);
+            $('.fLoadImg').css('background-position', '-1592px 0');
+            if (data.ret == 0) {
+                changeF3();
             } else {
-                changeF4();
+                alert(data.msg);
             }
         }
     });
