@@ -63,8 +63,8 @@ function l3Swiper() {
         prevButton: '.btnLeft2',
         spaceBetween: 1,
         loop: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
+        autoplay: 3500,
+        autoplayDisableOnInteraction: true
     });
 }
 
