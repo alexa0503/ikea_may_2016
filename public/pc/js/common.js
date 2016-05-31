@@ -52,7 +52,7 @@ function videoInit() {
             case 3:
                 v3.play();
 				$('#v' + vIndex).show();
-				ga('send','event','UGC Gallery','Play','Featured_UGC_1');
+				ga('send','event','UGC Gallery','Play','Featured_UGC_3');
                 break;
             case 4:
 				$('.vInit').eq(3).find('.vGif').show();

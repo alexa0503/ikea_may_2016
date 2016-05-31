@@ -42,16 +42,20 @@ function l2Swiper() {
         switch (vIndex) {
             case 1:
 				$('.vGif'+vIndex).show();
+				ga('send','event','UGC Gallery','Click','Featured_UGC_1');
                 break;
             case 2:
 				$('.vGif'+vIndex).show();
+				ga('send','event','UGC Gallery','Click','Featured_UGC_2');
                 break;
             case 3:
                 v3.play();
 				$('#v' + vIndex).show();
+				ga('send','event','UGC Gallery','Play','Featured_UGC_3');
                 break;
             case 4:
 				$('.vGif'+vIndex).show();
+				ga('send','event','UGC Gallery','Click','Featured_UGC_4');
                 break;
         	}
 		});
@@ -209,6 +213,7 @@ function changeF4() {
 //视频上传
 function uploadVideo() {
     $('.fUploadVideo').show();
+	ga('send','event','UGC Recruitment','Upload','Video_Upload_PC');
 }
 
 function getYouku() {
@@ -280,7 +285,9 @@ function resizeImg() {
                 iA = 0;
 
                 ffType = 'img';
-
+				
+				ga('send','event','UGC Recruitment','Upload','Image_Upload_PC');
+				
                 goF2();
 
                 return true;
@@ -306,6 +313,7 @@ function goF2() {
         $('.stMask').addClass('stMask' + sIndex);
         $('.onBg').removeClass('stMask1 stMask2 stMask3 stMask4');
         $('.onBg').addClass('stMask' + sIndex);
+		ga('send','event','UGC Recruitment','Click','Sticker_'+sIndex);
     });
     changeMc();
 }

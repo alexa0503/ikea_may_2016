@@ -5,7 +5,7 @@
 	<div class="line1">
     	<div class="innerDiv">
         	<img src="{{asset('mobile/images/logo.png')}}" class="abs logo">
-            <a href="javascript:void(0);" onclick="window.scrollTo(0,1040);" class="abs btn1"><img src="{{asset('mobile/images/btn1.png')}}"></a>
+            <a href="javascript:void(0);" onclick="ga('send','event','UGC Recruitment','Click','Top_Banner_CTA');window.scrollTo(0,1040);" class="abs btn1"><img src="{{asset('mobile/images/btn1.png')}}"></a>
         </div>
     </div>
     <!--line1 end-->
@@ -67,25 +67,26 @@
                             <div class="abs onBg stMask1"></div>
                             <img src="" class="abs saveImg" id="saveImg">
                             <div class="shareBtns">
-                                <a href="javascript:void(0);" class="abs sb1" onClick="showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb1" onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Weibo');" class="abs sb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Douban');" class="abs sb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Qzone');" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
                             </div>
-                            <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
-                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
+                            <a href="http://community.ikea.cn/family/2016activity_awgc/public/#uploadBlock" onClick="ga('send','event','UGC Recruitment','Click','UGC_Replay');" class="abs paBtn"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
+                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
                         </div>
                     </div>
                     <div class="f4" style="display:none;">
                     	<div class="innerDiv">
                         	<div class="shareBtns">
-                                <a href="javascript:void(0);" class="abs sb1" onClick="showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                                <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" class="abs sb1" onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Weibo');" class="abs sb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Douban');" class="abs sb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Qzone');" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
                             </div>
-                            <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
-                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
+                            <a href="#galleryBlock" style="position:absolute; left:175px; top:275px;"><img src="{{asset('mobile/images/space.gif')}}" width="294" height="116"></a>
+                            <a href="http://community.ikea.cn/family/2016activity_awgc/public/#uploadBlock" onClick="ga('send','event','UGC Recruitment','Click','UGC_Replay');" class="abs paBtn"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
+                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
                         </div>
                     </div>
                     <div class="fTop">
@@ -109,7 +110,7 @@
                             <div class="fTxt3">*您的联系地址</div>
 
                             <div class="abs fNote">温馨提示：请务必填写真实信息，以免错失大奖！</div>
-                            <div class="abs fLice"><label><input type="checkbox" name="fLice" checked> 我已阅读并同意本次<a href="javascript:void(0);" onClick="showRule();">条件与条款</a></label></div>
+                            <div class="abs fLice"><label onClick="ga('send','event','UGC Recruitment','Click','T&C_Agreement');"><input type="checkbox" name="fLice" checked> 我已阅读并同意本次<a href="javascript:void(0);" onClick="showRule();">条件与条款</a></label></div>
 
                             <div class="fTemplete" style="display:none;">
                                 <a href="javascript:void(0);" class="abs ft ft1 fton"><img src="{{asset('mobile/images/space.gif')}}"></a>
@@ -121,11 +122,11 @@
                             <input type="file" class="abs uploadBtn" id="uploadBtn">
                             <a href="javascript:void(0);" class="abs youkuBtn" onClick="uploadVideo();"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
 
-                            <input type="text" name="name" class="fInput fInput1" maxlength="20">
-                            <input type="tel" name="mobile" class="fInput fInput2" maxlength="11">
-                            <input type="text" name="province" class="fInput fInput3" maxlength="10" placeholder="省">
-                            <input type="text" name="city" class="fInput fInput4" maxlength="10" placeholder="市">
-                            <input type="text" name="address" class="fInput fInput5" maxlength="40" placeholder="详细地址">
+                            <input type="text" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Name');" name="name" class="fInput fInput1" maxlength="20">
+                            <input type="tel" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Tel');" name="mobile" class="fInput fInput2" maxlength="11">
+                            <input type="text" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Province');" name="province" class="fInput fInput3" maxlength="10" placeholder="省">
+                            <input type="text" onClick="ga('send','event','UGC Recruitment','Comment','Contact_City');" name="city" class="fInput fInput4" maxlength="10" placeholder="市">
+                            <input type="text" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Address');" name="address" class="fInput fInput5" maxlength="40" placeholder="详细地址">
 
                             {!! csrf_field() !!}
                             <input type="hidden" name="t" id="t" />
@@ -136,7 +137,7 @@
                             <input type="hidden" name="canvasData" id="canvasData" value="" />
                             <a href="javascript:void(0);" class="abs vPlayAgain" onClick="playAgain();" style="display:none;"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
 
-                            <a href="javascript:void(0);" class="abs submitBtn" onClick="submitL2();"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
+                            <a href="javascript:void(0);" class="abs submitBtn" onClick="ga('send','event','UGC Recruitment','Click','UGC_Submission');submitL2();"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
                         </div>
                         </form>
                     </div>
@@ -163,8 +164,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_blank"><img src="{{asset('mobile/images/s1.gif')}}"></a>
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_blank" class="sLink sLink1">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_1');" target="_blank"><img src="{{asset('mobile/images/s1.gif')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_1');" target="_blank" class="sLink sLink1">
                                     <span class="sName">IKEA 365 瓦福<br>肉凿，黑色</span><br>
                                     <span class="sPrice">¥&nbsp;49.00</span>
                                 </a>
@@ -172,8 +173,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_blank"><img src="{{asset('mobile/images/s2.gif')}}"></a>
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_blank" class="sLink sLink2">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_2');" target="_blank"><img src="{{asset('mobile/images/s2.gif')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_2');" target="_blank" class="sLink sLink2">
                                     <span class="sName">RÅSKOG 拉斯克<br>手推车, 天蓝色</span><br>
                                     <span class="sPrice">¥&nbsp;299.00</span>
                                 </a>
@@ -181,8 +182,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_blank"><img src="{{asset('mobile/images/s3.gif')}}"></a>
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_blank" class="sLink sLink3">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_3');" target="_blank"><img src="{{asset('mobile/images/s3.gif')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_3');" target="_blank" class="sLink sLink3">
                                     <span class="sName">IKEA PS 2002<br>洒水壶, 灰色</span><br>
                                     <span class="sPrice">¥&nbsp;9.90</span>
                                 </a>
@@ -197,12 +198,12 @@
     </div>
     <!--line4 end-->
 
-    <div class="line5">
+    <div class="line5" id="galleryBlock">
     	<div class="innerDiv">
-        	<a href="javascript:void(0);" class="abs btn2"><img src="{{asset('mobile/images/btn2.png')}}"></a>
-            <a href="javascript:void(0);" class="abs btn3"><img src="{{asset('mobile/images/btn3.png')}}"></a>
-            <input type="text" class="searchTxt" placeholder="输入你家宝贝名字／电话搜索">
-            <a href="javascript:void(0);" class="abs searchBtn"><img src="{{asset('mobile/images/icon1.png')}}"></a>
+        	<a href="javascript:void(0);" class="abs btn2" onClick="ga('send','event','UGC Gallery','Click','Filter_Latest');"><img src="{{asset('mobile/images/btn2.png')}}"></a>
+            <a href="javascript:void(0);" class="abs btn3" onClick="ga('send','event','UGC Gallery','Click','Filter_Filter_Liked');"><img src="{{asset('mobile/images/btn3.png')}}"></a>
+            <input type="text" class="searchTxt" onClick="ga('send','event','UGC Gallery','Click','UGC_Search_Input');" placeholder="输入你家宝贝名字／电话搜索">
+            <a href="javascript:void(0);" class="abs searchBtn" onClick="ga('send','event','UGC Gallery','Click','UGC_Search_Btn');"><img src="{{asset('mobile/images/icon1.png')}}"></a>
 
             <div class="abs pBlock">
             	<div class="pInitOuter" id="infos">
@@ -251,11 +252,11 @@
             2.	一起娱乐奖：INBJUDANDE 英丹徳围裙（成人＋儿童）套装，共计40套。<br>
             3.	边玩边学奖：LATTJO拉特奥拼图，共计24份。<br>
             4.	陪伴记录奖：单个WONDERMOOI系列限量版单色3D玩偶（玩偶角色随机），共8个。<br>
-            5.	创意陪伴奖：全套WONDERMOOI系列限量版单色3D玩偶及拍立得相机，共1套。/p>
+            5.	创意陪伴奖：全套WONDERMOOI系列限量版单色3D玩偶及拍立得相机，共1套。</p>
             
             <p><strong>抽奖时间：</strong><br>
             •	2016年6月1日00:00 至 2016年6月23日24:00，及<br>
-            •	2016年7月12日00:00至2016年8月13日24:00/p>
+            •	2016年7月12日00:00至2016年8月13日24:00</p>
             
             <p><strong>抽奖规则：</strong><br>
             •	参与奖：活动期间，每位成功上传动图、照片或视频的参与者，都将有机会获得参与奖1份<br>
@@ -335,7 +336,7 @@ function getInfos(url,params, refresh){
         }
 
         for (var i = 0; i < json.data.length; i++) {
-            html += '<div class="pInit"><div class="innerDiv"><div class="pTopImg"><a href="{{url("share")}}/'+json.data[i].id+'" cType="img"><img src="'+json.data[i].thumb+'"></a></div><div class="pBottomTxt"><a href="'+'{{url("like")}}/'+json.data[i].id+'" class="pBottomTXtBtn2" onClick="return pVote($(this));"><img src="{{asset("mobile/images/icon2.png")}}"> <span>'+json.data[i].like_num+'</span></a><a href="{{url("share")}}/'+json.data[i].id+'" class="pBottomTXtBtn1" cType="img"><img src="mobile/images/icon3.png"></a></div><div class="pBottomTxtName">'+json.data[i].name+'</div></div></div>';
+            html += '<div class="pInit"><div class="innerDiv"><div class="pTopImg"><a href="{{url("share")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');" cType="img"><img src="'+json.data[i].thumb+'"></a></div><div class="pBottomTxt"><a href="'+'{{url("like")}}/'+json.data[i].id+'" class="pBottomTXtBtn2" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("mobile/images/icon2.png")}}"> <span>'+json.data[i].like_num+'</span></a><a href="{{url("share")}}/'+json.data[i].id+'" class="pBottomTXtBtn1" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');" cType="img"><img src="mobile/images/icon3.png"></a></div><div class="pBottomTxtName">'+json.data[i].name+'</div></div></div>';
         }
         if( json.data.length == 0 ){
             html += '<div style="text-align:center"><h3>抱歉，没有您更多的信息~</h3></div>';

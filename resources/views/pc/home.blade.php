@@ -242,11 +242,11 @@
                                     2.	一起娱乐奖：INBJUDANDE 英丹徳围裙（成人＋儿童）套装，共计40套。<br>
                                     3.	边玩边学奖：LATTJO拉特奥拼图，共计24份。<br>
                                     4.	陪伴记录奖：单个WONDERMOOI系列限量版单色3D玩偶（玩偶角色随机），共8个。<br>
-                                    5.	创意陪伴奖：全套WONDERMOOI系列限量版单色3D玩偶及拍立得相机，共1套。/p>
+                                    5.	创意陪伴奖：全套WONDERMOOI系列限量版单色3D玩偶及拍立得相机，共1套。</p>
                                     
                                     <p><strong>抽奖时间：</strong><br>
                                     •	2016年6月1日00:00 至 2016年6月23日24:00，及<br>
-                                    •	2016年7月12日00:00至2016年8月13日24:00/p>
+                                    •	2016年7月12日00:00至2016年8月13日24:00</p>
                                     
                                     <p><strong>抽奖规则：</strong><br>
                                     •	参与奖：活动期间，每位成功上传动图、照片或视频的参与者，都将有机会获得参与奖1份<br>
@@ -306,7 +306,7 @@ function getInfos(url,params){
         for (var i = 0; i < json.data.length; i++) {
             html += '<div class="pInit">';
             html += '<div class="innerDiv">';
-            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_\''+json.data[i].id+');"';
+            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');"';
 		if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
                 html += ' data-shareImg="'+json.data[i].animation+'"';
@@ -318,7 +318,7 @@ function getInfos(url,params){
             html += ' data-shareUrl="'+noWechatSharlUrl+'?id='+json.data[i].id+'"><img src="'+json.data[i].thumb+'"></a></div>';
             html += '<div class="pBottomTxt">';
             html += '<div class="pBottomTxtName">'+json.data[i].name+'</div>';
-            html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_\''+json.data[i].id+');"';
+            html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');"';
             if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
             }
@@ -326,12 +326,12 @@ function getInfos(url,params){
                 html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'"';
             }
             html += '><img src="{{asset("pc/images/icon2.png")}}"></a></div>';
-            html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="return pVote($(this));ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_\''+json.data[i].id+');"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
+            html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
         }
         if( json.data.length == 0 ){
             html = '<div style="text-align:center"><h3>抱歉，没有您需要的信息~</h3></div>';
         }
-        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_More_UGC\');"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
+        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_More_UGC\');return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
         $('#infos').html(html);
     })
 }
