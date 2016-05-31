@@ -45,26 +45,26 @@
                             <div class="innerDiv">
                                 <img src="" class="abs f3EndGif">
                                 <div class="shareBtns">
-                                    <a href="javascript:void(0);" class="abs sb1" data-qr="" onClick="showQc(this);"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                                    <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                                    <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                                    <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" class="abs sb1" data-qr="" onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showQc(this);"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Weibo');" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Douban');" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_QZone');" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                 </div>
-                                <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();">
+                                <a href="javascript:void(0);" class="abs paBtn" onClick="ga('send','event','UGC Recruitment','Click','UGC_Replay');playAgain();">
                                     <img src="{{asset('pc/images/space.gif')}}" width="164" height="56"></a>
-                                <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
+                                <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
                             </div>
                         </div>
                         <div class="f4" style="display:none;">
                         	<div class="innerDiv">
                                 <img src="" class="abs f3EndGif">
                                 <div class="shareBtns">
-                                    <a href="javascript:void(0);" class="abs sb1" data-qr='' onClick="showQc(this);"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                                    <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                                    <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                                    <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" class="abs sb1" data-qr='' onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showQc(this);"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Weibo');" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Douban');" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_QZone');" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                 </div>
-                                <a href="javascript:void(0);" class="abs paBtn" onClick="playAgain();">
+                                <a href="javascript:void(0);" class="abs paBtn" onClick="ga('send','event','UGC Recruitment','Click','UGC_Replay');playAgain();">
                                     <img src="{{asset('pc/images/space.gif')}}" width="164" height="56"></a>
                                 <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" target="_top" class="abs moreLink"><img src="{{asset('pc/images/space.gif')}}" width="80" height="18"></a>
                             </div>
@@ -113,7 +113,7 @@
                                 <input type="hidden" id="file_type" name="file_type" value="0" />
                                 {!! csrf_field() !!}
                                 <a href="javascript:void(0);" class="abs vPlayAgain" onClick="playAgain();" style="display:none;"><img src="{{asset('pc/images/space.gif')}}" width="164" height="64"></a>
-                                <a href="javascript:void(0);" class="abs submitBtn" onClick="submitL2();"><img src="{{asset('pc/images/space.gif')}}" width="164" height="64"></a>
+                                <a href="javascript:void(0);" class="abs submitBtn" onClick="ga('send','event','UGC Recruitment','Click','UGC_Submission');submitL2();"><img src="{{asset('pc/images/space.gif')}}" width="164" height="64"></a>
                             </div>
                             </form>
                         </div>
@@ -150,8 +150,8 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="innerDiv">
-                                    <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_top"><img src="{{asset('pc/images/s1.gif')}}"></a>
-                                    <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_top" class="sLink sLink1">
+                                    <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_1');" target="_top"><img src="{{asset('pc/images/s1.gif')}}"></a>
+                                    <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_1');" target="_top" class="sLink sLink1">
                                         <span class="sName">IKEA 365 瓦福<br>肉凿，黑色</span><br>
                                         <span class="sPrice">¥&nbsp;49.00</span>
                                     </a>
@@ -159,8 +159,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="innerDiv">
-                                    <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_top"><img src="{{asset('pc/images/s2.gif')}}"></a>
-                                    <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_top" class="sLink sLink2">
+                                    <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_2');" target="_top"><img src="{{asset('pc/images/s2.gif')}}"></a>
+                                    <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_2');" target="_top" class="sLink sLink2">
                                         <span class="sName">RÅSKOG 拉斯克<br>手推车, 天蓝色</span><br>
                                         <span class="sPrice">¥&nbsp;299.00</span>
                                     </a>
@@ -168,8 +168,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="innerDiv">
-                                    <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_top"><img src="{{asset('pc/images/s3.gif')}}"></a>
-                                    <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_top" class="sLink sLink3">
+                                    <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_3');" target="_top"><img src="{{asset('pc/images/s3.gif')}}"></a>
+                                    <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_3');" target="_top" class="sLink sLink3">
                                         <span class="sName">IKEA PS 2002<br>洒水壶, 灰色</span><br>
                                         <span class="sPrice">¥&nbsp;9.90</span>
                                     </a>
@@ -186,10 +186,10 @@
 
         <div class="line4">
             <div class="innerDiv">
-                <a href="javascript:void(0);" class="abs btn2"><img src="{{asset('pc/images/btn2.png')}}"></a>
-                <a href="javascript:void(0);" class="abs btn3"><img src="{{asset('pc/images/btn3.png')}}"></a>
-                <input type="text" class="searchTxt" placeholder="输入你家宝贝名字／电话搜索">
-                <a href="javascript:void(0);" class="abs searchBtn"><img src="{{asset('pc/images/icon3.png')}}"></a>
+                <a href="javascript:void(0);" class="abs btn2" onClick="ga('send','event','UGC Gallery','Click','Filter_Latest');"><img src="{{asset('pc/images/btn2.png')}}"></a>
+                <a href="javascript:void(0);" class="abs btn3" onClick="ga('send','event','UGC Gallery','Click','Filter_Filter_Liked');"><img src="{{asset('pc/images/btn3.png')}}"></a>
+                <input type="text" class="searchTxt" onClick="ga('send','event','UGC Gallery','Click','UGC_Search_Input');" placeholder="输入你家宝贝名字／电话搜索">
+                <a href="javascript:void(0);" class="abs searchBtn" onClick="ga('send','event','UGC Gallery','Click','UGC_Search_Btn');"><img src="{{asset('pc/images/icon3.png')}}"></a>
 
                 <div class="abs pBlock" id="infos"></div>
             </div>
@@ -204,10 +204,10 @@
                 </div>
                 <img src="" class="abs bottomQc" onClick="closeQcBottom();" style="display:none;">
                 <div class="shareBtns">
-                    <a href="javascript:void(0);" class="abs sbb1" onClick="showQcBottom();"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                    <a href="javascript:void(0);" class="abs sbb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                    <a href="javascript:void(0);" class="abs sbb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
-                    <a href="javascript:void(0);" class="abs sbb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                    <a href="javascript:void(0);" class="abs sbb1" onClick="showQcBottom();ga('send','event','UGC Gallery','Share','Share_UGC_WeChat');"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Gallery','Share','Share_UGC_Weibo');" class="abs sbb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Gallery','Share','Share_UGC_Douban');" class="abs sbb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                    <a href="javascript:void(0);" onClick="ga('send','event','UGC Gallery','Share','Share_UGC_Qzone');" class="abs sbb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                 </div>
                 <a href="javascript:void(0);" class="abs bottmCloseBtn" onClick="closeBottom();"><img src="{{asset('pc/images/space.gif')}}" width="66" height="57"></a>
             </div>
@@ -306,7 +306,7 @@ function getInfos(url,params){
         for (var i = 0; i < json.data.length; i++) {
             html += '<div class="pInit">';
             html += '<div class="innerDiv">';
-            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);"';
+            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_\''+json.data[i].id+');"';
 		if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
                 html += ' data-shareImg="'+json.data[i].animation+'"';
@@ -318,7 +318,7 @@ function getInfos(url,params){
             html += ' data-shareUrl="'+noWechatSharlUrl+'?id='+json.data[i].id+'"><img src="'+json.data[i].thumb+'"></a></div>';
             html += '<div class="pBottomTxt">';
             html += '<div class="pBottomTxtName">'+json.data[i].name+'</div>';
-            html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);"';
+            html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_\''+json.data[i].id+');"';
             if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
             }
@@ -326,12 +326,12 @@ function getInfos(url,params){
                 html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'"';
             }
             html += '><img src="{{asset("pc/images/icon2.png")}}"></a></div>';
-            html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="return pVote($(this));"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
+            html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="return pVote($(this));ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_\''+json.data[i].id+');"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
         }
         if( json.data.length == 0 ){
             html = '<div style="text-align:center"><h3>抱歉，没有您需要的信息~</h3></div>';
         }
-        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
+        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_More_UGC\');"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
         $('#infos').html(html);
     })
 }
