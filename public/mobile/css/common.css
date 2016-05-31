@@ -136,3 +136,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 .shareGif{ position:absolute; left:124px; top:359px;}
 .shareVideo{ width:530px; height:400px; overflow:hidden; left:55px; top:359px; position:absolute;}
 .shareBtn1{ left:220px; top:800px;}
+
+.ruleBg{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.8);}
+.ruleBlock{ width:620px; height:832px; position:fixed; left:10px; top:50%; margin-top:-416px;}
+.ruleBlock{ color:#FFF; background:none;}
+.ruleBlock h1{ text-align:center; width:100%; font-size:24px; height:60px; line-height:30px; padding:10px 0;}
+.ruleBlock .main{ overflow-x:hidden; overflow-y:auto; width:100%; height:772px;}
+.ruleBlock p{ padding:10px 0; text-align:left; font-size:20px; line-height:28px;}

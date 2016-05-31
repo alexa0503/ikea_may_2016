@@ -611,3 +611,11 @@ function shareNoWeichat(){
 			shareToQzone(_title,_pageurl,_sharetext,_picurl);
 			});
 	}
+	
+function closeRule(){
+	$('.ruleBlock').hide();
+	}
+	
+function showRule(){
+	$('.ruleBlock').show();
+	}
