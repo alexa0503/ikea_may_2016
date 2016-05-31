@@ -163,8 +163,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="##" target="_blank"><img src="{{asset('mobile/images/s1.png')}}"></a>
-                                <a href="##" class="sLink sLink1">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_blank"><img src="{{asset('mobile/images/s1.png')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" target="_blank" class="sLink sLink1">
                                     <span class="sName">IKEA 365 瓦福<br>肉凿，黑色</span><br>
                                     <span class="sPrice">¥&nbsp;49.00</span>
                                 </a>
@@ -172,8 +172,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="##" target="_blank"><img src="{{asset('mobile/images/s2.png')}}"></a>
-                                <a href="##" class="sLink sLink2">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_blank"><img src="{{asset('mobile/images/s2.png')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" target="_blank" class="sLink sLink2">
                                     <span class="sName">RÅSKOG 拉斯克<br>手推车, 天蓝色</span><br>
                                     <span class="sPrice">¥&nbsp;299.00</span>
                                 </a>
@@ -181,8 +181,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="##" target="_blank"><img src="{{asset('mobile/images/s3.png')}}"></a>
-                                <a href="##" class="sLink sLink3">
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_blank"><img src="{{asset('mobile/images/s3.png')}}"></a>
+                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" target="_blank" class="sLink sLink3">
                                     <span class="sName">IKEA PS 2002<br>洒水壶, 灰色</span><br>
                                     <span class="sPrice">¥&nbsp;9.90</span>
                                 </a>
@@ -212,7 +212,7 @@
                 <div class="l4BtnLine">
                 	<a href="javascript:void(0);" class="btn5" style="display:none;"><img src="{{asset('mobile/images/btn5.png')}}"></a>
                 	<br><br>
-                    <a href="javascript:void(0);"><img src="{{asset('mobile/images/btn4.png')}}"></a>
+                    <a href="javascript:void(0);" onClick="playAgain();"><img src="{{asset('mobile/images/btn4.png')}}"></a>
                 </div>
             </div>
         </div>
@@ -283,7 +283,8 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function() {
-        if (null != next_page_url && $(window).scrollTop() == $(document).height() - $(window).height()) {
+		//alert($(window).scrollTop()+' - '+$(document).height()+' - '+$(window).height());
+        if (null != next_page_url && $(window).scrollTop() <= (parseInt($(document).height()) - parseInt($(window).height())+50)) {
             getInfos(next_page_url,params);
         }
     });
