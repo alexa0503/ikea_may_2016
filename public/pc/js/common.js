@@ -555,7 +555,7 @@ function shareNoWeichat(){
 	var _sharetext=noWechatShareTxt;
 
 		$(".douban").click(function(){
-			var _title=noWechatShareTitle;
+			var _title=noWechatShareTxt;
 			var _pageurl=noWechatSharlUrl;
 			var _picurl=noWechatShareImg;
 			var _sharetext=noWechatShareTxt;
