@@ -319,6 +319,7 @@ function submitL2() {
     }
     if (fTel == ''||!pattern.test(fTel)) {
         $('.fTxt2').addClass('fRed');
+		alert('请输入正确的手机号');
         return false;
     }
     if (fProvince == '' || fCity == '' || fAddress == '') {
