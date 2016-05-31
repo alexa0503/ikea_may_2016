@@ -613,9 +613,11 @@ function shareNoWeichat(){
 	}
 	
 function closeRule(){
+	$('.ruleBg').hide();
 	$('.ruleBlock').hide();
 	}
 	
 function showRule(){
+	$('.ruleBg').show();
 	$('.ruleBlock').show();
 	}
