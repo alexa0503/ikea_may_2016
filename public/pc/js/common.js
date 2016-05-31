@@ -493,6 +493,8 @@ function showBottom(e) {
     }
     $('.bottomQc').attr('src', qr); //当前内容的二维码图片绑定进页面
     $('.bottomBg').show();
+    noWechatShareImg = $(e).attr('data-shareImg');
+    noWechatShareUrl = $(e).attr('data-shareUrl');
 }
 
 function showQcBottom() {

@@ -215,12 +215,17 @@
     </div>
 @endsection
 @section('scripts')
+<script>
+var noWechatShareTitle='多陪伴1小时';
+var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
+var noWechatShareImg='';
+var noWechatSharlUrl='{{url("/web")}}';
+</script>
 <script src="{{asset('pc/js/jquery-1.9.1.min.js')}}"></script>
 <script src="{{asset('pc/js/swiper.min.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('pc/js/common.js')}}"></script>
 <script>
-
 function getInfos(url,params){
     $.getJSON(url,params,function(json){
         var html = '';
@@ -230,11 +235,13 @@ function getInfos(url,params){
             html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);"';
 		if(json.data[i].file_type == 0 ){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
+                html += ' data-shareImg="'+json.data[i].animation+'"';
             }
             else{
                 html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'"';
+                html += ' data-shareImg="'+json.data[i].animation+'"';
             }
-			html += '><img src="'+json.data[i].thumb+'"></a></div>';
+            html += ' data-shareUrl="'+noWechatSharlUrl+'?id='+json.data[i].id+'"><img src="'+json.data[i].thumb+'"></a></div>';
             html += '<div class="pBottomTxt">';
             html += '<div class="pBottomTxtName">'+json.data[i].name+'</div>';
             html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);"';
