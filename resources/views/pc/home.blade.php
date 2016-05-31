@@ -3,7 +3,7 @@
 	<div class="innerDiv">
     	<div class="line1">
     	<div class="innerDiv">
-        	<a href="javascript:void(0);" class="abs btn1"><img src="{{asset('pc/images/btn1.png')}}"></a>
+        	<a href="javascript:void(0);" class="abs btn1" onClick="ga('send','event','UGC Recruitment','Click','Top_Banner_CTA_inner');topGoPage3();"><img src="{{asset('pc/images/btn1.png')}}"></a>
             <div class="abs vBlock">
             	<div class="vInit">
                 	<div class="innerDiv">
@@ -88,7 +88,7 @@
                                 <div class="fTxt3">*您的联系地址</div>
 
                                 <div class="abs fNote">温馨提示：请务必填写真实信息，以免错失大奖！</div>
-                                <div class="abs fLice"><label><input type="checkbox" name="fLice" checked> 我已阅读并同意本次<a href="javascript:void(0);" onClick="showRule();">条件与条款</a></label></div>
+                                <div class="abs fLice"><label onClick="ga('send','event','UGC Recruitment','Click','T&C_Agreement');"><input type="checkbox" name="fLice" checked> 我已阅读并同意本次<a href="javascript:void(0);" onClick="showRule();">条件与条款</a></label></div>
 
                                 <div class="fTemplete" style="display:none;">
                                     <a href="javascript:void(0);" class="abs ft ft1 fton"><img src="{{asset('pc/images/space.gif')}}"></a>
@@ -100,11 +100,11 @@
                                 <input type="file" class="abs uploadBtn" name="photo" id="uploadBtn" onChange="setImagePreview();">
                                 <a href="javascript:void(0);" class="abs youkuBtn" onClick="uploadVideo();"><img src="{{asset('pc/images/space.gif')}}" width="174" height="62"></a>
 
-                                <input type="text" name="name" class="fInput fInput1" maxlength="20">
-                                <input type="text" name="mobile" class="fInput fInput2" maxlength="11">
-                                <input type="text" name="province" class="fInput fInput3" maxlength="10" placeholder="省">
-                                <input type="text" name="city" class="fInput fInput4" maxlength="10" placeholder="市">
-                                <input type="text" name="address" class="fInput fInput5" maxlength="40" placeholder="详细地址">
+                                <input type="text" name="name" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Name');" class="fInput fInput1" maxlength="20">
+                                <input type="text" name="mobile" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Tel');" class="fInput fInput2" maxlength="11">
+                                <input type="text" name="province" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Province');" class="fInput fInput3" maxlength="10" placeholder="省">
+                                <input type="text" name="city" onClick="ga('send','event','UGC Recruitment','Comment','Contact_City');" class="fInput fInput4" maxlength="10" placeholder="市">
+                                <input type="text" name="address" onClick="ga('send','event','UGC Recruitment','Comment','Contact_Address');" class="fInput fInput5" maxlength="40" placeholder="详细地址">
                                 <input type="hidden" name="x" />
                                 <input type="hidden" name="y" />
                                 <input type="hidden" name="t" />
