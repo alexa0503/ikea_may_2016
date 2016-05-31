@@ -510,7 +510,7 @@ function topGoPage3(){
 	}
 	
 var noWechatShareTitle='';
-var noWechatShareTxt='';
+var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，快来为我家宝贝XXX（名字）点赞吧！';
 var noWechatShareImg='';
 var noWechatSharlUrl='';
 	
