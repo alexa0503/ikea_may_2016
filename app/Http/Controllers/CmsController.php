@@ -28,8 +28,8 @@ class CmsController extends Controller
      */
     public function index()
     {
-        $count = \App\WechatUser::count();
-        return view('cms/dashboard',['count' => $count]);
+        //$count = \App\WechatUser::count();
+        return view('cms/dashboard');
     }
 
     /**
@@ -43,6 +43,22 @@ class CmsController extends Controller
         else
             $wechat_users = DB::table('wechat_users')->where('id', $id)->paginate(20);
         return view('cms/wechat_user',['wechat_users' => $wechat_users]);
+    }
+
+    public function infoDelete($id)
+    {
+        //$info = \App\Info::find($id);
+        \App\Info::destroy($id);
+        return json_encode(['ret'=>0,'msg'=>'']);
+    }
+
+    public function infoStatusUpdate($id)
+    {
+        $info = \App\Info::find($id);
+        $info->status = $info->status == 0 ? 1 : 0;
+        $info->save();
+        //\App\Info::destroy($id);
+        return json_encode(['ret'=>0,'msg'=>'','status'=>$info->status]);
     }
 
 
