@@ -209,7 +209,10 @@ function changeF4() {
 //视频上传
 function uploadVideo() {
     $('.fUploadVideo').show();
-    //上传中
+}
+
+function getYouku() {
+	//上传中
     $('.fLoading').show();
     st1 = setTimeout(function() {
         $('.fLoadImg').css('background-position', '-398px 0');
@@ -220,9 +223,7 @@ function uploadVideo() {
             }, 600);
         }, 500);
     }, 400);
-}
-
-function getYouku() {
+	
     //上传成功
     clearTimeout(st1);
     clearTimeout(st2);
