@@ -533,7 +533,7 @@ function shareToTencent(title, pageurl, sharetext) {
 
 //分享到豆瓣网
 function shareToDouban(title, pageurl, sharetext,picurl) {
-		window.open('http://www.douban.com/recommend/?title=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(pageurl) +"&image="+encodeURIComponent(picurl), target_str,window_size);}
+		window.open('http://www.douban.com/recommend/?url=' + encodeURIComponent(pageurl) +"&image="+encodeURIComponent(picurl)+'&title=' + encodeURIComponent(title)+'&text='+encodeURIComponent(sharetext) , target_str,window_size);}
 
 //分享到QQ空间
 function shareToQzone(title, pageurl, sharetext,picurl) {
@@ -555,11 +555,10 @@ function shareNoWeichat(){
 	var _sharetext=noWechatShareTxt;
 
 		$(".douban").click(function(){
-			var _title=noWechatShareTxt;
+			var _title=noWechatShareTitle;
 			var _pageurl=noWechatSharlUrl;
 			var _picurl=noWechatShareImg;
 			var _sharetext=noWechatShareTxt;
-			_sharetext=_sharetext.replace('#','').replace('#','');
 			shareToDouban(_title,_pageurl,_sharetext,_picurl);
 			// ga('send', 'event', 'Social', 'share','douban')
 		});
