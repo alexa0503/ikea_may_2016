@@ -216,29 +216,6 @@
 @endsection
 @section('scripts')
 <script src="{{asset('pc/js/jquery-1.9.1.min.js')}}"></script>
-<script src="http://cloud.youku.com/assets/lib/uploadjs.php"></script>
-<script>
-var USE_STREAM_UPLOAD = true;
-var youkuParam = {client_id:"876cd40a21540f7f",access_token:"c52defaa741795bc7fd9a133277d0a01",oauth_opentype:"currentWindow",oauth_redirect_uri:"http://youku.himyweb.com/oauth.php",oauth_state:"",completeCallback:"uploadComplete",categoryCallback:"categoryLoaded"};
-function uploadComplete(data){
-	alert("videoid="+data.videoid+";title="+data.title);
-	uploadagain();
-}
-
-function categoryLoaded(data){
-    if(data.categories) {
-        var tpl = '';
-        for (var i=0; i<data.categories.length; i++) {
-            if(data.categories[i].term == 'Autos'){
-                tpl += '<option value="' + data.categories[i].term + '" selected>' + data.categories[i].label + '</option>';
-            }else{
-                tpl += '<option value="' + data.categories[i].term + '" >' + data.categories[i].label + '</option>';
-            }
-        }
-        $("#category-node").html(tpl);
-    }
-}
-</script>
 <script src="{{asset('pc/js/swiper.min.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('pc/js/common.js')}}"></script>
@@ -273,7 +250,7 @@ function getInfos(url,params){
         if( json.data.length == 0 ){
             html = '<div style="text-align:center"><h3>抱歉，没有您需要的信息~</h3></div>';
         }
-        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
+        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
         $('#infos').html(html);
     })
 }
