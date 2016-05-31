@@ -220,20 +220,27 @@
 <script src="{{asset('mobile/js/hammer.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('mobile/js/common.js')}}"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="{{asset('mobile/js/wx.js')}}"></script>
 
 <script>
 
 var isLock = false;
 var current_page = 1;
 var next_page_url = null;
-function getInfos(url,params){
+function getInfos(url,params, refresh){
     if (isLock) {
         return;
     }
     isLock = true;
     $.getJSON(url,params,function(json){
+        if( true == refresh){
+            var html = '';
+        }
+        else{
+            var html = $('#infos').html();
+        }
 
-        var html = $('#infos').html();
         for (var i = 0; i < json.data.length; i++) {
             html += '<div class="pInit"><div class="innerDiv"><div class="pTopImg"><a href="javascript:void(0);" cType="img"><img src="'+json.data[i].thumb+'"></a></div><div class="pBottomTxt"><a href="'+'{{url("like")}}/'+json.data[i].id+'" class="pBottomTXtBtn2" onClick="return pVote($(this));"><img src="{{asset("mobile/images/icon2.png")}}"> <span>'+json.data[i].like_num+'</span></a><a href="javascript:void(0);" class="pBottomTXtBtn1" cType="img"><img src="mobile/images/icon3.png"></a></div><div class="pBottomTxtName">'+json.data[i].name+'</div></div></div>';
         }
@@ -252,24 +259,32 @@ $(document).ready(function(){
     resizeImg();
 
     var url = '{{url("infos")}}';
+    var params = {};
     getInfos(url,{});
 
-    $('.btn2').click(function(){
-        getInfos(url,{order:'time'});
-    });
     $('.btn3').click(function(){
-        getInfos(url,{order:'like'});
+        params = {order:'time'};
+        getInfos(url, params,true);
+    });
+    $('.btn2').click(function(){
+        params = {order:'like'};
+        getInfos(url, params,true);
     });
     $('.searchBtn').click(function(){
         var keywords = $('.searchTxt').val();
-        getInfos(url,{keywords:keywords});
+        params = {keywords:keywords};
+        getInfos(url, params);
     });
 
     $(window).scroll(function() {
         if (null != next_page_url && $(window).scrollTop() == $(document).height() - $(window).height()) {
-            getInfos(next_page_url,{});
+            getInfos(next_page_url,params);
         }
     });
+
+    $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
+        wxShare(data);
+    })
 })
 </script>
 @endsection

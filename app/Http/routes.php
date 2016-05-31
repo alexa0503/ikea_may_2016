@@ -35,6 +35,7 @@ Route::get('/infos', function(){
     //var_dump($infos);
     return $result;
 });
+Route::get('wx/share', 'HomeController@wxShare');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
