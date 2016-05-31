@@ -146,10 +146,6 @@ class HomeController extends Controller
                 $info->file = $file_name;
                 $info->status = 1;
                 $result['url'] = $info->animation = url('storage/animation/'.$array_file[0].'.gif');
-                $result['wxUrl'] = url('share/'.$info->id);
-                $result['id'] = $info->id;
-                \QrCode::format('png')->size(600)->generate('http://community.ikea.cn/family/2016activity_awgc/public/share/'.$info->id,public_path('qrcodes/'.$info->id.'.png'));
-                //$result['qr'] = url('qrcodes/'.$info->id.'.png');
 
                 $info->thumb = asset('storage/thumb/'.$file_name);
             } else {
@@ -167,6 +163,10 @@ class HomeController extends Controller
             $info->created_time = Carbon::now();
             $info->created_ip = $request->getClientIp();
             $info->save();
+            $result['wxUrl'] = url('share/'.$info->id);
+            $result['id'] = $info->id;
+            $result['qrUrl'] = url('qrcodes/'.$info->id.'.png');
+            \QrCode::format('png')->size(600)->generate('http://community.ikea.cn/family/2016activity_awgc/public/share/'.$info->id,public_path('qrcodes/'.$info->id.'.png'));
         }
 
         return json_encode($result);

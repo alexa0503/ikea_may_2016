@@ -377,7 +377,7 @@ function submitL2() {
             else{
                 changeF4();
             }
-            $('.abs sb1').attr('data-qr', 'qrcodes/'+data.id+'.png');
+            $('.sb1').attr('data-qr', data.qrUrl);
         },
         complete: function(xhr) {
             //alert(xhr.responseText);
@@ -548,14 +548,12 @@ function shareToRenRen(title, pageurl,sharetext,picurl){
 	}
 
 function shareNoWeichat(){
-<<<<<<< HEAD
+
 	var _title=noWechatShareTitle;
 	var _pageurl=noWechatSharlUrl;
 	var _picurl=noWechatShareImg;
 	var _sharetext=noWechatShareTxt;
 
-=======
->>>>>>> 7249be34fc07cdcd6beb7dfa6c2b25ac652ea53f
 		$(".douban").click(function(){
 			var _title=noWechatShareTitle;
 			var _pageurl=noWechatSharlUrl;

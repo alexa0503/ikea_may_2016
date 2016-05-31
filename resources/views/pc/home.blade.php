@@ -59,7 +59,7 @@
                         	<div class="innerDiv">
                                 <img src="" class="abs f3EndGif">
                                 <div class="shareBtns">
-                                    <a href="javascript:void(0);" class="abs sb1" data-qr='' onClick="showQc();"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
+                                    <a href="javascript:void(0);" class="abs sb1" data-qr='' onClick="showQc(this);"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb2 sinaShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb3 douban"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
                                     <a href="javascript:void(0);" class="abs sb4 qzoneShare"><img src="{{asset('pc/images/space.gif')}}" width="50" height="50"></a>
