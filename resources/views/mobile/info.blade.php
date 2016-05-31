@@ -11,7 +11,6 @@
 </div>
 @endsection
 @section('scripts')
-<script src="{{asset('mobile/js/jquery-1.9.1.min.js')}}"></script>
 <script src="{{asset('mobile/js/swiper.min.js')}}"></script>
 <script src="{{asset('mobile/js/exif.js')}}"></script>
 <script src="{{asset('mobile/js/hammer.js')}}"></script>

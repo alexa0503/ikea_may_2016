@@ -23,11 +23,31 @@ class HomeController extends Controller
     }
     public function share($id)
     {
+        $url = urldecode(url('/'));
+        $options = [
+            'app_id' => env('WECHAT_APPID'),
+            'secret' => env('WECHAT_SECRET'),
+            'token' => 'ikea',
+        ];
+        $wx = new Application($options);
+        $js = $wx->js;
+        $js->setUrl($url);
+        $config = json_decode($js->config(array('onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ'), false), true);
+
+        $share = [
+            'title' => env('WECHAT_SHARE_TITLE'),
+            'desc' => env('WECHAT_SHARE_DESC'),
+            'link' => env('APP_URL'),
+            'imgUrl' => env('APP_URL').env('WECHAT_SHARE_IMG'),
+        ];
+        $wx_data = json_encode(array_merge($share, $config));
+
+
         $info = \App\Info::find($id);
         if (null == $info) {
             return redirect('/');
         }
-        return view('mobile/info',['info'=>$info]);
+        return view('mobile/info',['info'=>$info,'wxData'=>$wx_data]);
     }
 
     public function index()

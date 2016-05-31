@@ -109,6 +109,11 @@ function submitL2() {
             },
             success: function(data) {
                 changeF4();
+                $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
+                        data.link = data.wxUrl;
+                        wxShare(data);
+                    }
+                });
             }
         });
     }
@@ -144,6 +149,11 @@ function dedSubmit() {
             $('.fLoadImg').css('background-position', '-1592px 0');
             if (data.ret == 0) {
                 changeF3();
+                $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
+                        data.link = data.wxUrl;
+                        wxShare(data);
+                    }
+                });
             } else {
                 alert(data.msg);
             }
