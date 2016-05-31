@@ -263,6 +263,10 @@ $(document).ready(function(){
     l2Swiper();
     l3Swiper();
     resizeImg();
+	
+	$('#mMask').on('touchmove', function (e) {
+        e.preventDefault();
+    });
 
     var url = '{{url("infos")}}';
     var params = {};
