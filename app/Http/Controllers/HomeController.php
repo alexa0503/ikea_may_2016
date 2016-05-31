@@ -165,9 +165,15 @@ class HomeController extends Controller
             $info->save();
             $result['wxUrl'] = url('share/'.$info->id);
             $result['id'] = $info->id;
-            $result['qrUrl'] = url('qrcodes/'.$info->id.'.png');
+            if( $info->status == 1){
+                $result['qrUrl'] = url('qrcodes/'.$info->id.'.png');
+                $result['shareImg'] = $info->animation;
+            }else{
+                $result['qrurl'] = asset('pc/images/videoshare.jpg');
+                $result['shareImg'] = 'http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
+            }
             $result['shareUrl'] = url('web/').'?id='.$info->id;
-            $result['shareImg'] = $info->status == 1 ? $info->animation : 'http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
+
             \QrCode::format('png')->size(600)->generate('http://community.ikea.cn/family/2016activity_awgc/public/share/'.$info->id,public_path('qrcodes/'.$info->id.'.png'));
         }
 

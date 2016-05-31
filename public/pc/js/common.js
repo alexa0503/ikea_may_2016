@@ -617,12 +617,12 @@ function shareNoWeichat(){
 			shareToQzone(_title,_pageurl,_sharetext,_picurl);
 			});
 	}
-	
+
 function closeRule(){
 	$('.ruleBg').hide();
 	$('.ruleBlock').hide();
 	}
-	
+
 function showRule(){
 	$('.ruleBg').show();
 	$('.ruleBlock').show();
