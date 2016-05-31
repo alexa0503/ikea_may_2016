@@ -17,6 +17,7 @@ function randomNumb(minNumb, maxNumb) {
 $(document).ready(function() {
     l3Swiper();
     videoInit();
+	shareNoWeichat();
 });
 
 function l3Swiper() {
