@@ -211,9 +211,9 @@
 
                 <div class="clear"></div>
                 <div class="l4BtnLine">
-                	<a href="javascript:void(0);" class="btn5" style="display:none;"><img src="{{asset('mobile/images/btn5.png')}}"></a>
-                	<br><br>
-                    <a href="javascript:void(0);" onClick="playAgain();"><img src="{{asset('mobile/images/btn4.png')}}"></a>
+                	<a href="javascript:void(0);" class="btn5" onClick="getInfos(next_page_url,params);"><img src="{{asset('mobile/images/btn5.png')}}"></a>
+                	<!--<br><br>
+                    <a href="javascript:void(0);" onClick="playAgain();"><img src="{{asset('mobile/images/btn4.png')}}"></a>-->
                 </div>
             </div>
         </div>
