@@ -286,9 +286,9 @@ function resizeImg() {
                 iA = 0;
 
                 ffType = 'img';
-				
+
 				ga('send','event','UGC Recruitment','Upload','Image_Upload_PC');
-				
+
                 goF2();
 
                 return true;
@@ -598,8 +598,16 @@ function initShare(url) {
     if (sType == 'img') {
         $('.shareGif').attr('src', url).show(); //绑定gif
     } else if (sType == 'video') {
-        var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
+        var div_id = 'youkuplayer_' + youku_vid;
+        var vHtml = '<div id="'+div_id+'" style="width:530px;height:400px"></div>';
+        //var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
         $('.shareVideo').append(vHtml).show(); //把视屏绑定到底部弹框中
+        layer = new YKU.Player(div_id,{
+            styleid: '0',
+            client_id: youku_client_id,
+            vid: youku_vid,
+            newPlayer: true
+        });
     }
 }
 

@@ -29,6 +29,7 @@ var noWechatSharlUrl=location.href;
 <script src="{{asset('mobile/js/hammer.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
 <script src="{{asset('mobile/js/common.js')}}"></script>
+<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
 <script>
 $(document).ready(function() {
     $.getJSON('{{url("wx/share")}}', {url:location.href},function(data){
@@ -42,6 +43,8 @@ $(document).ready(function() {
         wxShare(wxData);
     })
 });
+var youku_client_id='{{env("YOUKU_CLIENT_ID")}}';
+var youku_vid = '{{$info->file}}';
 </script>
 <script>
 @if ($info->file_type == 0)
