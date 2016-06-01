@@ -244,7 +244,8 @@ function changeF5() {
     ffType = 'video';
     $('.fLoading').hide();
     $('#uploadBtn').hide();
-    $('.youkuBtn').hide()
+    $('.youkuBtn').hide();
+	$('.goGbBtn').show();
     $('.vPlayAgain').show();
     $('.f1').hide();
     $('.f5').show();

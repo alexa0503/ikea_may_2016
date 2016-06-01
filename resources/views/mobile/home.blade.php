@@ -138,6 +138,8 @@
                             <a href="javascript:void(0);" class="abs vPlayAgain" onClick="playAgain();" style="display:none;"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
 
                             <a href="javascript:void(0);" class="abs submitBtn" onClick="ga('send','event','UGC Recruitment','Click','UGC_Submission');submitL2();"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
+                            
+                            <a href="#galleryBlock" class="goGbBtn" style="position:absolute; left:175px; top:400px; display:none;"><img src="{{asset('mobile/images/space.gif')}}" width="294" height="116"></a>
                         </div>
                         </form>
                     </div>
