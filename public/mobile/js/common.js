@@ -599,7 +599,7 @@ function initShare(url) {
         $('.shareGif').attr('src', url).show(); //绑定gif
     } else if (sType == 'video') {
         var div_id = 'youkuplayer_' + youku_vid;
-        var vHtml = '<div id="'+div_id+'" style="width:530px;height:400px"></div>';
+        var vHtml = '<div id="'+div_id+'" style="width:530px;height:400px;"></div>';
         //var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
         $('.shareVideo').append(vHtml).show(); //把视屏绑定到底部弹框中
         layer = new YKU.Player(div_id,{

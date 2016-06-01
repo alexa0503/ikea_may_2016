@@ -13,7 +13,7 @@
         .uploadfile {
             width: 150px;
             height: 14px;
-            vertical-align: top;
+            vertical-align:middle;
         }
     </style>
     <script src="http://cloud.youku.com/assets/lib/jquery-1.8.1.min.js"></script>
@@ -71,12 +71,15 @@
 <body>
     <div id="youku-upload">
         <div class="container">
-            <form class="well form-horizontal" name="video-upload">
+            <form class="well form-horizontal" name="video-upload" style="padding:10px 19px;">
                 <fieldset>
-                    <div class="control-group">
+                    <div class="control-group" style="padding-top:20px;">
                         <label class="control-label" for="spanSWFUploadButton">选择文件：</label>
-                        <div id="uploadControl" class="controls">
-
+                        <div id="uploadControl" class="controls" style="position:relative;">
+                            <button type="button" class="btn btn-large btn-primary">
+                                <i class="icon-upload icon-white"></i>
+                                <span>选择视频</span>
+                            </button>
                         </div>
                     </div>
                     <input name="title" value="ikea成长陪伴" type="hidden" />
@@ -85,12 +88,12 @@
                     <input name="category" value="Entertainment" type="hidden" />
                     <input name="copyright_type" value="original" type="hidden" />
                     <input name="public_type" value="all" type="hidden" />
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary start" id="btn-upload-start">
+                    <div class="form-actions" style="margin-bottom:0;">
+                        <button type="submit" class="btn btn-large btn-primary start" id="btn-upload-start">
                             <i class="icon-upload icon-white"></i>
                             <span>开始上传</span>
                         </button><br><br>
-                        <button type="button" class="btn btn-primary" onClick="closeVideo();">
+                        <button type="button" class="btn btn-large btn-primary" onClick="closeVideo();">
                             <i class="icon-upload icon-white"></i>
                             <span>取消上传</span>
                         </button>
@@ -101,7 +104,7 @@
                 <div class="span5" id="upload-status-wraper"></div>
             </div>
             <br>
-            <div class="well">
+            <div class="well" style="padding:10px 19px;">
                 <h3>说明</h3>
                 <ul>
                     <li>最大支持上传<strong>1 GB</strong> 视频文件</li>
@@ -112,6 +115,16 @@
         <div id="complete"></div>
         <div id="login" style="width:100%;height:100%;position:fixed;z-index:999;left:0px;top:0px;overflow:hidden;display:none;">
         </div>
+        
+<style>
+#fileInput{ display:block; width:100%; height:100%; position:absolute; left:0; top:0; opacity:0;}
+@media (max-width:700px) {
+	label{ font-size:24px;}
+	input{ font-size:16px;}
+	.well h3{ font-size:24px;}
+	.well li{ font-size:20px; line-height:30px; word-break:break-all;}
+	}
+</style>
 </body>
 
 </html>

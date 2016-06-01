@@ -1515,7 +1515,7 @@ var URI = "https://openapi.youku.com/";
 					$("#uploadControl").html(htmlStr);
 					loadSWFUpload();
 			}else{
-					var htmlStr = '<input class="input-file" id="fileInput" type="file" name="FileData">';
+					var htmlStr = '<input class="input-file" id="fileInput" type="file" name="FileData"><button type="button" class="btn btn-large btn-primary"><i class="icon-upload icon-white"></i><span>选择视频</span></button>';
 					$("#uploadControl").html(htmlStr);
 			}
 
