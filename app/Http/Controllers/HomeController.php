@@ -125,16 +125,17 @@ class HomeController extends Controller
                     $image->crop(398, 398, $left, $top);
                     $image->save(public_path('storage/animation/').$file_name);
                 } else {
-                    $file_name = date('YmdHis').uniqid().'.png';
+                    $file_name = date('YmdHis').uniqid();
                     $canvas = $request->input('canvasData');
                     $canvas = str_replace('data:image/png;base64,', '', $canvas);
                     $canvas = str_replace(' ', '+', $canvas);
                     $canvas_data = base64_decode($canvas);
-                    file_put_contents(public_path('storage/').$file_name, $canvas_data);
-                    file_put_contents(public_path('storage/animation/').$file_name, $canvas_data);
-
+                    file_put_contents(public_path('storage/').$file_name.'.png', $canvas_data);
+                    //file_put_contents(public_path('storage/animation/').$file_name, $canvas_data);
                     #生成缩略图
-                    $image = Image::make(public_path('storage/').$file_name);
+                    $image = Image::make(public_path('storage/').$file_name.'.png');
+                    $file_name .= '.jpeg';
+                    $image->save(public_path('storage/animation/').$file_name);
                     $image->resize(279, 279, function ($constraint) {
                         $constraint->aspectRatio();
                     });
