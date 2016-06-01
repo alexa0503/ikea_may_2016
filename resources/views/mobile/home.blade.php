@@ -211,7 +211,7 @@
 
                 <div class="clear"></div>
                 <div class="l4BtnLine">
-                	<a href="javascript:void(0);" class="btn5" onClick="getInfos(next_page_url,params);"><img src="{{asset('mobile/images/btn5.png')}}"></a>
+                	<a href="javascript:void(0);" class="btn5"><img src="{{asset('mobile/images/btn5.png')}}"></a>
                 	<!--<br><br>
                     <a href="javascript:void(0);" onClick="playAgain();"><img src="{{asset('mobile/images/btn4.png')}}"></a>-->
                 </div>
@@ -321,7 +321,7 @@ $(document).ready(function() {
 <script>
 var isLock = false;
 var current_page = 1;
-var next_page_url = null;
+var next_page_url = "{{url('infos',['page'=>2])}}";
 var params = {};
 function getInfos(url,params, refresh){
     if (isLock) {
@@ -359,7 +359,10 @@ $(document).ready(function(){
 
     var url = '{{url("infos")}}';
     getInfos(url,{});
-
+    $('.btn5').click(function(){
+        //alert(next_page_url);
+        getInfos(next_page_url, params,true);
+    })
     $('.btn3').click(function(){
         params = {order:'time'};
         getInfos(url, params,true);
@@ -371,7 +374,7 @@ $(document).ready(function(){
     $('.searchBtn').click(function(){
         var keywords = $('.searchTxt').val();
         params = {keywords:keywords};
-        getInfos(url, params);
+        getInfos(url, params,true);
     });
 
 	try{

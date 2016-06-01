@@ -19,6 +19,7 @@ class HomeController extends Controller
 
     public function mobile()
     {
+        //var_dump(\Request::getClientIps());
         return view('mobile/home');
     }
     public function share($id)
@@ -47,7 +48,7 @@ class HomeController extends Controller
             $log = new \App\LikeLog();
             $log->info_id = $info->id;
             $log->created_time = Carbon::now();
-            $log->created_ip = \Request::getClientIp();
+            $log->created_ip = \Request::getClientIps();
             $log->save();
 
             $info->like_num += 1;
@@ -161,7 +162,7 @@ class HomeController extends Controller
             $info->address = $request->input('address');
             $info->file_type = $request->input('file_type');
             $info->created_time = Carbon::now();
-            $info->created_ip = $request->getClientIp();
+            $info->created_ip = $request->getClientIps();
             $info->save();
             $result['wxUrl'] = url('share/'.$info->id);
             $result['id'] = $info->id;
