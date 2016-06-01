@@ -492,12 +492,22 @@ function showBottom(e) {
     var cType = $(e).attr('cType');
     var url = $(e).attr('data-url');
     var qr = $(e).attr('data-qr');
+    var vid = $(e).attr('data-vid');
     if (cType == 'img') {
         $('.bottomGif').attr('src', url); //把图片绑定到底部弹框中
         $('.imgBlock').show();
     } else if (cType == 'video') {
-        var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
+        var div_id = 'youkuplayer_' + vid;
+        var vHtml = '<div id="'+div_id+'" style="width:530px;height:400px"></div>';
+        //var vHtml = '<iframe height=400 width=530 src="'+url+'" frameborder=0 allowfullscreen></iframe>';
         $('.videoBlock').append(vHtml).show(); //把视屏绑定到底部弹框中
+
+        player = new YKU.Player(div_id,{
+            styleid: '0',
+            client_id: youku_client_id,
+            vid: vid,
+            newPlayer: true
+        });
     }
     $('.bottomQc').attr('src', qr); //当前内容的二维码图片绑定进页面
     $('.bottomBg').show();

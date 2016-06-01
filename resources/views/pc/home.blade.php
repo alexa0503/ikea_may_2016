@@ -213,7 +213,7 @@
             </div>
         </div>
     </div>
-    
+
 <div class="ruleBg" style="display:none;"></div>
 <div class="ruleBlock" style="display:none;">
                         	<div class="innerDiv">
@@ -225,43 +225,43 @@
                                     •	活动时间：2016年6月1日 至 2016年8月13日<br>
                                     •	活动范围：中国大陆地区（港、澳、台地区除外）<br>
                                     •	征集主题：捣蛋瞬间、亲子瞬间</p>
-                                    
+
                                     <p><strong>活动参与方式及流程：</strong><br>
                                     第一步：访问活动网站，上传您孩子或者您与孩子的动图（仅限5M以内Gif格式的文件）、照片（仅限5M以内JPEG／GIF／PNG格式文件）或者视频（仅限 .avi | .dat | .mpg | .mpeg | .vob | .mkv | .mov | .wmv | .asf | .rm | .rmvb | .ram | .flv | .mp4 | .3gp | .dv | .qt | .divx | .cpk | .fli | .flc | .m4v 格式的文件。）<br>
                                     第二步：填写您或您孩子的名字或昵称、正确的联系电话及地址信息<br>
                                     第三步：完成提交，并等待后台审核（审核所需时间不超过提交后的24小时）<br>
                                     第四步：您可以分享活动，并邀请好友一起参与活动，也可为您与您孩子的瞬间点赞</p>
-                                    
+
                                     <p><strong>上传作品规则：</strong><br>
                                     1.	每位参与者需确保拥有上传内容的肖像权、版权和所有权<br>
                                     2.	同一IP地址每天只能在活动网站点赞10次<br>
                                     3.	宜家有权自行删除与本次活动无关、违反法律法规或侵犯第三方权益的动图、照片或者视频</p>
-                                    
+
                                     <p><strong>奖品设置：</strong><br>
                                     1.	参与奖：MÅLA莫拉多色毡头笔，数量有限，送完为止。<br>
                                     2.	一起娱乐奖：INBJUDANDE 英丹徳围裙（成人＋儿童）套装，共计40套。<br>
                                     3.	边玩边学奖：LATTJO拉特奥拼图，共计24份。<br>
                                     4.	陪伴记录奖：单个WONDERMOOI系列限量版单色3D玩偶（玩偶角色随机），共8个。<br>
                                     5.	创意陪伴奖：全套WONDERMOOI系列限量版单色3D玩偶及拍立得相机，共1套。</p>
-                                    
+
                                     <p><strong>抽奖时间：</strong><br>
                                     •	2016年6月1日00:00 至 2016年6月23日24:00，及<br>
                                     •	2016年7月12日00:00至2016年8月13日24:00</p>
-                                    
+
                                     <p><strong>抽奖规则：</strong><br>
                                     •	参与奖：活动期间，每位成功上传动图、照片或视频的参与者，都将有机会获得参与奖1份<br>
                                     •	一起娱乐奖：活动期间，将从所有成功上传动图、照片或视频的参与者中，每周随机抽选5名<br>
                                     •	边玩边学奖：活动期间，将从所有成功上传动图、照片或视频的参与者中，每周随机抽选3名<br>
                                     •	陪伴成长奖：活动期间，将从所有成功上传动图、照片或视频的参与者中，每周随机抽选1名<br>
                                     •	创意陪伴奖：活动结束后，将从所有成功上传动图、照片或视频的参与者中，随机抽选1名</p>
-                                    
+
                                     <p><strong>中奖通知</strong><br>
                                     •	参与奖：将随机抽取一定数量的用户，以邮寄的方式直接将奖品寄给中奖用户。<br>
                                     •	周奖中奖者：每周将通过宜家官方微信及微博公布中奖名单。抽奖后2周内，宜家将通过电话联系中奖者，进行兑奖确认。<br>
                                     •	活动结束后，将通过宜家官方微信及微博公布所有中奖者名单。完整中奖名单，将在活动结束后，公布于活动网站。活动结束后，宜家将通过电话联系剩余中奖者，进行兑奖确认。<br>
                                     •	如因参与者上传的联系电话不正确、或者参与者更改联系电话，而无法联系到获奖者，则视为获奖者自动弃奖。<br>
                                     •	所有奖品，将在活动结束后，由宜家统一寄出。获奖用户一经确认奖品，不得自行撤销，更改或者转让。</p>
-                                    
+
                                     <p><strong>注意事项：</strong><br>
                                     1.	参与用户不得上传涉及淫秽色情、暴力、侮辱他人等妨碍社会治安、违 法国家法律或有损社会道德风气，以及与本次活动无关的文字、照片或视频。一旦发现上述行为，主办方有权在不通知参与用户的前提下予以删除。<br>
                                     2.	参与用户的合法言论、图片及视频一经在本此活动中发表，则该作品的版权，除署名权、修改权、保护作品完整权归原作者享有外，其他权益无偿转归本站独占所有。“其他权益”包括但不限于：通过复制、发行、信息网络传播、改编、翻译、汇编及应由版权人享有的其他方式使用上述作品的权利。<br>
@@ -271,12 +271,12 @@
                                     6.	获奖用户一经确认奖品，不得自行撤销，更改或转让。如因不可抗力因素导致活动主办方无法提供指定奖品，活动主办方可以以等值或价值更高的奖品替代。所有奖品不得兑换现金或作价销售。<br>
                                     7.	如果发现有参加活动的用户在活动中使用任何不正当的手段参加活动，活动主办方有权在不事先通知的前提下，取消该用户参加活动的资格。<br>
                                     8.	宜家保留在法律允许范围内对本次活动的最终解释权。</p>
-                                    
+
                                     <p><strong>责任和许可</strong><br>
                                     1.	此次活动主办方为宜家中国，注册地址位于上海市。<br>
                                     2.	对于可能限制、延迟您内容上传或下载的任何类型的非宜家过错导致的网络故障、电脑故障或软件故障，宜家不承担任何责任。 <br>
                                     3.	任何因不可抗力原因导致的延期、取消、延迟或奖品变更或任何第三方的侵权行为所产生的损失，宜家不承担任何责任。</p>
-                                    
+
                                     <p><strong>个人信息和知识产权</strong><br>
                                     1.	宜家和任何宜家特许经营公司出于宣传目的希望通过网站及其他媒体渠道公布所有参与者的上传内容，参与者上传内容至活动网站即表明参与者同意按前述方式使用此类信息，无须征得进一步的同意、通知或补偿。<br>
                                     2.	向参与者收集的信息将只会在其成为获奖者后披露给第三方，此类披露方仅限于因向您发放奖品需要知悉此类信息的第三方。参加此次活动并上传内容即表明，您同意我们将您的个人信息按前述方式进行披露 。宜家还会与宜家集团的其他公司以及其他宜家公司共享此类信息。<br>
@@ -286,7 +286,7 @@
                                 <a href="javascript:void(0);" onClick="closeRule();" style="position:absolute; top:10px; right:10px; font-size:14px; color:#FFF;">关闭/Close</a>
                             </div>
                         </div>
-    
+
 @endsection
 @section('scripts')
 <script>
@@ -294,10 +294,12 @@ var noWechatShareTitle='多陪伴1小时';
 var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
 var noWechatShareImg='';
 var noWechatSharlUrl='{{url("/web")}}';
+var youku_client_id='{{env("YOUKU_CLIENT_ID")}}';
 </script>
 <script src="{{asset('pc/js/jquery-1.9.1.min.js')}}"></script>
 <script src="{{asset('pc/js/swiper.min.js')}}"></script>
 <script src="{{asset('pc/js/jquery.form.js')}}"></script>
+<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
 <script src="{{asset('pc/js/common.js')}}"></script>
 <script>
 function getInfos(url,params){
@@ -312,7 +314,7 @@ function getInfos(url,params){
                 html += ' data-shareImg="'+json.data[i].animation+'"';
             }
             else{
-                html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'"';
+                html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'" data-vid="'+json.data[i].file+'"';
                 html += ' data-shareImg="'+json.data[i].animation+'"';
             }
             html += ' data-shareUrl="'+noWechatSharlUrl+'?id='+json.data[i].id+'"><img src="'+json.data[i].thumb+'"></a></div>';
@@ -323,7 +325,7 @@ function getInfos(url,params){
                 html += ' cType="img" data-url="'+json.data[i].animation+'"';
             }
             else{
-                html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'"';
+                html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'" data-vid="'+json.data[i].file+'"';
             }
             html += '><img src="{{asset("pc/images/icon2.png")}}"></a></div>';
             html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
