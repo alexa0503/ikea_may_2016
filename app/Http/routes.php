@@ -76,9 +76,9 @@ Route::get('/cms/wechat/export', 'CmsController@wechatExport');
 Route::get('/cms/wechat/{id}', 'CmsController@wechat');
 Route::get('/cms/user/logs', 'CmsController@userLogs');
 Route::get('/cms/infos', 'CmsController@infos');
+Route::get('/cms/infos/{type}', 'CmsController@infos');
 Route::get('/cms/info/delete/{id}', 'CmsController@infoDelete');
 Route::get('cms/info/update/status/{id}', 'CmsController@infoStatusUpdate');
-Route::get('/cms/infos/has_win', 'CmsController@infos');
 Route::get('/cms/infos/export', 'CmsController@infosExport');
 
 //wechat auth

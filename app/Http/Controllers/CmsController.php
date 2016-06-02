@@ -66,12 +66,16 @@ class CmsController extends Controller
      * 信息
      * @return mixed
      */
-    public function infos(Request $request)
+    public function infos(Request $request, $type = 0)
     {
-        if( 'has_win' == $request->segment(3))
-            $infos = \App\Info::where('has_win',1)->paginate(20);
-        else
-            $infos = \App\Info::paginate(20);
+        $model = \App\Info::where('file_type',$type);
+        if( $request->get('id')){
+            $model->where('id',$request->get('id'));
+        }
+        if( $request->get('mobile')){
+            $model->where('mobile',$request->get('mobile'));
+        }
+        $infos = $model->paginate(20);
         return view('cms/infos',['infos' => $infos]);
     }
     public function infosExport()
