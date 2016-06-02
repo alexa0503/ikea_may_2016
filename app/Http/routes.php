@@ -40,7 +40,7 @@ Route::get('/infos', function(){
         $info->orderby('created_time','desc');
 
     $result = $info->paginate(8);
-    //var_dump($infos);
+    //sleep(5);
     return $result;
 });
 Route::get('wx/share', 'HomeController@wxShare');

@@ -304,43 +304,73 @@ var youku_client_id='{{env("YOUKU_CLIENT_ID")}}';
 <script src="{{asset('pc/js/common.js')}}"></script>
 <script>
 function getInfos(url,params){
-    $.getJSON(url,params,function(json){
-        var html = '';
-        for (var i = 0; i < json.data.length; i++) {
-            html += '<div class="pInit">';
-            html += '<div class="innerDiv">';
-            html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');"';
-		if(json.data[i].file_type == 0 ){
-                html += ' cType="img" data-url="'+json.data[i].animation+'"';
-                html += ' data-shareImg="'+json.data[i].animation+'"';
+    $.ajax(url,{
+        data: params,
+        dataType: 'json',
+        beforeSend: function(){
+            $('#infos').html('<div style="text-align:center">loading...</div>');
+        },
+        success: function(json){
+            var html = '';
+            for (var i = 0; i < json.data.length; i++) {
+                html += '<div class="pInit">';
+                html += '<div class="innerDiv">';
+                html += '<div class="pTopImg"><a href="javascript:void(0);" data-qr="{{asset("qrcodes/")}}/'+json.data[i].id+'.png" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');"';
+    		if(json.data[i].file_type == 0 ){
+                    html += ' cType="img" data-url="'+json.data[i].animation+'"';
+                    html += ' data-shareImg="'+json.data[i].animation+'"';
+                }
+                else{
+                    html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'" data-vid="'+json.data[i].file+'"';
+                    html += ' data-shareImg="'+json.data[i].animation+'"';
+                }
+                html += ' data-shareUrl="'+noWechatSharlUrl+'?id='+json.data[i].id+'"><img src="'+json.data[i].thumb+'"></a></div>';
+                html += '<div class="pBottomTxt">';
+                html += '<div class="pBottomTxtName">'+json.data[i].name+'</div>';
+                html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');"';
+                if(json.data[i].file_type == 0 ){
+                    html += ' cType="img" data-url="'+json.data[i].animation+'"';
+                }
+                else{
+                    html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'" data-vid="'+json.data[i].file+'"';
+                }
+                html += '><img src="{{asset("pc/images/icon2.png")}}"></a></div>';
+                html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
+            }
+            if( json.data.length == 0 ){
+                html = '<div style="text-align:center"><h3>抱歉，没有您需要的信息~</h3></div>';
             }
             else{
-                html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'" data-vid="'+json.data[i].file+'"';
-                html += ' data-shareImg="'+json.data[i].animation+'"';
+                html += '<div class="clear"></div><div style="text-align:center" class="page">';
+                var n = json.current_page - 5 < 0 ? 1 : json.current_page - 4;
+                var m = json.current_page + 5 < json.last_page ? json.current_page + 4 : json.last_page;
+                if( json.current_page > 1)
+                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+json.prev_page_url+'\',{order:\''+params['order']+'\'});" class="prev">&lt;</a>'
+                if( json.current_page > 5)
+                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}\',{order:\''+params['order']+'\'});">1</a><span>...</span>'
+                for (var i = n; i <= m; i++) {
+                    if( i == json.current_page ){
+                        html += '<span class="current">'+i+'</span>';
+                    }
+                    else{
+                        html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}?page='+i+'\',{order:\''+params['order']+'\'});">'+i+'</a>';
+                    }
+                }
+                if( json.last_page - json.current_page > 5)
+                    html += '<span>...</span><a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}?page='+json.last_page+'\',{order:\''+params['order']+'\'});">'+json.last_page+'</a>'
+                if( json.current_page < json.last_page)
+                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+json.next_page_url+'\',{order:\''+params['order']+'\'});" class="next">&gt;</a>'
+                html += '</div>';
             }
-            html += ' data-shareUrl="'+noWechatSharlUrl+'?id='+json.data[i].id+'"><img src="'+json.data[i].thumb+'"></a></div>';
-            html += '<div class="pBottomTxt">';
-            html += '<div class="pBottomTxtName">'+json.data[i].name+'</div>';
-            html += '<div class="pBottomTXtBtn1"><a href="javascript:void(0);" onClick="showBottom(this);ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');"';
-            if(json.data[i].file_type == 0 ){
-                html += ' cType="img" data-url="'+json.data[i].animation+'"';
-            }
-            else{
-                html += ' cType="video" data-url="http://player.youku.com/embed/'+json.data[i].file+'" data-vid="'+json.data[i].file+'"';
-            }
-            html += '><img src="{{asset("pc/images/icon2.png")}}"></a></div>';
-            html += '<div class="pBottomTXtBtn2"><a href="'+'{{url("like")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("pc/images/icon1.png")}}"> <span>'+json.data[i].like_num+'</span></a></div></div></div></div>';
+            //html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_More_UGC\');return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
+            $('#infos').html(html);
         }
-        if( json.data.length == 0 ){
-            html = '<div style="text-align:center"><h3>抱歉，没有您需要的信息~</h3></div>';
-        }
-        html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_More_UGC\');return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
-        $('#infos').html(html);
     })
+    //$.getJSON(url,params,function(json))
 }
 $().ready(function(){
     var url = '{{url("infos")}}';
-    getInfos(url,{});
+    getInfos(url,{order:'time'});
     $('.btn2').click(function(){
         getInfos(url,{order:'time'});
     });

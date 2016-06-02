@@ -130,3 +130,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .sbb3{ left:543px; top:649px;}
 .sbb4{ left:596px; top:649px;}
 .bottmCloseBtn{ left:788px; top:121px;}
+.page {margin: 20px 0;font-size:16px;}
+.page * {color:#666666;}
+.page a,.page span{padding:0 5px;width: 40px;}
+.page .current,.page .prev,.page .next {color:#1da7d2;}
