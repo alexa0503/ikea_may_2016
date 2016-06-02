@@ -55,7 +55,7 @@ class Animation extends Command
         @unlink($file_path.$file_name);
 
         $gif = public_path('storage/animation/').$array_file[0].'.gif';
-        $cmd = env('CONVERT_PATH').' -delay 50 -loop 10 ';
+        $cmd = env('CONVERT_PATH').' -delay 22 -loop 0 ';
         foreach ($images as $v) {
           $cmd .= $v.' ';
         }
