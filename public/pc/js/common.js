@@ -632,8 +632,15 @@ function closeRule(){
 	$('.ruleBg').hide();
 	$('.ruleBlock').hide();
 	}
+	
+var isScrollChanged=false;
 
 function showRule(){
 	$('.ruleBg').show();
 	$('.ruleBlock').show();
+	if(!isScrollChanged){
+		isScrollChanged=true;
+		$('#scrollbar2').tinyscrollbar();
+		$('.thumb').height(parseInt($('.thumb').height())-10);
+		}
 	}

@@ -41,11 +41,22 @@ select,input,textarea{font-family:inherit; outline:none;}
 .moreLink{ left:590px; top:518px;}
 .f4{ background:url(../images/f4.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:813px; height:561px;}
 .fTop,.fLoading,.fEnd3,.fUploadVideo{ position:absolute; left:0; top:0; width:813px; height:561px;}
-.ruleBg{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.8);}
-.ruleBlock{ color:#FFF; background:none; position:fixed; left:50%; top:50%;  width:813px; height:561px; margin:-280px 0 0 -406px;}
-.ruleBlock h1{ text-align:center; width:100%; font-size:18px; height:50px; line-height:25px; padding:10px 0;}
-.ruleBlock .main{ overflow-x:hidden; overflow-y:auto; width:100%; height:480px;}
-.ruleBlock p{ padding:10px 0; text-align:left; font-size:14px; line-height:24px;}
+.ruleBg{ width:100%; height:700px; position:absolute; left:0; top:50%; margin-top:-650px; background:rgba(0,0,0,0.8);}
+.ruleBlock{ color:#FFF; background:url(../images/ruleBg.png) 0 0 no-repeat; position:absolute; left:50%; top:50%;  width:712px; height:542px; margin:-571px 0 0 -356px;}
+.ruleBlock h1{ text-align:center; width:100%; font-size:24px; height:30px; line-height:30px; padding:50px 0 0 0;}
+.ruleBlock h2{ text-align:center; width:100%; color:#a4a4a4; font-size:18px; height:20px; line-height:20px; padding:10px 0 20px 0;}
+.ruleBlock .main{ overflow:hidden; width:620px; height:380px; margin:0 auto;}
+.ruleBlock p{ padding:10px 0; text-align:left; font-size:12px; line-height:24px;}
+.ruleBlock strong{ color:#ff7041; font-size:14px;}
+
+#scrollbar2{ width:620px;}
+#scrollbar2 .viewport{ height:380px; overflow:hidden; position:relative; width:585px;}
+#scrollbar2 .overview{ left:0; list-style:none outside none; margin:0; padding:0; position:absolute; top:0;}
+#scrollbar2 .scrollbar{ background:none; float:right; position:relative; width:24px; background:none;}
+#scrollbar2 .track{ background:url(../images/scrollBar.png) 9px 0 no-repeat; height:100%; position:relative; width:24px;}
+#scrollbar2 .thumb{ background:url(../images/scrollHand.png) 0 0 no-repeat; cursor: pointer; left:0; position:absolute; top:0; width:24px;}
+#scrollbar2 .end{ background:url(../images/scrollEnd.png) center bottom no-repeat; width:24px; height:12px; position:absolute; left:0; bottom:0;}
+
 #201661youku{ position:absolute; left:50%;top:50%; margin:-220px 0 0 -320px;}
 .fLoadImg{ width:279px; height:279px; position:absolute; left:137px; top:182px; overflow:hidden; background:url(../images/fLoadImg.png) 0 0 no-repeat;}
 .uploadImgBlock{ width:279px; height:279px; position:absolute; left:137px; top:182px; overflow:hidden;}
@@ -109,8 +120,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 .searchBtn{ left:1032px; top:76px;}
 .pBlock{ width:1060px; left:0; top:115px;}
 .pInit{ width:234px; height:270px; float:left; padding:0 15px 20px 16px;}
-.pTopImg{ width:234px; height:234px; overflow:hidden; text-align:center;}
+.pTopImg{ width:234px; height:234px; overflow:hidden; text-align:center; position:relative;}
 .pTopImg img{height:234px;}
+.pTopImg a{ position:absolute; left:0; top:0;}
+.pTopImg a img{ width:234px; height:234px;}
 .pBottomTxt{ padding:0 10px; width:214px; height:36px; overflow:hidden; background:#f4f4f4;}
 .pBottomTxtName{ width:120px; height:36px; line-height:36px; font-size:12px; color:#666; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; float:left;}
 .pBottomTXtBtn1{ width:28px; float:right; text-align:right; line-height:36px;}
