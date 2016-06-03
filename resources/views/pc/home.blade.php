@@ -341,25 +341,33 @@ function getInfos(url,params){
                 html = '<div style="text-align:center"><h3>抱歉，没有您需要的信息~</h3></div>';
             }
             else{
+                if( typeof(params['keywords']) == 'undefined'){
+                    params['keywords'] = '';
+                }
+                if( typeof(params['order']) == 'undefined'){
+                    params['order'] = '';
+                }
+
+                var params_string = '{order:\''+params['order']+'\', keywords:\''+params['keywords']+'\'}';
                 html += '<div class="clear"></div><div style="text-align:center" class="page">';
                 var n = json.current_page - 5 < 0 ? 1 : json.current_page - 4;
                 var m = json.current_page + 5 < json.last_page ? json.current_page + 4 : json.last_page;
                 if( json.current_page > 1)
-                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+json.prev_page_url+'\',{order:\''+params['order']+'\'});" class="prev">&lt;</a>'
+                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+json.prev_page_url+'\','+params_string+');" class="prev">&lt;</a>'
                 if( json.current_page > 5)
-                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}\',{order:\''+params['order']+'\'});">1</a><span>...</span>'
+                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}\','+params_string+');">1</a><span>...</span>'
                 for (var i = n; i <= m; i++) {
                     if( i == json.current_page ){
                         html += '<span class="current">'+i+'</span>';
                     }
                     else{
-                        html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}?page='+i+'\',{order:\''+params['order']+'\'});">'+i+'</a>';
+                        html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}?page='+i+'\','+params_string+');">'+i+'</a>';
                     }
                 }
                 if( json.last_page - json.current_page > 5)
-                    html += '<span>...</span><a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}?page='+json.last_page+'\',{order:\''+params['order']+'\'});">'+json.last_page+'</a>'
+                    html += '<span>...</span><a href="javascript:;" onclick="javascript:return getInfos(\''+'{{url("infos")}}?page='+json.last_page+'\','+params_string+');">'+json.last_page+'</a>'
                 if( json.current_page < json.last_page)
-                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+json.next_page_url+'\',{order:\''+params['order']+'\'});" class="next">&gt;</a>'
+                    html += '<a href="javascript:;" onclick="javascript:return getInfos(\''+json.next_page_url+'\','+params_string+');" class="next">&gt;</a>'
                 html += '</div>';
             }
             //html += '<div class="clear"></div><div class="l4BtnLine"><a href="javascript:void(0);" onclick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_More_UGC\');return getInfos(\''+json.next_page_url+'\', {order:\''+params['order']+'\'});"><img src="{{asset("pc/images/btn4.png")}}"></a></div></div>';
