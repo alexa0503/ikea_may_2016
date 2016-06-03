@@ -118,8 +118,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 .searchBtn{ left:485px; top:132px;}
 .pBlock{ width:600px; left:34px; top:288px;}
 .pInit{ width:300px; height:400px; float:left; padding:0;}
-.pTopImg{ width:276px; height:276px; overflow:hidden; text-align:center;}
+.pTopImg{ width:276px; height:276px; overflow:hidden; text-align:center; position:relative;}
 .pTopImg img{ width:auto; height:276px; display:block;}
+.pTopImg a{ position:absolute; left:0; top:0;}
+.pTopImg a img{ width:276px; height:276px;}
 .pBottomTxt{ padding:0; width:276px; height:64px; line-height:64px; overflow:hidden; background:#f4f4f4; text-align:center;}
 .pBottomTxtName{ width:270px; height:42px; line-height:42px; font-size:22px; color:#666; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
 .pBottomTXtBtn1{ display:inline-block; margin:0 10px;}

@@ -340,7 +340,14 @@ function getInfos(url,params, refresh){
         }
 
         for (var i = 0; i < json.data.length; i++) {
-            html += '<div class="pInit"><div class="innerDiv"><div class="pTopImg"><a href="{{url("share")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');" cType="img"><img src="'+json.data[i].thumb+'"></a></div><div class="pBottomTxt"><a href="'+'{{url("like")}}/'+json.data[i].id+'" class="pBottomTXtBtn2" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("mobile/images/icon2.png")}}"> <span>'+json.data[i].like_num+'</span></a><a href="{{url("share")}}/'+json.data[i].id+'" class="pBottomTXtBtn1" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');" cType="img"><img src="mobile/images/icon3.png"></a></div><div class="pBottomTxtName">'+json.data[i].name+'</div></div></div>';
+            html += '<div class="pInit"><div class="innerDiv"><div class="pTopImg"><img src="'+json.data[i].thumb+'"><a href="{{url("share")}}/'+json.data[i].id+'" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');" cType="img">';
+			if(json.data[i].file_type == 0){
+				html+='<img src="{{asset("mobile/images/space.gif")}}">';
+				}
+				else{
+					html+='<img src="{{asset("mobile/images/vTopImg.png")}}">';
+					}
+			html+='</a></div><div class="pBottomTxt"><a href="'+'{{url("like")}}/'+json.data[i].id+'" class="pBottomTXtBtn2" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Like\',\'View_UGC_'+json.data[i].id+'\');return pVote($(this));"><img src="{{asset("mobile/images/icon2.png")}}"> <span>'+json.data[i].like_num+'</span></a><a href="{{url("share")}}/'+json.data[i].id+'" class="pBottomTXtBtn1" onClick="ga(\'send\',\'event\',\'UGC Gallery\',\'Click\',\'View_UGC_'+json.data[i].id+'\');" cType="img"><img src="mobile/images/icon3.png"></a></div><div class="pBottomTxtName">'+json.data[i].name+'</div></div></div>';
         }
         if( json.data.length == 0 ){
             html += '<div style="text-align:center"><h3>抱歉，没有您更多的信息~</h3></div>';
