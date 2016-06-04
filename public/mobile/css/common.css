@@ -135,9 +135,14 @@ select,input,textarea{font-family:inherit; outline:none;}
 
 /*share*/
 .sharePage{ background:url(../images/shareBg.jpg) 0 0 no-repeat; width:640px; height:960px;}
-.shareGif{ position:absolute; left:50%; margin-left:-199px; top:359px;}
-.shareVideo{ width:530px; height:400px; overflow:hidden; left:50%; top:359px; margin-left:-265px; position:absolute;}
+.shareGif{ position:absolute; left:50%; margin-left:-199px; top:279px;}
+.shareVideo{ width:530px; height:400px; overflow:hidden; left:50%; top:279px; margin-left:-265px; position:absolute;}
 .shareBtn1{ left:50%; margin-left:-104px; top:800px;}
+.shareBtns2{ position:absolute; left:50%; top:678px; margin-left:-320px; width:640px; height:85px;}
+.ssb1{ left:155px; top:0;}
+.ssb2{ left:248px; top:0;}
+.ssb3{ left:333px; top:0;}
+.ssb4{ left:418px; top:0;}
 
 .ruleBg{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.8);}
 .ruleBlock{ width:620px; height:832px; position:fixed; left:10px; top:50%; margin-top:-416px;}
