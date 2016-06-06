@@ -8,10 +8,10 @@
         
         <div class="shareBtns2">
         	<div class="innerDiv">
-            	<a href="javascript:void(0);" class="abs ssb1" onClick="ga('send','event','UGC Recruitment','Share','ShareInSharePage_Weibo_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-            	<a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','ShareInSharePage_Weibo');" class="abs ssb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','ShareInSharePage_Weibo_Douban');" class="abs ssb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
-                <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','ShareInSharePage_Weibo_Qzone');" class="abs ssb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+            	<a href="javascript:void(0);" class="abs ssb1" onClick="ga('send','event','h5_personal_share_page','Share','ShareInSharePage_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+            	<a href="javascript:void(0);" onClick="ga('send','event','h5_personal_share_page','Share','ShareInSharePage_Weibo');" class="abs ssb2 sinaShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                <a href="javascript:void(0);" onClick="ga('send','event','h5_personal_share_page','Share','ShareInSharePage_Douban');" class="abs ssb3 douban"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
+                <a href="javascript:void(0);" onClick="ga('send','event','h5_personal_share_page','Share','ShareInSharePage_Qzone');" class="abs ssb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
             </div>
         </div>
 
