@@ -353,6 +353,19 @@ function submitL2() {
         var iX = parseInt($('.upLoadImg').eq(2).css('left'));
         var iY = parseInt($('.upLoadImg').eq(2).css('top'));
         var iT = $('.ft').index($('.fton')) + 1;
+		
+		if(iT==1){
+			iT=6;
+			}
+		else if(iT==2){
+			iT=5;
+			}
+		else if(iT==3){
+			iT=1;
+			}
+		else if(iT==4){
+			iT=4;
+			}
 
         $('input[name="x"]').val(iX);
         $('input[name="y"]').val(iY);
