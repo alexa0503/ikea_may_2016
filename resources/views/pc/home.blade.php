@@ -26,19 +26,19 @@
                 <div class="vInit">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn2.jpg')}}" class="moImg"></a>
-                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v2.gif')}}" /></div>
+                        <video id="v2" src="{{asset('pc/images/v2.mp4?v=1')}}" preload="auto" style="display:none;"></video>
                     </div>
                 </div>
                 <div class="vInit">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn3.jpg')}}" class="moImg"></a>
-                        <video id="v3" src="{{asset('pc/images/v3.mp4?v=1')}}" preload="auto" style="display:none;"></video>
+                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v3.jpg')}}" /></div>
                     </div>
                 </div>
                 <div class="vInit nomr">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn4.jpg')}}" class="moImg"></a>
-                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v4.gif')}}" /></div>
+                        <video id="v4" src="{{asset('pc/images/v4.mp4?v=1')}}" preload="auto" style="display:none;"></video>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                                         <img src="" class="abs upLoadImg" id="localImag" />
                                     </div>
                                 </div>
-                                <div class="stMask stMask1" style="display:none;"></div>
+                                <div class="stMask stMask6" style="display:none;"></div>
                                 <img src="{{asset('pc/images/fImg1.png')}}" class="abs fImg1" style="display:none;">
                                 <div class="mMask" id="mMask"></div>
 

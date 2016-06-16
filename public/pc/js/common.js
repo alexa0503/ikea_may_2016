@@ -34,10 +34,12 @@ function l3Swiper() {
 var v1, v2, v3, v4;
 
 function videoInit() {
-    v3 = document.getElementById('v3');
+    v2 = document.getElementById('v2');
+	v4 = document.getElementById('v4');
     $('.vInit').hover(function() {
         var vIndex = $('.vInit').index($(this)) + 1;
-        v3.pause();
+        v2.pause();
+		v4.pause();
         $('.vInit video').hide();
 		$('.vInit .vGif').hide();
         switch (vIndex) {
@@ -46,16 +48,17 @@ function videoInit() {
 				ga('send','event','UGC Gallery','Click','Featured_UGC_1');
                 break;
             case 2:
-				$('.vInit').eq(1).find('.vGif').show();
+				v2.play();
+				$('#v' + vIndex).show();
 				ga('send','event','UGC Gallery','Click','Featured_UGC_2');
                 break;
             case 3:
-                v3.play();
-				$('#v' + vIndex).show();
+                $('.vInit').eq(2).find('.vGif').show();
 				ga('send','event','UGC Gallery','Play','Featured_UGC_3');
                 break;
             case 4:
-				$('.vInit').eq(3).find('.vGif').show();
+				v4.play();
+				$('#v' + vIndex).show();
 				ga('send','event','UGC Gallery','Click','Featured_UGC_4');
                 break;
         }
