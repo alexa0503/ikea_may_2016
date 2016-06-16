@@ -18,3 +18,4 @@ public/qrcodes
 .env.php
 .env
 
+app/Helpers/Youku/
