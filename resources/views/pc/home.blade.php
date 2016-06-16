@@ -136,7 +136,7 @@
                         </div>
                         <div class="fUploadVideo" id="fUploadVideo" style="display:none;">
                             <div class="innerDiv">
-                            	<iframe id="201661youku" src="http://community.ikea.cn/family/2016activity_awgc/public/youku" style="width:740px; height:470px; border:0; overflow: hidden; position:absolute; left:50%; top:50%; margin:-175px 0 0 -333px; background:#FFF;" name="201661youku" width="740" height="470px" scrolling="no" frameborder="0"></iframe>
+                            	<iframe id="201661youku" src="http://community.ikea.cn/family/2016activity_awgc/public/youku" style="width:940px; height:470px; border:0; overflow: hidden; position:absolute; left:50%; top:50%; margin:-165px 0 0 -470px; background:#FFF;" name="201661youku" width="740" height="470px" scrolling="no" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>
