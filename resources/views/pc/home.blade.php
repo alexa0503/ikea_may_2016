@@ -3,6 +3,18 @@
 	<div class="innerDiv">
     	<div class="line1">
     	<div class="innerDiv">
+        	<div class="kvBlock">
+            	<div class="innerDiv">
+                	<img src="{{asset('pc/images/fo1.png')}}" class="abs fo1">
+                    <img src="{{asset('pc/images/fo2.png')}}" class="abs fo2">
+                    <img src="{{asset('pc/images/fo3.png')}}" class="abs fo3">
+                    <img src="{{asset('pc/images/fo4.png')}}" class="abs fo4">
+                    <img src="{{asset('pc/images/fo5.png')}}" class="abs fo5">
+                    <img src="{{asset('pc/images/fo6.png')}}" class="abs fo6">
+                    <img src="{{asset('pc/images/fo7.png')}}" class="abs fo7">
+                    <img src="{{asset('pc/images/fo8.png')}}" class="abs fo8">
+                </div>
+            </div>
         	<a href="javascript:void(0);" class="abs btn1" onClick="ga('send','event','UGC Recruitment','Click','Top_Banner_CTA_inner');topGoPage3();"><img src="{{asset('pc/images/btn1.png')}}"></a>
             <div class="abs vBlock">
             	<div class="vInit">

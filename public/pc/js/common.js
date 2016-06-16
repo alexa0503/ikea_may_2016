@@ -164,18 +164,18 @@ function setImagePreview() {
     return true;
 }
 
-var io = parseInt(279);
+var io = parseInt(339);
 
 var mnGifInterval;
 
 function mnGIf(){
 	$('.fLoadImg').css('background-position', '0 0');
 	setTimeout(function() {
-		$('.stMask').css('background-position', '-279px 0');
+		$('.stMask').css('background-position', '-339px 0');
 		setTimeout(function() {
-			$('.stMask').css('background-position', '-558px 0');
+			$('.stMask').css('background-position', '-678px 0');
 			setTimeout(function() {
-				$('.stMask').css('background-position', '-837px 0');
+				$('.stMask').css('background-position', '-1017px 0');
 			}, 250);
 		}, 250);
 	}, 250);
@@ -189,14 +189,14 @@ function move_picture(e) {
             'width': 'auto',
             'height': io + 'px',
             'top': '0px',
-            'left': -(changeWidth - 279) / 2 + 'px'
+            'left': -(changeWidth - 339) / 2 + 'px'
         });
     } else {
         var changeHeight = originalImgHeight * io / originalImgWidth;
         $('.upLoadImg').css({
             'width': io + 'px',
             'height': 'auto',
-            'top': -(changeHeight - 279) / 2 + 'px',
+            'top': -(changeHeight - 339) / 2 + 'px',
             'left': '0px'
         });
     }
@@ -215,7 +215,19 @@ function move_picture(e) {
         $('.ft').removeClass('fton');
         $(this).addClass('fton');
         var sIndex = $('.fTemplete a').index($(this)) + 1;
-        $('.stMask').removeClass('stMask1 stMask2 stMask3 stMask4');
+		if(sIndex==1){
+			sIndex=6;
+			}
+		else if(sIndex==2){
+			sIndex=5;
+			}
+		else if(sIndex==3){
+			sIndex=1;
+			}
+		else if(sIndex==4){
+			sIndex=4;
+			}
+        $('.stMask').removeClass('stMask1 stMask2 stMask3 stMask4 stMask5 stMask6');
         $('.stMask').addClass('stMask' + sIndex);
 		ga('send','event','UGC Recruitment','Click','Sticker_'+sIndex);
     });
@@ -350,11 +362,11 @@ function submitL2() {
         $('.fLoading').show();
 		clearInterval(mnGifInterval);
         st1 = setTimeout(function() {
-            $('.fLoadImg').css('background-position', '-279px 0');
+            $('.fLoadImg').css('background-position', '-339px 0');
             st2 = setTimeout(function() {
-                $('.fLoadImg').css('background-position', '-558px 0');
+                $('.fLoadImg').css('background-position', '-678px 0');
                 st3 = setTimeout(function() {
-                    $('.fLoadImg').css('background-position', '-837px 0');
+                    $('.fLoadImg').css('background-position', '-1017px 0');
                 }, 600);
             }, 500);
         }, 400);
@@ -424,9 +436,9 @@ function getYouku() {
     /*st1 = setTimeout(function() {
         $('.fLoadImg').css('background-position', '-279px 0');
         st2 = setTimeout(function() {
-            $('.fLoadImg').css('background-position', '-558px 0');
+            $('.fLoadImg').css('background-position', '-678px 0');
             st3 = setTimeout(function() {
-                $('.fLoadImg').css('background-position', '-837px 0');
+                $('.fLoadImg').css('background-position', '-1017px 0');
             }, 600);
         }, 500);
     }, 400);
