@@ -17,7 +17,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.png')}}"></a>
+                                <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.jpg')}}"></a>
                                 <div class="vGif vGif1" style="display:none;">
                                 	<img src="{{asset('mobile/images/v1.gif')}}" />
                                 </div>
@@ -25,24 +25,22 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.png')}}"></a>
-                                <div class="vGif vGif2" style="display:none;">
-                                	<img src="{{asset('mobile/images/v2.gif')}}" />
+                                <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.jpg')}}"></a>
+                                <video id="v2" class="v2" src="{{asset('pc/images/v2.mp4?v=1')}}" preload="auto" style="display:none;"></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="innerDiv">
+                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.jpg')}}"></a>
+                                <div class="vGif vGif3" style="display:none;">
+                                	<img src="{{asset('mobile/images/v3.jpg')}}" />
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.png')}}"></a>
-                                <video id="v3" src="{{asset('pc/images/v3.mp4?v=1')}}" preload="auto" style="display:none;"></video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.png')}}"></a>
-                                <div class="vGif vGif4" style="display:none;">
-                                	<img src="{{asset('mobile/images/v4.gif')}}" />
-                                </div>
+                                <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.jpg')}}"></a>
+                                <video id="v4" class="v4" src="{{asset('pc/images/v4.mp4?v=1')}}" preload="auto" style="display:none;"></video>
                             </div>
                         </div>
                     </div>
@@ -64,7 +62,7 @@
                     <div class="f3" style="display:none;">
                         <div class="innerDiv">
                             <img src="" class="abs f3EndGif" id="f3EndGif">
-                            <div class="abs onBg stMask1"></div>
+                            <div class="abs onBg stMask6"></div>
                             <img src="" class="abs saveImg" id="saveImg">
                             <div class="shareBtns">
                                 <a href="javascript:void(0);" class="abs sb1" onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
@@ -101,7 +99,7 @@
                                     <img src="" class="abs upLoadImg" id="localImag" />
                                 </div>
                             </div>
-                            <div class="stMask stMask1" style="display:none;"></div>
+                            <div class="stMask stMask6" style="display:none;"></div>
                             <img src="{{asset('mobile/images/fImg1.png')}}" class="abs fImg1" style="display:none;">
                             <div class="mMask" id="mMask"></div>
 

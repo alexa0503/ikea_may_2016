@@ -138,7 +138,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .vInit{ float:left; width:252px; height:186px; margin-right:17px; overflow:hidden;}
 .vInit.nomr{ margin-right:0;}
 .vInit img.moImg{ width:252px; height:186px;}
-.vInit video{ width:252px; height:186px; position:absolute; left:0; top:0;}
+.vInit video{ width:252px; height:186px; position:absolute; left:0; top:0; background:#000;}
 .vGif{ width:252px; height:186px; text-align:center; overflow:hidden; position:absolute; left:0; top:0; background:#000;}
 .vGif img{ width:auto; height:186px;}
 
@@ -266,3 +266,26 @@ select,input,textarea{font-family:inherit; outline:none;}
 .page * {color:#666666;}
 .page a,.page span{padding:0 5px;width: 40px;}
 .page .current,.page .prev,.page .next {color:#1da7d2;}
+
+.cs1{ background:url(../images/csBg1.png) 0 0 no-repeat; width:1060px; height:527px;}
+.seledTime{ left:586px; top:296px; color:#666666; font-size:20px; line-height:20px; width:110px;}
+.csSelBtn{ left:552px; top:282px;}
+.csBtn1{ left:770px; top:282px;}
+.selTimeBlock{ position:absolute; left:552px; top:85px; background:url(../images/csSdBg.png) 0 0 no-repeat; width:210px; height:400px; padding:4px 0;}
+.selTimeBlock ul{ width:210px;}
+.selTimeBlock ul li{ width:210px; height:40px;}
+.selTimeBlock ul li a{ display:block; width:100%; height:100%; color:#666; line-height:40px; font-size:20px; text-align:center;}
+.csBlock1{ width:635px; height:322px; overflow:hidden; position:absolute; left:230px; top:132px;}
+.swiper-container2 .swiper-wrapper{width:66000px;height:322px;}
+.swiper-container2 .swiper-wrapper .swiper-slide{background:none; float:left; width:635px; height:322px;}
+.btnLeft2,.btnLeft3{ left:50px; top:260px;}
+.btnRight2,.btnRight3{ left:980px; top:260px;}
+.csBtn2{ left:340px; top:260px;}
+.csBtn3{ left:492px; top:260px;}
+.cs3{ background:url(../images/csBg3.png) 0 0 no-repeat; width:1060px; height:527px;}
+.csBlock2{ width:872px; height:278px; overflow:hidden; position:absolute; left:103px; top:130px;}
+.swiper-container3 .swiper-wrapper{width:66000px;height:278px;}
+.swiper-container3 .swiper-wrapper .swiper-slide{background:none; float:left; width:872px; height:278px;}
+.swiper-container3 a{ margin-right:5px;}
+.csBtn2b{ left:460px; top:427px;}
+

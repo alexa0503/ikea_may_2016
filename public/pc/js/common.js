@@ -15,7 +15,7 @@ function randomNumb(minNumb, maxNumb) {
 }
 
 $(document).ready(function() {
-    l3Swiper();
+    //l3Swiper();
     videoInit();
 	shareNoWeichat();
 });
@@ -30,6 +30,72 @@ function l3Swiper() {
         autoplayDisableOnInteraction: false
     });
 }
+
+var csTime=1;
+function selTime(e){
+	csTime=parseInt($(e).attr('cst'));
+	var ctHtml=$(e).html();
+	$('.seledTime').html(ctHtml);
+	$('.selTimeBlock').hide();
+	}
+	
+function showSelTime(){
+	$('.selTimeBlock').show();
+	}
+	
+function goCs2(){
+	$('.cs1').hide();
+	$('.cs2').show();
+	cs2Scroll();
+	swiper2.slideTo(csTime, 1000, '');
+	}
+	
+function backCs1(){
+	$('.cs2').hide();
+	$('.cs1').show();
+	}
+	
+function viewCs3(e){
+	$('.cs2').hide();
+	$('.cs3').show();
+	cs3Scroll();
+	}
+
+var swiper2	
+function cs2Scroll(){
+	swiper2 = new Swiper('.swiper-container2', {
+        nextButton: '.btnRight2',
+        prevButton: '.btnLeft2',
+        spaceBetween: 1,
+        loop: true
+    });
+	}
+	
+var swiper3	
+function cs3Scroll(){
+	swiper3 = new Swiper('.swiper-container3', {
+        nextButton: '.btnRight3',
+        prevButton: '.btnLeft3',
+        spaceBetween: 1,
+        loop: true,
+		autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+	}
+	
+function backCs3(){
+	$('.cs2').hide();
+	$('.cs3').hide();
+	$('.cs1').show();
+	}
+	
+function backOnlyCs2(e){
+	var ct=parseInt(e);
+	$('.cs3').hide();
+	$('.cs2').show();
+	cs2Scroll();
+	swiper2.slideTo(ct, 1000, '');
+	}
 
 var v1, v2, v3, v4;
 
@@ -64,7 +130,8 @@ function videoInit() {
         }
 
     }, function() {
-        v3.pause();
+        v2.pause();
+		v4.pause();
         $('.vInit video').hide();
 		$('.vInit .vGif').hide();
     });
