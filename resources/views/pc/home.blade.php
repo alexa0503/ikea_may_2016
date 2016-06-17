@@ -207,7 +207,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB1.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/00302267/" target="_top"><img src="{{asset('pc/images/csB1.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -215,7 +215,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB2.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/40289952/" target="_top"><img src="{{asset('pc/images/csB2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(2);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -223,7 +223,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB3.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/70158191/" target="_top"><img src="{{asset('pc/images/csB3.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(3);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -231,7 +231,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB4.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/60286405/?query=SM%C3%85BIT+%E6%96%AF%E8%8E%AB%E6%AF%94+%E5%88%80%E5%92%8C%E5%88%A8%E5%88%80" target="_top"><img src="{{asset('pc/images/csB4.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(4);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -239,7 +239,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB5.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/90206884/?query=%E5%8B%92%E5%85%8B%E6%96%AF%E5%A1%94" target="_top"><img src="{{asset('pc/images/csB5.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(5);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -247,7 +247,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB6.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/60208479/" target="_top"><img src="{{asset('pc/images/csB6.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(6);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -255,7 +255,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB7.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/20256617/" target="_top"><img src="{{asset('pc/images/csB7.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(7);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -263,7 +263,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB8.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/00233962/?query=%E5%AE%89%E8%BE%BE%E6%A0%B9" target="_top"><img src="{{asset('pc/images/csB8.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(8);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -271,7 +271,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB9.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/50285454/#/30167852" target="_top"><img src="{{asset('pc/images/csB9.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(9);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
@@ -279,7 +279,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB10.png')}}"></a>
+                                            <a href="http://www.ikea.com/cn/zh/catalog/products/00264393/" target="_top"><img src="{{asset('pc/images/csB10.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
                                             <a href="javascript:void(0);" onClick="viewCs3(10);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>

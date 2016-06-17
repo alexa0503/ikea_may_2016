@@ -105,7 +105,6 @@ function cs2Scroll(e){
         nextButton: '.btnRight2',
         prevButton: '.btnLeft2',
         spaceBetween: 1,
-        loop: true,
 		initialSlide:e
     });
 	}

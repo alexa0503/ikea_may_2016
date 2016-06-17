@@ -205,88 +205,73 @@
 			<div class="cs2" style="display:none;">
                 	<div class="innerDiv">
                     	<div class="csBlock1">
-                        	<div class="swiper-container2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB1.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                        	<div class="innerDiv">
+                            	<div class="swiper-container2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/00302267/" target="_top"><img src="{{asset('mobile/images/csB1.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(2);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/40289952/" target="_top"><img src="{{asset('mobile/images/csB2.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB3.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(3);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/70158191/" target="_top"><img src="{{asset('mobile/images/csB3.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB4.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(4);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/60286405/" target="_top"><img src="{{asset('mobile/images/csB4.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB5.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(5);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/90206884/" target="_top"><img src="{{asset('mobile/images/csB5.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB6.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(6);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/60208479/" target="_top"><img src="{{asset('mobile/images/csB6.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB7.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(7);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/20256617/" target="_top"><img src="{{asset('mobile/images/csB7.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB8.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(8);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/00233962/" target="_top"><img src="{{asset('mobile/images/csB8.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB9.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(9);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/30167852/" target="_top"><img src="{{asset('mobile/images/csB9.png')}}"></a>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB10.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(10);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+    
+                                        <div class="swiper-slide">
+                                            <div class="innerDiv">
+                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/00264393/" target="_top"><img src="{{asset('mobile/images/csB10.png')}}"></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+								<a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                             </div>
                         </div>
 						<a href="javascript:void(0);" class="abs btnLeft2"><img src="{{asset('mobile/images/btnLeft.png')}}"></a>

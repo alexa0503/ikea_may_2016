@@ -91,8 +91,9 @@ function showSelTime(){
 function goCs2(){
 	$('.cs1').hide();
 	$('.cs2').show();
-	cs2Scroll();
-	swiper2.slideTo(csTime, 1000, '');
+	var c2got=csTime-1;
+	cs2Scroll(c2got);
+	//swiper2.slideTo(csTime, 1000, '');
 	}
 
 function backCs1(){
@@ -107,12 +108,12 @@ function viewCs3(e){
 	}
 
 var swiper2
-function cs2Scroll(){
+function cs2Scroll(e){
 	swiper2 = new Swiper('.swiper-container2', {
         nextButton: '.btnRight2',
         prevButton: '.btnLeft2',
         spaceBetween: 1,
-        loop: true
+		initialSlide:e
     });
 	}
 
@@ -135,11 +136,11 @@ function backCs3(){
 	}
 
 function backOnlyCs2(e){
-	var ct=parseInt(e);
+	var ct=parseInt(e)-1;
 	$('.cs3').hide();
 	$('.cs2').show();
-	cs2Scroll();
-	swiper2.slideTo(ct, 1000, '');
+	cs2Scroll(ct);
+	//swiper2.slideTo(ct, 1000, '');
 	}
 
 //l4 投票
