@@ -162,7 +162,7 @@
                     	<div class="abs seledTime">起床2分钟</div>
                         <a href="javascript:void(0);" class="abs csSelBtn" onClick="showSelTime();"><img src="{{asset('pc/images/space.gif')}}" width="214" height="54"></a>
                         <a href="javascript:void(0);" class="abs csBtn1" onClick="goCs2();"><img src="{{asset('pc/images/csBtn1.png')}}"></a>
-                        
+
                         <div class="selTimeBlock" style="display:none;">
                         	<ul>
                             	<li>
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="cs2" style="display:none;">
                 	<div class="innerDiv">
                     	<div class="csBlock1">
@@ -212,7 +212,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB2.png')}}"></a>
@@ -220,7 +220,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(2);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB3.png')}}"></a>
@@ -228,7 +228,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(3);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB4.png')}}"></a>
@@ -236,7 +236,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(4);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB5.png')}}"></a>
@@ -244,7 +244,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(5);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB6.png')}}"></a>
@@ -252,7 +252,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(6);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB7.png')}}"></a>
@@ -260,7 +260,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(7);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB8.png')}}"></a>
@@ -268,7 +268,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(8);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB9.png')}}"></a>
@@ -276,7 +276,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(9);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('pc/images/csB10.png')}}"></a>
@@ -291,7 +291,7 @@
 						<a href="javascript:void(0);" class="abs btnRight2"><img src="{{asset('pc/images/btnRight.png')}}"></a>
                     </div>
                 </div>
-                
+
                 <div class="cs3" style="display:none;">
                 	<div class="innerDiv">
                     	<div class="csBlock2">
@@ -305,7 +305,7 @@
                                 <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('pc/images/csS7.png')}}"></a>
                                 <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('pc/images/csS8.png')}}"></a>
                                 <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('pc/images/csS9.png')}}"></a>
-                            </div>
+							</div>
                         </div>
 						<a href="javascript:void(0);" class="abs btnLeft3"><img src="{{asset('pc/images/btnLeft.png')}}"></a>
 						<a href="javascript:void(0);" class="abs btnRight3"><img src="{{asset('pc/images/btnRight.png')}}"></a>
@@ -442,7 +442,7 @@
 @section('scripts')
 <script>
 var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
+var noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
 var noWechatShareImg='';
 var noWechatSharlUrl='{{url("/web")}}';
 var youku_client_id='{{env("YOUKU_CLIENT_ID")}}';
