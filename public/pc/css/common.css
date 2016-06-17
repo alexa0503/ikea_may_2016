@@ -232,7 +232,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .sName{ color:#000; font-family: Verdana,sans-serif; font-size:12px; line-height:16px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px;}
 .sPrice{ color:#000; font-family: Verdana,sans-serif; font-size:24px; line-height:28px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px}
 
-.line4{ background:url(../images/line4.jpg) 0 0 no-repeat; width:1060px; height:800px;}
+.line4{ background:url(../images/line4.jpg) -5px 16px no-repeat; width:1060px; height:800px;}
 .btn2{ left:3px; top:65px;}
 .btn3{ left:127px; top:65px;}
 .searchTxt{ padding:0 10px; width:200px; height:28px; color:#333; font-size:14px; position:absolute; left:810px; top:84px; border:none; background:none;}
