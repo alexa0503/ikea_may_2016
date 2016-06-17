@@ -38,7 +38,7 @@ function cs3ScrollNew(){
 			clearInterval(cs3Interval);
 			});
 	}
-	
+
 function csGoLeft(){
 	if(cs3Step<8){
 		cs3Step++;
@@ -520,7 +520,7 @@ function submitL2() {
             $('.sb1').attr('data-qr', data.qrUrl);
             noWechatShareImg=data.shareImg;
             noWechatSharlUrl=data.shareUrl;
-            noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
+            noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
         },
         complete: function(xhr) {
             //alert(xhr.responseText);

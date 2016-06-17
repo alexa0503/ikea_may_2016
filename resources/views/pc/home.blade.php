@@ -444,7 +444,7 @@
 @section('scripts')
 <script>
 var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
+var noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
 var noWechatShareImg='';
 var noWechatSharlUrl='{{url("/web")}}';
 var youku_client_id='{{env("YOUKU_CLIENT_ID")}}';
