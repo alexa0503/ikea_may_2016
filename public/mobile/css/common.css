@@ -152,3 +152,25 @@ select,input,textarea{font-family:inherit; outline:none;}
 .ruleBlock h1{ text-align:center; width:100%; font-size:24px; height:60px; line-height:30px; padding:10px 0;}
 .ruleBlock .main{ overflow-x:hidden; overflow-y:auto; width:100%; height:772px;}
 .ruleBlock p{ padding:10px 0; text-align:left; font-size:20px; line-height:28px;}
+
+.cs1{ background:url(../images/csBg1.png) 0 0 no-repeat; width:640px; height:868px;}
+.seledTime{ left:188px; top:202px; width:232px; color:#666666; font-size:26px; height:58px; line-height:58px; text-align:center;}
+.csSelBtn{ left:188px; top:202px;}
+.csBtn1{ left:215px; top:275px;}
+.selTimeBlock{ position:absolute; left:197px; top:16px; background:url(../images/csSdBg.png) 0 0 no-repeat; width:204px; height:480px; padding:0;}
+.selTimeBlock ul{ width:204px;}
+.selTimeBlock ul li{ width:204px; height:48px;}
+.selTimeBlock ul li a{ display:block; width:100%; height:100%; color:#666; line-height:48px; font-size:26px; text-align:center;}
+.csBlock1{ width:525px; height:720px; overflow:hidden; position:absolute; left:58px; top:119px;}
+.swiper-container2 .swiper-wrapper{width:66000px;height:322px;}
+.swiper-container2 .swiper-wrapper .swiper-slide{background:none; float:left; width:525px; height:720px;}
+.btnLeft2,.btnLeft3{ left:10px; top:318px;}
+.btnRight2,.btnRight3{ left:595px; top:318px;}
+.csBtn2{ left:55px; top:646px;}
+.csBtn3{ left:280px; top:646px;}
+.cs3{ background:url(../images/csBg3.png) 0 0 no-repeat; width:640px; height:868px;}
+.csBlock2{ width:536px; height:555px; overflow:hidden; position:absolute; left:52px; top:132px;}
+.swiper-container3 .swiper-wrapper{width:66000px;height:555px;}
+.swiper-container3 .swiper-wrapper .swiper-slide{background:none; float:left; width:536px; height:555px;}
+.swiper-container3 a{ margin:0 3px 4px 3px; display:inline-block; float:left;}
+.csBtn2b{ left:215px; top:716px;}
