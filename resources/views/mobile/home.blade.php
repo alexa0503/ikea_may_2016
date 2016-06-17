@@ -136,7 +136,7 @@
                             <a href="javascript:void(0);" class="abs vPlayAgain" onClick="playAgain();" style="display:none;"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
 
                             <a href="javascript:void(0);" class="abs submitBtn" onClick="ga('send','event','UGC Recruitment','Click','UGC_Submission');submitL2();"><img src="{{asset('mobile/images/space.gif')}}" width="220" height="76"></a>
-                            
+
                             <a href="#galleryBlock" class="goGbBtn" style="position:absolute; left:175px; top:400px; display:none;"><img src="{{asset('mobile/images/space.gif')}}" width="294" height="116"></a>
                         </div>
                         </form>
@@ -164,7 +164,7 @@
                     	<div class="abs seledTime">起床2分钟</div>
                         <a href="javascript:void(0);" class="abs csSelBtn" onClick="showSelTime();"><img src="{{asset('mobile/images/space.gif')}}" width="272" height="58"></a>
                         <a href="javascript:void(0);" class="abs csBtn1" onClick="goCs2();"><img src="{{asset('mobile/images/csBtn1.png')}}"></a>
-                        
+
                         <div class="selTimeBlock" style="display:none;">
                         	<ul>
                             	<li>
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 			<div class="cs2" style="display:none;">
                 	<div class="innerDiv">
                     	<div class="csBlock1">
@@ -214,7 +214,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB2.png')}}"></a>
@@ -222,7 +222,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(2);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB3.png')}}"></a>
@@ -230,7 +230,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(3);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB4.png')}}"></a>
@@ -238,7 +238,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(4);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB5.png')}}"></a>
@@ -246,7 +246,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(5);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB6.png')}}"></a>
@@ -254,7 +254,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(6);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB7.png')}}"></a>
@@ -262,7 +262,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(7);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB8.png')}}"></a>
@@ -270,7 +270,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(8);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB9.png')}}"></a>
@@ -278,7 +278,7 @@
                                             <a href="javascript:void(0);" onClick="viewCs3(9);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB10.png')}}"></a>
@@ -293,7 +293,7 @@
 						<a href="javascript:void(0);" class="abs btnRight2"><img src="{{asset('mobile/images/btnRight.png')}}"></a>
                     </div>
                 </div>
-                
+
 			<div class="cs3" style="display:none;">
                 	<div class="innerDiv">
                     	<div class="csBlock2">
@@ -307,7 +307,7 @@
                                             <a href="javascript:void(0);" onClick="backOnlyCs2(4);"><img src="{{asset('mobile/images/csS4.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" onClick="backOnlyCs2(5);"><img src="{{asset('mobile/images/csS5.png')}}"></a>
@@ -316,7 +316,7 @@
                                             <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('mobile/images/csS8.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="swiper-slide">
                                         <div class="innerDiv">
                                             <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('mobile/images/csS9.png')}}"></a>
@@ -324,7 +324,7 @@
                                             <a><img src="{{asset('mobile/images/csS11.png')}}"></a>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -441,7 +441,7 @@
 <script>
 wxData = {};
 var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时# 宝贝在捣蛋，上传你家宝贝捣蛋瞬间，宜家丰富奖品等你来拿！';
+var noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
 var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
 var noWechatSharlUrl='{{url("/")}}';
 </script>
