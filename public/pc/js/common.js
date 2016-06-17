@@ -15,7 +15,7 @@ function randomNumb(minNumb, maxNumb) {
 }
 
 $(document).ready(function() {
-    l3Swiper();
+    //l3Swiper();
     videoInit();
 	shareNoWeichat();
 });
@@ -31,13 +31,81 @@ function l3Swiper() {
     });
 }
 
+var csTime=1;
+function selTime(e){
+	csTime=parseInt($(e).attr('cst'));
+	var ctHtml=$(e).html();
+	$('.seledTime').html(ctHtml);
+	$('.selTimeBlock').hide();
+	}
+	
+function showSelTime(){
+	$('.selTimeBlock').show();
+	}
+	
+function goCs2(){
+	$('.cs1').hide();
+	$('.cs2').show();
+	cs2Scroll();
+	swiper2.slideTo(csTime, 1000, '');
+	}
+	
+function backCs1(){
+	$('.cs2').hide();
+	$('.cs1').show();
+	}
+	
+function viewCs3(e){
+	$('.cs2').hide();
+	$('.cs3').show();
+	cs3Scroll();
+	}
+
+var swiper2	
+function cs2Scroll(){
+	swiper2 = new Swiper('.swiper-container2', {
+        nextButton: '.btnRight2',
+        prevButton: '.btnLeft2',
+        spaceBetween: 1,
+        loop: true
+    });
+	}
+	
+var swiper3	
+function cs3Scroll(){
+	swiper3 = new Swiper('.swiper-container3', {
+        nextButton: '.btnRight3',
+        prevButton: '.btnLeft3',
+        spaceBetween: 1,
+        loop: true,
+		autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+	}
+	
+function backCs3(){
+	$('.cs2').hide();
+	$('.cs3').hide();
+	$('.cs1').show();
+	}
+	
+function backOnlyCs2(e){
+	var ct=parseInt(e);
+	$('.cs3').hide();
+	$('.cs2').show();
+	cs2Scroll();
+	swiper2.slideTo(ct, 1000, '');
+	}
+
 var v1, v2, v3, v4;
 
 function videoInit() {
-    v3 = document.getElementById('v3');
+    v2 = document.getElementById('v2');
+	v4 = document.getElementById('v4');
     $('.vInit').hover(function() {
         var vIndex = $('.vInit').index($(this)) + 1;
-        v3.pause();
+        v2.pause();
+		v4.pause();
         $('.vInit video').hide();
 		$('.vInit .vGif').hide();
         switch (vIndex) {
@@ -46,22 +114,24 @@ function videoInit() {
 				ga('send','event','UGC Gallery','Click','Featured_UGC_1');
                 break;
             case 2:
-				$('.vInit').eq(1).find('.vGif').show();
+				v2.play();
+				$('#v' + vIndex).show();
 				ga('send','event','UGC Gallery','Click','Featured_UGC_2');
                 break;
             case 3:
-                v3.play();
-				$('#v' + vIndex).show();
+                $('.vInit').eq(2).find('.vGif').show();
 				ga('send','event','UGC Gallery','Play','Featured_UGC_3');
                 break;
             case 4:
-				$('.vInit').eq(3).find('.vGif').show();
+				v4.play();
+				$('#v' + vIndex).show();
 				ga('send','event','UGC Gallery','Click','Featured_UGC_4');
                 break;
         }
 
     }, function() {
-        v3.pause();
+        v2.pause();
+		v4.pause();
         $('.vInit video').hide();
 		$('.vInit .vGif').hide();
     });
@@ -353,6 +423,19 @@ function submitL2() {
         var iX = parseInt($('.upLoadImg').eq(2).css('left'));
         var iY = parseInt($('.upLoadImg').eq(2).css('top'));
         var iT = $('.ft').index($('.fton')) + 1;
+		
+		if(iT==1){
+			iT=6;
+			}
+		else if(iT==2){
+			iT=5;
+			}
+		else if(iT==3){
+			iT=1;
+			}
+		else if(iT==4){
+			iT=4;
+			}
 
         $('input[name="x"]').val(iX);
         $('input[name="y"]').val(iY);

@@ -27,7 +27,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .swiper-container1 .swiper-slide{ background:none; float:left; width:472px; height:354px;}
 .vGif{ position:absolute; left:0; top:0; width:472px; height:354px; text-align:center; overflow:hidden; background:#000;}
 .vGif img{ width:auto; height:354px;}
-.swiper-container1 .swiper-slide video{ position:absolute; left:0; top:0; width:472px; height:354px;}
+.swiper-container1 .swiper-slide video{ position:absolute; left:0; top:0; width:472px; height:354px; background:#000;}
 .btnLeft1{ left:36px; top:160px;}
 .btnRight1{ left:584px; top:160px;}
 
@@ -56,10 +56,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 .f5{ background:url(../images/f5.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:640px; height:1177px;}
 
 .fTop,.fLoading,.fEnd3,.fUploadVideo{ position:absolute; left:0; top:0; width:640px; height:1177px;}
-.fLoadImg{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden; background:url(../images/fLoadImg.png) 0 0 no-repeat; background-size:auto 398px;}
-.uploadImgBlock{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden;}
-#mMask{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden;}
-.stMask{ width:398px; height:398px; position:absolute; left:125px; top:242px; overflow:hidden; background:url(../images/ft1.png) 0 0 no-repeat; background-size:auto 398px; -webkit-animation:stMask 0.8s steps(4) infinite;}
+.fLoadImg{ width:398px; height:398px; position:absolute; left:125px; top:264px; overflow:hidden; background:url(../images/fLoadImg.png) 0 0 no-repeat; background-size:auto 398px;}
+.uploadImgBlock{ width:398px; height:398px; position:absolute; left:125px; top:264px; overflow:hidden;}
+#mMask{ width:398px; height:398px; position:absolute; left:125px; top:264px; overflow:hidden;}
+.stMask{ width:398px; height:398px; position:absolute; left:125px; top:264px; overflow:hidden; background:url(../images/ft1.png) 0 0 no-repeat; background-size:auto 398px; -webkit-animation:stMask 0.8s steps(4) infinite;}
 @-webkit-keyframes stMask{
 0%{ background-position:0 0;}
 100%{ background-position:-1592px 0;}
@@ -68,29 +68,31 @@ select,input,textarea{font-family:inherit; outline:none;}
 .stMask2{ background-image:url(../images/ft2.png);}
 .stMask3{ background-image:url(../images/ft3.png);}
 .stMask4{ background-image:url(../images/ft4.png);}
-.fImg1{ left:125px; top:242px;}
+.stMask5{ background-image:url(../images/ft5.png);}
+.stMask6{ background-image:url(../images/ft6.png);}
+.fImg1{ left:125px; top:264px;}
 .upLoadImg{ left:0; top:0; width:100%; display:none;}
-.uploadBtn{ display:block; width:220px; height:76px; position:absolute; left:216px; top:365px; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer;}
+.uploadBtn{ display:block; width:220px; height:76px; position:absolute; left:216px; top:385px; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer;}
 .uploadedBtn{ left:95px; top:1010px; width:220px; height:76px;}
 .vPlayAgain{ left:95px; top:1010px;}
-.youkuBtn{ left:216px; top:454px;}
+.youkuBtn{ left:216px; top:472px;}
 .fInput{ background:none; border:none; display:block; width:220px; height:44px; line-height:44px; padding:0 14px; position:absolute; left:274px; color:#333; font-size:22px;}
-.fTxt1{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:752px; color:#666666; font-size:22px;}
-.fTxt2{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:798px; color:#666666; font-size:22px;}
-.fTxt3{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:844px; color:#666666; font-size:22px;}
+.fTxt1{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:762px; color:#666666; font-size:22px;}
+.fTxt2{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:808px; color:#666666; font-size:22px;}
+.fTxt3{ width:165px; height:44px; line-height:44px; position:absolute; left:110px; top:854px; color:#666666; font-size:22px;}
 .fRed{ color:#D30508;}
-.fInput1{ top:752px;}
-.fInput2{ top:798px;}
-.fInput3{ top:844px; width:96px;}
-.fInput4{ top:844px; width:96px; left:412px;}
-.fInput5{ top:890px; width:368px; left:126px;}
-.fNote{ font-size:12px; color:#adadad; line-height:100%; left:110px; top:950px;}
-.fLice{ font-size:16px; color:#666; line-height:100%; left:110px; top:975px;}
+.fInput1{ top:762px;}
+.fInput2{ top:808px;}
+.fInput3{ top:854px; width:96px;}
+.fInput4{ top:854px; width:96px; left:412px;}
+.fInput5{ top:900px; width:368px; left:126px;}
+.fNote{ font-size:12px; color:#adadad; line-height:100%; left:110px; top:960px;}
+.fLice{ font-size:16px; color:#666; line-height:100%; left:110px; top:985px;}
 .fLice input{ vertical-align:1px;}
 .fLice label{ font-size:16px; color:#666;}
 .fLice a{ font-size:16px; color:#666; font-weight:bold; text-decoration:underline;}
-.submitBtn{ left:325px; top:1010px;}
-.ft{ top:653px;}
+.submitBtn{ left:325px; top:1020px;}
+.ft{ top:674px;}
 .ft img{ width:90px; height:90px;}
 .ft1{ left:125px;}
 .ft2{ left:228px;}
@@ -98,7 +100,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .ft4{ left:432px;}
 .fton img{ width:84px; height:84px; border:3px solid #25caff;}
 
-.line4{ background:url(../images/line4.jpg) 0 0 no-repeat; width:640px; height:458px;}
+.line4{ background:url(../images/line4.jpg) 0 0 no-repeat; width:640px; height:868px;}
 .sBlock2{ left:53px; top:128px; width:538px; height:316px; overflow:hidden;}
 .sBlock2 .swiper-wrapper{width:6000px;height:316px;}
 .sBlock2 .swiper-slide{background:none; float:left; width:538px; height:316px;}
@@ -111,7 +113,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .sName{ color:#000; font-family: Verdana,sans-serif; font-size:12px; line-height:16px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px;}
 .sPrice{ color:#000; font-family: Verdana,sans-serif; font-size:24px; line-height:28px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px}
 
-.line5{ background:url(../images/line5.jpg) 0 0 no-repeat; width:640px; height:1357px;}
+.line5{ background:url(../images/line5.jpg) 0 0 no-repeat; width:640px; height:1337px;}
 .btn2{ left:112px; top:183px;}
 .btn3{ left:333px; top:183px;}
 .searchTxt{ padding:0 20px; width:320px; height:46px; line-height:46px; color:#333; font-size:20px; position:absolute; left:112px; top:118px; border:none; background:none;}
@@ -150,3 +152,25 @@ select,input,textarea{font-family:inherit; outline:none;}
 .ruleBlock h1{ text-align:center; width:100%; font-size:24px; height:60px; line-height:30px; padding:10px 0;}
 .ruleBlock .main{ overflow-x:hidden; overflow-y:auto; width:100%; height:772px;}
 .ruleBlock p{ padding:10px 0; text-align:left; font-size:20px; line-height:28px;}
+
+.cs1{ background:url(../images/csBg1.png) 0 0 no-repeat; width:640px; height:868px;}
+.seledTime{ left:188px; top:202px; width:232px; color:#666666; font-size:26px; height:58px; line-height:58px; text-align:center;}
+.csSelBtn{ left:188px; top:202px;}
+.csBtn1{ left:215px; top:275px;}
+.selTimeBlock{ position:absolute; left:197px; top:16px; background:url(../images/csSdBg.png) 0 0 no-repeat; width:204px; height:480px; padding:0;}
+.selTimeBlock ul{ width:204px;}
+.selTimeBlock ul li{ width:204px; height:48px;}
+.selTimeBlock ul li a{ display:block; width:100%; height:100%; color:#666; line-height:48px; font-size:26px; text-align:center;}
+.csBlock1{ width:525px; height:720px; overflow:hidden; position:absolute; left:58px; top:119px;}
+.swiper-container2 .swiper-wrapper{width:66000px;height:322px;}
+.swiper-container2 .swiper-wrapper .swiper-slide{background:none; float:left; width:525px; height:720px;}
+.btnLeft2,.btnLeft3{ left:10px; top:318px;}
+.btnRight2,.btnRight3{ left:595px; top:318px;}
+.csBtn2{ left:55px; top:646px;}
+.csBtn3{ left:280px; top:646px;}
+.cs3{ background:url(../images/csBg3.png) 0 0 no-repeat; width:640px; height:868px;}
+.csBlock2{ width:536px; height:555px; overflow:hidden; position:absolute; left:52px; top:132px;}
+.swiper-container3 .swiper-wrapper{width:66000px;height:555px;}
+.swiper-container3 .swiper-wrapper .swiper-slide{background:none; float:left; width:536px; height:555px;}
+.swiper-container3 a{ margin:0 3px 4px 3px; display:inline-block; float:left;}
+.csBtn2b{ left:215px; top:716px;}

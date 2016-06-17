@@ -17,7 +17,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.png')}}"></a>
+                                <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.jpg')}}"></a>
                                 <div class="vGif vGif1" style="display:none;">
                                 	<img src="{{asset('mobile/images/v1.gif')}}" />
                                 </div>
@@ -25,24 +25,22 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.png')}}"></a>
-                                <div class="vGif vGif2" style="display:none;">
-                                	<img src="{{asset('mobile/images/v2.gif')}}" />
+                                <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.jpg')}}"></a>
+                                <video id="v2" class="v2" src="{{asset('pc/images/v2.mp4?v=1')}}" preload="auto" style="display:none;"></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="innerDiv">
+                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.jpg')}}"></a>
+                                <div class="vGif vGif3" style="display:none;">
+                                	<img src="{{asset('mobile/images/v3.jpg')}}" />
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.png')}}"></a>
-                                <video id="v3" src="{{asset('pc/images/v3.mp4?v=1')}}" preload="auto" style="display:none;"></video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.png')}}"></a>
-                                <div class="vGif vGif4" style="display:none;">
-                                	<img src="{{asset('mobile/images/v4.gif')}}" />
-                                </div>
+                                <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.jpg')}}"></a>
+                                <video id="v4" class="v4" src="{{asset('pc/images/v4.mp4?v=1')}}" preload="auto" style="display:none;"></video>
                             </div>
                         </div>
                     </div>
@@ -64,7 +62,7 @@
                     <div class="f3" style="display:none;">
                         <div class="innerDiv">
                             <img src="" class="abs f3EndGif" id="f3EndGif">
-                            <div class="abs onBg stMask1"></div>
+                            <div class="abs onBg stMask6"></div>
                             <img src="" class="abs saveImg" id="saveImg">
                             <div class="shareBtns">
                                 <a href="javascript:void(0);" class="abs sb1" onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
@@ -101,7 +99,7 @@
                                     <img src="" class="abs upLoadImg" id="localImag" />
                                 </div>
                             </div>
-                            <div class="stMask stMask1" style="display:none;"></div>
+                            <div class="stMask stMask6" style="display:none;"></div>
                             <img src="{{asset('mobile/images/fImg1.png')}}" class="abs fImg1" style="display:none;">
                             <div class="mMask" id="mMask"></div>
 
@@ -161,41 +159,180 @@
 
     <div class="line4">
     	<div class="innerDiv">
-        	<div class="abs sBlock2">
-                <div class="swiper-container2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="innerDiv">
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_1');" target="_blank"><img src="{{asset('mobile/images/s1.gif')}}"></a>
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/80163408/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_1');" target="_blank" class="sLink sLink1">
-                                    <span class="sName">IKEA 365 瓦福<br>肉凿，黑色</span><br>
-                                    <span class="sPrice">¥&nbsp;49.00</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="innerDiv">
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_2');" target="_blank"><img src="{{asset('mobile/images/s2.gif')}}"></a>
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/10216537/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_2');" target="_blank" class="sLink sLink2">
-                                    <span class="sName">RÅSKOG 拉斯克<br>手推车, 天蓝色</span><br>
-                                    <span class="sPrice">¥&nbsp;299.00</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="innerDiv">
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_3');" target="_blank"><img src="{{asset('mobile/images/s3.gif')}}"></a>
-                                <a href="http://www.ikea.com/cn/zh/catalog/products/40308267/" onClick="ga('send','event','Manual & Tips','Click','Manual_Product_3');" target="_blank" class="sLink sLink3">
-                                    <span class="sName">IKEA PS 2002<br>洒水壶, 灰色</span><br>
-                                    <span class="sPrice">¥&nbsp;9.90</span>
-                                </a>
-                            </div>
+        	<div class="cs1">
+                	<div class="innerDiv">
+                    	<div class="abs seledTime">起床2分钟</div>
+                        <a href="javascript:void(0);" class="abs csSelBtn" onClick="showSelTime();"><img src="{{asset('mobile/images/space.gif')}}" width="272" height="58"></a>
+                        <a href="javascript:void(0);" class="abs csBtn1" onClick="goCs2();"><img src="{{asset('mobile/images/csBtn1.png')}}"></a>
+                        
+                        <div class="selTimeBlock" style="display:none;">
+                        	<ul>
+                            	<li>
+                                	<a href="javascript:void(0);" cst='1' onClick="selTime(this);">起床2分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='2' onClick="selTime(this);">早晨5分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='3' onClick="selTime(this);">早餐6分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='4' onClick="selTime(this);">餐前3分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='5' onClick="selTime(this);">午后9分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='6' onClick="selTime(this);">午后8分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='7' onClick="selTime(this);">晚上10分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='8' onClick="selTime(this);">餐后3分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='9' onClick="selTime(this);">晚上6分钟</a>
+                                </li>
+                                <li>
+                                	<a href="javascript:void(0);" cst='10' onClick="selTime(this);">洗澡8分钟</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <a href="javascript:void(0);" class="abs btnLeft2"><img src="{{asset('mobile/images/btnLeft.png')}}"></a>
-            <a href="javascript:void(0);" class="abs btnRight2"><img src="{{asset('mobile/images/btnRight.png')}}"></a>
+                
+			<div class="cs2" style="display:none;">
+                	<div class="innerDiv">
+                    	<div class="csBlock1">
+                        	<div class="swiper-container2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB1.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(2);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB3.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(3);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB4.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(4);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB5.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(5);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB6.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(6);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB7.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(7);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB8.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(8);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB9.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(9);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" target="_top"><img src="{{asset('mobile/images/csB10.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="viewCs3(10);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<a href="javascript:void(0);" class="abs btnLeft2"><img src="{{asset('mobile/images/btnLeft.png')}}"></a>
+						<a href="javascript:void(0);" class="abs btnRight2"><img src="{{asset('mobile/images/btnRight.png')}}"></a>
+                    </div>
+                </div>
+                
+			<div class="cs3" style="display:none;">
+                	<div class="innerDiv">
+                    	<div class="csBlock2">
+                        	<div class="swiper-container3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(1);"><img src="{{asset('mobile/images/csS1.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(2);"><img src="{{asset('mobile/images/csS2.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(3);"><img src="{{asset('mobile/images/csS3.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(4);"><img src="{{asset('mobile/images/csS4.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(5);"><img src="{{asset('mobile/images/csS5.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(6);"><img src="{{asset('mobile/images/csS6.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('mobile/images/csS7.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('mobile/images/csS8.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="innerDiv">
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('mobile/images/csS9.png')}}"></a>
+                                            <a href="javascript:void(0);" onClick="backOnlyCs2(10);"><img src="{{asset('mobile/images/csS10.png')}}"></a>
+                                            <a><img src="{{asset('mobile/images/csS11.png')}}"></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+						<a href="javascript:void(0);" class="abs btnLeft3"><img src="{{asset('mobile/images/btnLeft.png')}}"></a>
+						<a href="javascript:void(0);" class="abs btnRight3"><img src="{{asset('mobile/images/btnRight.png')}}"></a>
+                        <a href="javascript:void(0);" class="abs csBtn2b" onClick="backCs3();"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
+                    </div>
+                </div>
         </div>
     </div>
     <!--line4 end-->
@@ -360,7 +497,7 @@ function getInfos(url,params, refresh){
 }
 $(document).ready(function(){
     l2Swiper();
-    l3Swiper();
+    //l3Swiper();
     resizeImg();
 
 	$('#mMask').on('touchmove', function (e) {
