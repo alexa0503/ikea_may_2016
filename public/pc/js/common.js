@@ -31,6 +31,12 @@ function cs3ScrollNew(){
 		},function(){
 			clearInterval(cs3Interval);
 			});
+	$('.btnLeft3').hover(function(){
+		csGoRight();
+		cs3Interval = setInterval(function(){csGoRight();},2000);
+		},function(){
+			clearInterval(cs3Interval);
+			});
 	}
 	
 function csGoLeft(){
@@ -42,6 +48,12 @@ function csGoLeft(){
 			else{
 				$('.csScroll2').stop().animate({marginLeft:-cs3Step*cs3Width},1000,'swing');
 				}
+		}
+	}
+function csGoRight(){
+	if(cs3Step>0){
+		cs3Step=cs3Step-1;
+		$('.csScroll2').stop().animate({marginLeft:-cs3Step*cs3Width},1000,'swing');
 		}
 	}
 
@@ -71,8 +83,9 @@ function showSelTime(){
 function goCs2(){
 	$('.cs1').hide();
 	$('.cs2').show();
-	cs2Scroll();
-	swiper2.slideTo(csTime, 1000, '');
+	var c2got=csTime-1;
+	cs2Scroll(c2got);
+	//swiper2.slideTo(csTime, 1000, '');
 	}
 
 function backCs1(){
@@ -87,12 +100,13 @@ function viewCs3(e){
 	}
 
 var swiper2
-function cs2Scroll(){
+function cs2Scroll(e){
 	swiper2 = new Swiper('.swiper-container2', {
         nextButton: '.btnRight2',
         prevButton: '.btnLeft2',
         spaceBetween: 1,
-        loop: true
+        loop: true,
+		initialSlide:e
     });
 	}
 
@@ -115,11 +129,11 @@ function backCs3(){
 	}
 
 function backOnlyCs2(e){
-	var ct=parseInt(e);
+	var ct=parseInt(e)-1;
 	$('.cs3').hide();
 	$('.cs2').show();
-	cs2Scroll();
-	swiper2.slideTo(ct, 1000, '');
+	cs2Scroll(ct);
+	//swiper2.slideTo(ct, 1000, '');
 	}
 
 var v1, v2, v3, v4;

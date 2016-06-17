@@ -305,6 +305,8 @@
                                 <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('pc/images/csS7.png')}}"></a>
                                 <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('pc/images/csS8.png')}}"></a>
                                 <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('pc/images/csS9.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(10);"><img src="{{asset('pc/images/csS10.png')}}"></a>
+                                <a><img src="{{asset('pc/images/csS11.png')}}"></a>
 							</div>
                         </div>
 						<a href="javascript:void(0);" class="abs btnLeft3"><img src="{{asset('pc/images/btnLeft.png')}}"></a>
