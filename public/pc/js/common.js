@@ -63,30 +63,30 @@ function selTime(e){
 	$('.seledTime').html(ctHtml);
 	$('.selTimeBlock').hide();
 	}
-	
+
 function showSelTime(){
 	$('.selTimeBlock').show();
 	}
-	
+
 function goCs2(){
 	$('.cs1').hide();
 	$('.cs2').show();
 	cs2Scroll();
 	swiper2.slideTo(csTime, 1000, '');
 	}
-	
+
 function backCs1(){
 	$('.cs2').hide();
 	$('.cs1').show();
 	}
-	
+
 function viewCs3(e){
 	$('.cs2').hide();
 	$('.cs3').show();
 	//cs3Scroll();
 	}
 
-var swiper2	
+var swiper2
 function cs2Scroll(){
 	swiper2 = new Swiper('.swiper-container2', {
         nextButton: '.btnRight2',
@@ -95,8 +95,8 @@ function cs2Scroll(){
         loop: true
     });
 	}
-	
-var swiper3	
+
+var swiper3
 function cs3Scroll(){
 	swiper3 = new Swiper('.swiper-container3', {
         nextButton: '.btnRight3',
@@ -107,13 +107,13 @@ function cs3Scroll(){
         autoplayDisableOnInteraction: false
     });
 	}
-	
+
 function backCs3(){
 	$('.cs2').hide();
 	$('.cs3').hide();
 	$('.cs1').show();
 	}
-	
+
 function backOnlyCs2(e){
 	var ct=parseInt(e);
 	$('.cs3').hide();
@@ -448,7 +448,7 @@ function submitL2() {
         var iX = parseInt($('.upLoadImg').eq(2).css('left'));
         var iY = parseInt($('.upLoadImg').eq(2).css('top'));
         var iT = $('.ft').index($('.fton')) + 1;
-		
+
 		if(iT==1){
 			iT=6;
 			}
@@ -507,6 +507,7 @@ function submitL2() {
             $('.sb1').attr('data-qr', data.qrUrl);
             noWechatShareImg=data.shareImg;
             noWechatSharlUrl=data.shareUrl;
+            noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
         },
         complete: function(xhr) {
             //alert(xhr.responseText);
@@ -752,7 +753,7 @@ function closeRule(){
 	$('.ruleBg').hide();
 	$('.ruleBlock').hide();
 	}
-	
+
 var isScrollChanged=false;
 
 function showRule(){
