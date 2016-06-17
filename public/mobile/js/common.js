@@ -123,7 +123,7 @@ function cs3Scroll(){
         prevButton: '.btnLeft3',
         spaceBetween: 1,
         loop: true,
-		autoplay: 2500,
+		autoplay: 5000,
         autoplayDisableOnInteraction: false
     });
 	}
