@@ -295,40 +295,16 @@
                 <div class="cs3" style="display:none;">
                 	<div class="innerDiv">
                     	<div class="csBlock2">
-                        	<div class="swiper-container3">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(1);"><img src="{{asset('pc/images/csS1.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(2);"><img src="{{asset('pc/images/csS2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(3);"><img src="{{asset('pc/images/csS3.png')}}"></a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(4);"><img src="{{asset('pc/images/csS4.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(5);"><img src="{{asset('pc/images/csS5.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(6);"><img src="{{asset('pc/images/csS6.png')}}"></a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('pc/images/csS7.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('pc/images/csS8.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('pc/images/csS9.png')}}"></a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(10);"><img src="{{asset('pc/images/csS10.png')}}"></a>
-                                            <a><img src="{{asset('pc/images/csS11.png')}}"></a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
+                        	<div class="csScroll2">
+                            	<a href="javascript:void(0);" onClick="backOnlyCs2(1);"><img src="{{asset('pc/images/csS1.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(2);"><img src="{{asset('pc/images/csS2.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(3);"><img src="{{asset('pc/images/csS3.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(4);"><img src="{{asset('pc/images/csS4.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(5);"><img src="{{asset('pc/images/csS5.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(6);"><img src="{{asset('pc/images/csS6.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('pc/images/csS7.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('pc/images/csS8.png')}}"></a>
+                                <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('pc/images/csS9.png')}}"></a>
                             </div>
                         </div>
 						<a href="javascript:void(0);" class="abs btnLeft3"><img src="{{asset('pc/images/btnLeft.png')}}"></a>
