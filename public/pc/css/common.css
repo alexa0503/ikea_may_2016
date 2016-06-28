@@ -16,31 +16,147 @@ select,input,textarea{font-family:inherit; outline:none;}
 .innerDiv{ width:100%; height:100%; position:relative;}
 .abs{ position:absolute;}
 
-.line1{ background:url(../images/line1.jpg) 0 0 no-repeat; width:1060px; height:626px;}
+.line1{ background:url(../images/line1.png) 0 0 no-repeat; width:1060px; height:626px;}
+.kvBlock{ width:1060px; height:412px; left:0; top:0; overflow:hidden;}
+.fo1{ left:287px; top:167px;
+-webkit-animation:fo1 2s 0s linear both infinite;
+-moz-animation:fo1 2s 0s linear both infinite;
+-ms-animation:fo1 2s 0s linear both infinite;
+}
+@-webkit-keyframes fo1{
+0%{ -webkit-transform:translate(0,0);}
+45%{ -webkit-transform:translate(0,30px);}
+100%{ -webkit-transform:translate(0,0);}
+}
+@-moz-keyframes fo1{
+0%{ -moz-transform:translate(0,0);}
+45%{ -moz-transform:translate(0,30px);}
+100%{ -moz-transform:translate(0,0);}
+}
+@-ms-keyframes fo1{
+0%{ -ms-transform:translate(0,0);}
+45%{ -ms-transform:translate(0,30px);}
+100%{ -ms-transform:translate(0,0);}
+}
+.fo2{ left:24px; top:257px;
+-webkit-animation:fo2 2s 0s linear both infinite;
+-moz-animation:fo2 2s 0s linear both infinite;
+-ms-animation:fo2 2s 0s linear both infinite;
+}
+@-webkit-keyframes fo2{
+0%{ -webkit-transform:translate(0,0);}
+50%{ -webkit-transform:translate(0,30px);}
+100%{ -webkit-transform:translate(0,0);}
+}
+@-moz-keyframes fo2{
+0%{ -moz-transform:translate(0,0);}
+50%{ -moz-transform:translate(0,30px);}
+100%{ -moz-transform:translate(0,0);}
+}
+@-ms-keyframes fo2{
+0%{ -ms-transform:translate(0,0);}
+50%{ -ms-transform:translate(0,30px);}
+100%{ -ms-transform:translate(0,0);}
+}
+.fo3{ left:950px; top:260px;
+-webkit-animation:fo3 2s 0s linear both infinite;
+-moz-animation:fo3 2s 0s linear both infinite;
+-ms-animation:fo3 2s 0s linear both infinite;
+}
+@-webkit-keyframes fo3{
+0%{ -webkit-transform:translate(0,0);}
+45%{ -webkit-transform:translate(0,10px);}
+100%{ -webkit-transform:translate(0,0);}
+}
+@-moz-keyframes fo3{
+0%{ -moz-transform:translate(0,0);}
+45%{ -moz-transform:translate(0,10px);}
+100%{ -moz-transform:translate(0,0);}
+}
+@-ms-keyframes fo3{
+0%{ -ms-transform:translate(0,0);}
+45%{ -ms-transform:translate(0,10px);}
+100%{ -ms-transform:translate(0,0);}
+}
+.fo4{ left:778px; top:-144px;
+-webkit-animation:fo4 2s 0s linear both infinite;
+-moz-animation:fo4 2s 0s linear both infinite;
+-ms-animation:fo4 2s 0s linear both infinite;
+}
+@-webkit-keyframes fo4{
+0%{ -webkit-transform:translate(0,0);}
+60%{ -webkit-transform:translate(0,30px);}
+100%{ -webkit-transform:translate(0,0);}
+}
+@-moz-keyframes fo4{
+0%{ -moz-transform:translate(0,0);}
+60%{ -moz-transform:translate(0,30px);}
+100%{ -moz-transform:translate(0,0);}
+}
+@-ms-keyframes fo4{
+0%{ -ms-transform:translate(0,0);}
+60%{ -ms-transform:translate(0,30px);}
+100%{ -ms-transform:translate(0,0);}
+}
+.fo5{ left:610px; top:148px;
+-webkit-animation:fo5 2s 0s linear both infinite;
+-moz-animation:fo5 2s 0s linear both infinite;
+-ms-animation:fo5 2s 0s linear both infinite;
+}
+@-webkit-keyframes fo5{
+0%{ -webkit-transform:translate(0,0);}
+60%{ -webkit-transform:translate(0,15px);}
+100%{ -webkit-transform:translate(0,0);}
+}
+@-moz-keyframes fo5{
+0%{ -moz-transform:translate(0,0);}
+60%{ -moz-transform:translate(0,15px);}
+100%{ -moz-transform:translate(0,0);}
+}
+@-ms-keyframes fo5{
+0%{ -ms-transform:translate(0,0);}
+60%{ -ms-transform:translate(0,15px);}
+100%{ -ms-transform:translate(0,0);}
+}
+.fo6{ left:908px; top:65px;
+-webkit-animation:fo5 2s 0s linear both infinite;
+-moz-animation:fo5 2s 0s linear both infinite;
+-ms-animation:fo5 2s 0s linear both infinite;
+}
+.fo7{ left:747px; top:66px;
+-webkit-animation:fo3 2s 0s linear both infinite;
+-moz-animation:fo3 2s 0s linear both infinite;
+-ms-animation:fo3 2s 0s linear both infinite;
+}
+.fo8{ left:348px; top:6px;
+-webkit-animation:fo3 2s 0s linear both infinite;
+-moz-animation:fo3 2s 0s linear both infinite;
+-ms-animation:fo3 2s 0s linear both infinite;
+}
 .btn1{ left:705px; top:267px;}
 .vBlock{ width:1060px; height:200px; left:0; top:428px;}
 .vInit{ float:left; width:252px; height:186px; margin-right:17px; overflow:hidden;}
 .vInit.nomr{ margin-right:0;}
 .vInit img.moImg{ width:252px; height:186px;}
-.vInit video{ width:252px; height:186px; position:absolute; left:0; top:0;}
+.vInit video{ width:252px; height:186px; position:absolute; left:0; top:0; background:#000;}
 .vGif{ width:252px; height:186px; text-align:center; overflow:hidden; position:absolute; left:0; top:0; background:#000;}
 .vGif img{ width:auto; height:186px;}
 
 .line2{ background:url(../images/line2.jpg) 0 0 no-repeat; width:1060px; height:690px;}
-.fBlock{ left:62px; top:75px; width:813px; height:561px; overflow:hidden;}
-.f1{ background:url(../images/f1.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:813px; height:561px;}
-.f2{ background:url(../images/f2.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:813px; height:561px;}
-.f5{ background:url(../images/f5.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:813px; height:561px;}
-.f3{ background:url(../images/f3.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:813px; height:561px;}
-.f3EndGif{ width:280px; height:280px; left:191px; top:81px;}
-.sb1{ left:503px; top:206px;}
-.sb2{ left:565px; top:206px;}
-.sb3{ left:624px; top:206px;}
-.sb4{ left:676px; top:206px;}
-.paBtn{ left:503px; top:268px;}
-.moreLink{ left:590px; top:518px;}
-.f4{ background:url(../images/f4.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:813px; height:561px;}
-.fTop,.fLoading,.fEnd3,.fUploadVideo{ position:absolute; left:0; top:0; width:813px; height:561px;}
+.fBlock{ left:46px; top:71px; width:885px; height:561px; overflow:hidden;}
+.f1{ background:url(../images/f1.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
+.f2{ background:url(../images/f2.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
+.f5{ background:url(../images/f5.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
+.f3{ background:url(../images/f3.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
+.f3EndGif{ width:280px; height:280px; left:208px; top:81px;}
+.sb1{ left:521px; top:206px;}
+.sb2{ left:583px; top:206px;}
+.sb3{ left:642px; top:206px;}
+.sb4{ left:694px; top:206px;}
+.paBtn{ left:520px; top:268px;}
+.moreLink{ left:608px; top:518px;}
+.f4{ background:url(../images/f4.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
+.fTop,.fLoading,.fEnd3,.fUploadVideo{ position:absolute; left:0; top:0; width:885px; height:561px;}
 .ruleBg{ width:100%; height:700px; position:absolute; left:0; top:50%; margin-top:-650px; background:rgba(0,0,0,0.8);}
 .ruleBlock{ color:#FFF; background:url(../images/ruleBg.png) 0 0 no-repeat; position:absolute; left:50%; top:50%;  width:712px; height:542px; margin:-571px 0 0 -356px;}
 .ruleBlock h1{ text-align:center; width:100%; font-size:24px; height:30px; line-height:30px; padding:50px 0 0 0;}
@@ -58,49 +174,52 @@ select,input,textarea{font-family:inherit; outline:none;}
 #scrollbar2 .end{ background:url(../images/scrollEnd.png) center bottom no-repeat; width:24px; height:12px; position:absolute; left:0; bottom:0;}
 
 #201661youku{ position:absolute; left:50%;top:50%; margin:-220px 0 0 -320px;}
-.fLoadImg{ width:279px; height:279px; position:absolute; left:137px; top:182px; overflow:hidden; background:url(../images/fLoadImg.png) 0 0 no-repeat;}
-.uploadImgBlock{ width:279px; height:279px; position:absolute; left:137px; top:182px; overflow:hidden;}
-.mMask{ width:279px; height:279px; position:absolute; left:137px; top:182px; overflow:hidden;}
-.stMask{ width:279px; height:279px; position:absolute; left:137px; top:182px; overflow:hidden; background:url(../images/f1Bg.png) 0 0 no-repeat;}
+.fLoadImg{ width:339px; height:339px; position:absolute; left:180px; top:182px; overflow:hidden; background:url(../images/fLoadImg.png) 0 0 no-repeat;}
+.fImg1{ width:339px; height:339px;}
+.uploadImgBlock{ width:339px; height:339px; position:absolute; left:180px; top:182px; overflow:hidden;}
+.mMask{ width:339px; height:339px; position:absolute; left:180px; top:182px; overflow:hidden;}
+.stMask{ width:339px; height:339px; position:absolute; left:180px; top:182px; overflow:hidden; background:url(../images/f6Bg.png) 0 0 no-repeat;}
 .stMask1{ background-image:url(../images/f1Bg.png);}
 .stMask2{ background-image:url(../images/f2Bg.png);}
 .stMask3{ background-image:url(../images/f3Bg.png);}
 .stMask4{ background-image:url(../images/f4Bg.png);}
-.fImg1{ left:137px; top:182px;}
+.stMask5{ background-image:url(../images/f5Bg.png);}
+.stMask6{ background-image:url(../images/f6Bg.png);}
+.fImg1{ left:180px; top:182px;}
 .upLoadImg{ left:0; top:0; display:none;}
-.uploadBtn{ display:block; width:174px; height:62px; position:absolute; left:191px; top:257px; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer;}
-.uploadedBtn{ left:438px; top:437px; width:164px; height:64px;}
-.vPlayAgain{ left:438px; top:437px;}
-.youkuBtn{ left:191px; top:328px;}
-.fInput{ background:none; border:none; display:block; width:200px; height:28px; line-height:28px; padding:0 15px; position:absolute; left:544px; color:#333; font-size:14px;}
-.fTxt1{ width:200px; height:28px; line-height:28px; position:absolute; left:435px; top:205px; color:#666666; font-size:14px;}
-.fTxt2{ width:200px; height:28px; line-height:28px; position:absolute; left:435px; top:252px; color:#666666; font-size:14px;}
-.fTxt3{ width:200px; height:28px; line-height:28px; position:absolute; left:435px; top:298px; color:#666666; font-size:14px;}
+.uploadBtn{ display:block; width:174px; height:62px; position:absolute; left:262px; top:290px; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer;}
+.uploadedBtn{ left:528px; top:437px; width:164px; height:64px;}
+.vPlayAgain{ left:528px; top:437px;}
+.youkuBtn{ left:262px; top:361px;}
+.fInput{ background:none; border:none; display:block; width:200px; height:28px; line-height:28px; padding:0 15px; position:absolute; left:636px; color:#333; font-size:14px;}
+.fTxt1{ width:200px; height:28px; line-height:28px; position:absolute; left:538px; top:205px; color:#666666; font-size:14px;}
+.fTxt2{ width:200px; height:28px; line-height:28px; position:absolute; left:538px; top:252px; color:#666666; font-size:14px;}
+.fTxt3{ width:200px; height:28px; line-height:28px; position:absolute; left:538px; top:298px; color:#666666; font-size:14px;}
 .fRed{ color:#D30508;}
 .fInput1{ top:205px;}
 .fInput2{ top:252px;}
 .fInput3{ top:298px; width:85px;}
-.fInput4{ top:298px; width:85px; left:659px;}
+.fInput4{ top:298px; width:85px; left:751px;}
 .fInput5{ top:344px;}
-.fNote{ font-size:12px; color:#adadad; line-height:100%; left:448px; top:386px;}
-.fLice{ font-size:14px; color:#666; line-height:100%; left:448px; top:412px;}
+.fNote{ font-size:12px; color:#adadad; line-height:100%; left:538px; top:386px;}
+.fLice{ font-size:14px; color:#666; line-height:100%; left:538px; top:412px;}
 .fLice input{ vertical-align:1px;}
 .fLice label{ font-size:14px; color:#666;}
 .fLice a{ font-size:14px; color:#666; font-weight:bold; text-decoration:underline;}
-.submitBtn{ left:620px; top:437px;}
-.ft{ top:470px;}
-.ft img{ width:63px; height:63px;}
-.ft1{ left:137px;}
-.ft2{ left:209px;}
-.ft3{ left:280px;}
-.ft4{ left:352px;}
-.fton img{ width:57px; height:57px; border:3px solid #25caff;}
+.submitBtn{ left:710px; top:437px;}
+.ft{ left:92px;}
+.ft img{ width:77px; height:77px;}
+.ft1{ top:184px;}
+.ft2{ top:272px;}
+.ft3{ top:360px;}
+.ft4{ top:447px;}
+.fton img{ width:71px; height:71px; border:3px solid #25caff;}
 .qcBlock{ background:url(../images/qc1.gif) 0 0 no-repeat; width:282px; height:359px; position:absolute; top:0; right:0;}
 .qcImg{ width:110px; height:110px; left:90px; top:164px;}
 .openQc{ background:url(../images/qc2.png) top right no-repeat; width:157px; height:142px; left:212px; top:156px;}
 .qcCloseBtn{ top:0; right:0;}
 
-.line3{ background:url(../images/line3.jpg) 0 0 no-repeat; width:1060px; height:413px;}
+.line3{ background:url(../images/line3.jpg) 0 0 no-repeat; width:1060px; height:475px;}
 .sBlock{ left:187px; top:133px; width:707px; height:220px; overflow:hidden;}
 .swiper-wrapper{width:6200px;height:220px;}
 .swiper-slide{background:none; float:left; width:707px; height:220px;}
@@ -113,22 +232,22 @@ select,input,textarea{font-family:inherit; outline:none;}
 .sName{ color:#000; font-family: Verdana,sans-serif; font-size:12px; line-height:16px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px;}
 .sPrice{ color:#000; font-family: Verdana,sans-serif; font-size:24px; line-height:28px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px}
 
-.line4{ background:url(../images/line4.jpg) 0 0 no-repeat; width:1060px; height:800px;}
-.btn2{ left:3px; top:55px;}
-.btn3{ left:127px; top:55px;}
-.searchTxt{ padding:0 10px; width:200px; height:28px; color:#333; font-size:14px; position:absolute; left:810px; top:69px; border:none; background:none;}
-.searchBtn{ left:1032px; top:76px;}
-.pBlock{ width:1060px; left:0; top:115px;}
+.line4{ background:url(../images/line4.jpg) -5px 16px no-repeat; width:1060px; height:800px;}
+.btn2{ left:3px; top:65px;}
+.btn3{ left:127px; top:65px;}
+.searchTxt{ padding:0 10px; width:200px; height:28px; color:#333; font-size:14px; position:absolute; left:810px; top:84px; border:none; background:none;}
+.searchBtn{ left:1032px; top:91px;}
+.pBlock{ width:1060px; left:0; top:130px;}
 .pInit{ width:234px; height:270px; float:left; padding:0 15px 20px 16px;}
 .pTopImg{ width:234px; height:234px; overflow:hidden; text-align:center; position:relative;}
 .pTopImg img{height:234px;}
 .pTopImg a{ position:absolute; left:0; top:0;}
 .pTopImg a img{ width:234px; height:234px;}
 .pBottomTxt{ padding:0 10px; width:214px; height:36px; overflow:hidden; background:#f4f4f4;}
-.pBottomTxtName{ width:120px; height:36px; line-height:36px; font-size:12px; color:#666; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; float:left;}
+.pBottomTxtName{ width:100px; height:36px; line-height:36px; font-size:12px; color:#666; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; float:left;}
 .pBottomTXtBtn1{ width:28px; float:right; text-align:right; line-height:36px;}
 .pBottomTXtBtn1 img{ vertical-align:-2px;}
-.pBottomTXtBtn2{ width:65px; height:36px; float:right; text-align:right; line-height:36px;}
+.pBottomTXtBtn2{ width:80px; height:36px; float:right; text-align:right; line-height:36px;}
 .pBottomTXtBtn2 a{ font-size:12px; color:#666;}
 .pBottomTXtBtn2 img{ vertical-align:-2px;}
 .l4BtnLine{ width:100%; padding:12px 0 0 0; text-align:center;}
@@ -143,7 +262,32 @@ select,input,textarea{font-family:inherit; outline:none;}
 .sbb3{ left:543px; top:649px;}
 .sbb4{ left:596px; top:649px;}
 .bottmCloseBtn{ left:788px; top:121px;}
-.page {margin: 20px 0;font-size:16px;}
+.page {margin: 0 0;font-size:16px;}
 .page * {color:#666666;}
 .page a,.page span{padding:0 5px;width: 40px;}
 .page .current,.page .prev,.page .next {color:#1da7d2;}
+
+.cs1{ background:url(../images/csBg1.png) 0 0 no-repeat; width:1060px; height:527px;}
+.seledTime{ left:586px; top:296px; color:#666666; font-size:20px; line-height:20px; width:110px;}
+.csSelBtn{ left:552px; top:282px;}
+.csBtn1{ left:770px; top:282px;}
+.selTimeBlock{ position:absolute; left:552px; top:85px; background:url(../images/csSdBg.png) 0 0 no-repeat; width:210px; height:400px; padding:4px 0;}
+.selTimeBlock ul{ width:210px;}
+.selTimeBlock ul li{ width:210px; height:40px;}
+.selTimeBlock ul li a{ display:block; width:100%; height:100%; color:#666; line-height:40px; font-size:20px; text-align:center;}
+.csBlock1{ width:635px; height:322px; overflow:hidden; position:absolute; left:230px; top:132px;}
+.swiper-container2 .swiper-wrapper{width:66000px;height:322px;}
+.swiper-container2 .swiper-wrapper .swiper-slide{background:none; float:left; width:635px; height:322px;}
+.btnLeft2,.btnLeft3{ left:50px; top:260px;}
+.btnRight2,.btnRight3{ left:980px; top:260px;}
+.csBtn2{ left:340px; top:260px;}
+.csBtn3{ left:492px; top:260px;}
+.cs3{ background:url(../images/csBg3.png) 0 0 no-repeat; width:1060px; height:527px;}
+.csBlock2{ width:872px; height:278px; overflow:hidden; position:absolute; left:103px; top:130px;}
+.swiper-container3 .swiper-wrapper{width:66000px;height:278px;}
+.swiper-container3 .swiper-wrapper .swiper-slide{background:none; float:left; width:872px; height:278px;}
+.swiper-container3 a{ margin-right:5px;}
+.csBtn2b{ left:460px; top:427px;}
+
+.csScroll2{ width:3510px; height:278px;}
+.csScroll2 a{ float:left; margin-right:14px;}

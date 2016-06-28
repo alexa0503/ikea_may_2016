@@ -79,6 +79,7 @@ class HomeController extends Controller
             $t = $request->input('t') ?: 1;
             $info = new \App\Info();
             if ($request->input('file_type') == 0) {
+                $standard_size = 339;
                 if ($request->hasFile('photo') && $request->input('from') != 'mobile') {
                     $x = $request->input('x') ?: 0;
                     $y = $request->input('y') ?: 0;
@@ -88,11 +89,11 @@ class HomeController extends Controller
                     #生成缩略图 279*279
                     $image = Image::make(public_path('storage/').$file_name);
                     if ($image->height() > $image->width()) {
-                        $width = 279;
+                        $width = $standard_size;
                         $height = null;
                     } else {
                         $width = null;
-                        $height = 279;
+                        $height = $standard_size;
                     }
                     $image->resize($width, $height, function ($constraint) {
                         $constraint->aspectRatio();
@@ -101,7 +102,7 @@ class HomeController extends Controller
                     $image = Image::make(public_path('storage/thumb/').$file_name);
                     $left = floor(-1 * $x);
                     $top = floor(-1 * $y);
-                    $image->crop(279, 279, $left, $top);
+                    $image->crop($standard_size, $standard_size, $left, $top);
                     $image->save(public_path('storage/thumb/').$file_name);
 
                     #生成398*398的缩略图
@@ -114,7 +115,7 @@ class HomeController extends Controller
                         $height = 398;
                     }
 
-                    $scale = 398 / 279;
+                    $scale = 398 / $standard_size;
                     $image->resize($width, $height, function ($constraint) {
                         $constraint->aspectRatio();
                     });
@@ -136,7 +137,7 @@ class HomeController extends Controller
                     $image = Image::make(public_path('storage/').$file_name.'.png');
                     $file_name .= '.jpeg';
                     $image->save(public_path('storage/animation/').$file_name);
-                    $image->resize(279, 279, function ($constraint) {
+                    $image->resize($standard_size, $standard_size, function ($constraint) {
                         $constraint->aspectRatio();
                     });
                     $image->save(public_path('storage/thumb/').$file_name);
