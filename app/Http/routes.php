@@ -80,7 +80,7 @@ Route::get('/cms/infos/{type}', 'CmsController@infos');
 Route::get('/cms/info/delete/{id}', 'CmsController@infoDelete');
 Route::get('cms/info/update/status/{id}', 'CmsController@infoStatusUpdate');
 Route::get('/cms/infos/export', 'CmsController@infosExport');
-
+Route::get('cms/create/lottery/{period}', 'CmsController@createLottery');
 //wechat auth
 Route::any('/wechat/auth', 'WechatController@auth');
 Route::any('/wechat/callback', 'WechatController@callback');

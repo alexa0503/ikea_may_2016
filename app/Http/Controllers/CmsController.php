@@ -10,6 +10,19 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class CmsController extends Controller
 {
+    private $lottery_configs =  array(
+        ['2016-06-20','2016-06-26'],
+        ['2016-06-27','2016-07-03'],
+        ['2016-07-04','2016-07-10'],
+        ['2016-07-11','2016-07-17'],
+        ['2016-07-18','2016-07-24'],
+        ['2016-07-25','2016-07-31'],
+        ['2016-08-01','2016-08-07'],
+        ['2016-08-08','2016-08-14'],
+        ['2016-08-15','2016-08-21'],
+        ['2016-08-22','2016-08-28'],
+        ['2016-08-29','2016-09-04'],
+    );
     /**
      * Create a new controller instance.
      *
@@ -29,7 +42,7 @@ class CmsController extends Controller
     public function index()
     {
         //$count = \App\WechatUser::count();
-        return view('cms/dashboard');
+        return view('cms/dashboard',['configs'=>$this->lottery_configs]);
     }
 
     /**
@@ -133,6 +146,7 @@ class CmsController extends Controller
     }
     public function userLogs()
     {
+        return;
         $logs = \App\UserLog::limit(30)->offset(0)->orderBy('create_time', 'DESC')->get();
         return view('cms/userLogs',['logs' => $logs]);
     }
@@ -165,5 +179,48 @@ class CmsController extends Controller
                 $sheet->fromArray($data, null, 'A2', false, false);
             });
         })->download('xlsx');
+    }
+
+    public function createLottery(Request $request, $period)
+    {
+        $lottery_configs = $this->lottery_configs;
+        if( null == $lottery_configs[$period]){
+            return ['ret'=>1001, 'msg'=>'没有需要的数据喔'];
+        }
+        $timestamp = time();
+        if( strtotime($lottery_configs[$period][1].' 23:59:59') > $timestamp){
+            return ['ret'=>1002, 'msg'=>'还没有到时间喔~'];
+        }
+        $model = DB::table('lotteries')
+            ->join('infos', 'infos.id', '=', 'lotteries.id')
+            ->where('period', $period);
+        if( $model->count() > 0){
+            $lotteries = $model->get();
+            return ['ret'=>0,'msg'=>'','data'=>$lotteries];
+        }
+        else{
+            $mobiles = [];
+            $collection = \App\Lottery::all();
+            if( null != $collection){
+                $mobiles = $collection->map(function ($item){
+                    return $item->mobile;
+                });
+            }
+            $collection = \App\Info::whereNotIn('mobile', $mobiles)
+                ->where('created_time', '>=', $lottery_configs[$period][0])
+                ->where('created_time', '<', $lottery_configs[$period][1].' 23:59:59')
+                ->get();
+            if( count($collection) > 15){
+                $lotteries = $collection->random(15);
+                foreach($lotteries as $lottery){
+                    DB::table('lotteries')->insert(
+                        ['id' => $lottery->id, 'mobile' => $lottery->mobile, 'period'=>$period]);
+                }
+                return ['ret'=>0,'msg'=>'','data'=>$lotteries];
+            }
+            else{
+                return ['ret'=>1002, 'msg'=>'还没有到时间喔~'];
+            }
+        }
     }
 }
