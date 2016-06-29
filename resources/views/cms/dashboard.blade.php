@@ -61,6 +61,10 @@
 @section('scripts')
     <script>
     $('#lottery').change(function(){
+        if( $(this).val() == ''){
+            $('#table-lotteries tbody').html('');
+            return false;
+        }
         var url = '{{url("cms/create/lottery")}}/' + $(this).val();
         $.getJSON(url,function(json){
             if(json.ret == 0){

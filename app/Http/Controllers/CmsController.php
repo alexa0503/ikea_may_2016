@@ -209,6 +209,7 @@ class CmsController extends Controller
             $collection = \App\Info::whereNotIn('mobile', $mobiles)
                 ->where('created_time', '>=', $lottery_configs[$period][0])
                 ->where('created_time', '<', $lottery_configs[$period][1].' 23:59:59')
+                ->groupBy('mobile')
                 ->get();
             if( count($collection) > 15){
                 $lotteries = $collection->random(15);
