@@ -40,6 +40,8 @@
                                     <th>类别</th>
                                     <th>姓名</th>
                                     <th>手机</th>
+                                    <th>省份</th>
+                                    <th>城市</th>
                                     <th>地址</th>
                                     <th>点赞</th>
                                     <th>创建时间</th>
@@ -80,6 +82,8 @@
                     }
                     html += '<td>'+val.name+'</td>';
                     html += '<td>'+val.mobile+'</td>';
+                    html += '<td>'+val.province+'</td>';
+                    html += '<td>'+val.city+'</td>';
                     html += '<td>'+val.address+'</td>';
                     html += '<td>'+val.like_num+'</td>';
                     html += '<td>'+val.created_time+'</td>';
