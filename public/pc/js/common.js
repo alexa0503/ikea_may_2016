@@ -18,7 +18,7 @@ $(document).ready(function() {
     //l3Swiper();
     videoInit();
 	shareNoWeichat();
-	cs3ScrollNew();
+	//cs3ScrollNew();
 });
 
 var cs3Interval;
@@ -324,18 +324,18 @@ function move_picture(e) {
         $(this).addClass('fton');
         var sIndex = $('.fTemplete a').index($(this)) + 1;
 		if(sIndex==1){
-			sIndex=6;
+			sIndex=7;
 			}
 		else if(sIndex==2){
-			sIndex=5;
+			sIndex=8;
 			}
 		else if(sIndex==3){
-			sIndex=1;
+			sIndex=5;
 			}
 		else if(sIndex==4){
 			sIndex=4;
 			}
-        $('.stMask').removeClass('stMask1 stMask2 stMask3 stMask4 stMask5 stMask6');
+        $('.stMask').removeClass('stMask1 stMask2 stMask3 stMask4 stMask5 stMask6 stMask7 stMask8');
         $('.stMask').addClass('stMask' + sIndex);
 		ga('send','event','UGC Recruitment','Click','Sticker_'+sIndex);
     });
@@ -463,13 +463,13 @@ function submitL2() {
         var iT = $('.ft').index($('.fton')) + 1;
 
 		if(iT==1){
-			iT=6;
+			iT=7;
 			}
 		else if(iT==2){
-			iT=5;
+			iT=8;
 			}
 		else if(iT==3){
-			iT=1;
+			iT=5;
 			}
 		else if(iT==4){
 			iT=4;
@@ -777,4 +777,13 @@ function showRule(){
 		$('#scrollbar2').tinyscrollbar();
 		$('.thumb').height(parseInt($('.thumb').height())-10);
 		}
+	}
+	
+function showL3Pop(e){
+	$('.l3Pop').hide();
+	$('.l3Pop'+e).fadeIn(500);
+	}
+	
+function closeL3Pop(){
+	$('.l3Pop').fadeOut(500);
 	}

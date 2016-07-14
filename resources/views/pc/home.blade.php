@@ -10,9 +10,6 @@
                     <img src="{{asset('pc/images/fo3.png')}}" class="abs fo3">
                     <img src="{{asset('pc/images/fo4.png')}}" class="abs fo4">
                     <img src="{{asset('pc/images/fo5.png')}}" class="abs fo5">
-                    <img src="{{asset('pc/images/fo6.png')}}" class="abs fo6">
-                    <img src="{{asset('pc/images/fo7.png')}}" class="abs fo7">
-                    <img src="{{asset('pc/images/fo8.png')}}" class="abs fo8">
                 </div>
             </div>
         	<a href="javascript:void(0);" class="abs btn1" onClick="ga('send','event','UGC Recruitment','Click','Top_Banner_CTA_inner');topGoPage3();"><img src="{{asset('pc/images/btn1.png')}}"></a>
@@ -91,7 +88,7 @@
                                         <img src="" class="abs upLoadImg" id="localImag" />
                                     </div>
                                 </div>
-                                <div class="stMask stMask6" style="display:none;"></div>
+                                <div class="stMask stMask7" style="display:none;"></div>
                                 <img src="{{asset('pc/images/fImg1.png')}}" class="abs fImg1" style="display:none;">
                                 <div class="mMask" id="mMask"></div>
 
@@ -157,161 +154,39 @@
 
         <div class="line3">
             <div class="innerDiv">
-            	<div class="cs1">
+            	<a href="javascript:void(0);" onClick="showL3Pop(1);" class="abs l3Btn1"><img src="{{asset('pc/images/space.gif')}}" width="160" height="160"></a>
+                <a href="javascript:void(0);" onClick="showL3Pop(2);" class="abs l3Btn2"><img src="{{asset('pc/images/space.gif')}}" width="160" height="160"></a>
+                <a href="javascript:void(0);" onClick="showL3Pop(3);" class="abs l3Btn3"><img src="{{asset('pc/images/space.gif')}}" width="160" height="160"></a>
+                <a href="javascript:void(0);" onClick="showL3Pop(4);" class="abs l3Btn4"><img src="{{asset('pc/images/space.gif')}}" width="160" height="160"></a>
+                <a href="javascript:void(0);" onClick="showL3Pop(5);" class="abs l3Btn5"><img src="{{asset('pc/images/space.gif')}}" width="160" height="160"></a>
+                <div class="abs l3Pop l3Pop1" style="display:none;">
                 	<div class="innerDiv">
-                    	<div class="abs seledTime">起床2分钟</div>
-                        <a href="javascript:void(0);" class="abs csSelBtn" onClick="showSelTime();"><img src="{{asset('pc/images/space.gif')}}" width="214" height="54"></a>
-                        <a href="javascript:void(0);" class="abs csBtn1" onClick="goCs2();"><img src="{{asset('pc/images/csBtn1.png')}}"></a>
-
-                        <div class="selTimeBlock" style="display:none;">
-                        	<ul>
-                            	<li>
-                                	<a href="javascript:void(0);" cst='1' onClick="selTime(this);">起床2分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='2' onClick="selTime(this);">早晨5分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='3' onClick="selTime(this);">早餐6分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='4' onClick="selTime(this);">餐前3分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='5' onClick="selTime(this);">午后9分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='6' onClick="selTime(this);">午后8分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='7' onClick="selTime(this);">晚上10分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='8' onClick="selTime(this);">餐后3分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='9' onClick="selTime(this);">晚上6分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='10' onClick="selTime(this);">洗澡8分钟</a>
-                                </li>
-                            </ul>
-                        </div>
+                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G1.gif')}}">
+                        <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
-
-                <div class="cs2" style="display:none;">
+                <div class="abs l3Pop l3Pop2" style="display:none;">
                 	<div class="innerDiv">
-                    	<div class="csBlock1">
-                        	<div class="swiper-container2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/00302267/" target="_top"><img src="{{asset('pc/images/csB1.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/40289952/" target="_top"><img src="{{asset('pc/images/csB2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(2);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/70158191/" target="_top"><img src="{{asset('pc/images/csB3.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(3);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/60286405/?query=SM%C3%85BIT+%E6%96%AF%E8%8E%AB%E6%AF%94+%E5%88%80%E5%92%8C%E5%88%A8%E5%88%80" target="_top"><img src="{{asset('pc/images/csB4.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(4);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/90206884/?query=%E5%8B%92%E5%85%8B%E6%96%AF%E5%A1%94" target="_top"><img src="{{asset('pc/images/csB5.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(5);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/60208479/" target="_top"><img src="{{asset('pc/images/csB6.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(6);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/20256617/" target="_top"><img src="{{asset('pc/images/csB7.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(7);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/00233962/?query=%E5%AE%89%E8%BE%BE%E6%A0%B9" target="_top"><img src="{{asset('pc/images/csB8.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(8);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/50285454/#/30167852" target="_top"><img src="{{asset('pc/images/csB9.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(9);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="http://www.ikea.com/cn/zh/catalog/products/00264393/" target="_top"><img src="{{asset('pc/images/csB10.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="viewCs3(10);" class="abs csBtn3"><img src="{{asset('pc/images/csBtn3.png')}}"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<a href="javascript:void(0);" class="abs btnLeft2"><img src="{{asset('pc/images/btnLeft.png')}}"></a>
-						<a href="javascript:void(0);" class="abs btnRight2"><img src="{{asset('pc/images/btnRight.png')}}"></a>
+                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G2.gif')}}">
+                        <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
-
-                <div class="cs3" style="display:none;">
+                <div class="abs l3Pop l3Pop3" style="display:none;">
                 	<div class="innerDiv">
-                    	<div class="csBlock2">
-                        	<div class="csScroll2">
-                            	<a href="javascript:void(0);" onClick="backOnlyCs2(1);"><img src="{{asset('pc/images/csS1.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(2);"><img src="{{asset('pc/images/csS2.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(3);"><img src="{{asset('pc/images/csS3.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(4);"><img src="{{asset('pc/images/csS4.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(5);"><img src="{{asset('pc/images/csS5.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(6);"><img src="{{asset('pc/images/csS6.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('pc/images/csS7.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('pc/images/csS8.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('pc/images/csS9.png')}}"></a>
-                                <a href="javascript:void(0);" onClick="backOnlyCs2(10);"><img src="{{asset('pc/images/csS10.png')}}"></a>
-                                <a><img src="{{asset('pc/images/csS11.png')}}"></a>
-							</div>
-                        </div>
-						<a href="javascript:void(0);" class="abs btnLeft3"><img src="{{asset('pc/images/btnLeft.png')}}"></a>
-						<a href="javascript:void(0);" class="abs btnRight3"><img src="{{asset('pc/images/btnRight.png')}}"></a>
-                        <a href="javascript:void(0);" class="abs csBtn2b" onClick="backCs3();"><img src="{{asset('pc/images/csBtn2.png')}}"></a>
+                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G3.gif')}}">
+                        <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
+                    </div>
+                </div>
+                <div class="abs l3Pop l3Pop4" style="display:none;">
+                	<div class="innerDiv">
+                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G4.gif')}}">
+                        <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
+                    </div>
+                </div>
+                <div class="abs l3Pop l3Pop5" style="display:none;">
+                	<div class="innerDiv">
+                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G5.gif')}}">
+                        <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
             </div>
