@@ -62,7 +62,7 @@
                     <div class="f3" style="display:none;">
                         <div class="innerDiv">
                             <img src="" class="abs f3EndGif" id="f3EndGif">
-                            <div class="abs onBg stMask6"></div>
+                            <div class="abs onBg stMask7"></div>
                             <img src="" class="abs saveImg" id="saveImg">
                             <div class="shareBtns">
                                 <a href="javascript:void(0);" class="abs sb1" onClick="ga('send','event','UGC Recruitment','Share','Share_WeChat');showShareWx();"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
@@ -99,7 +99,7 @@
                                     <img src="" class="abs upLoadImg" id="localImag" />
                                 </div>
                             </div>
-                            <div class="stMask stMask6" style="display:none;"></div>
+                            <div class="stMask stMask7" style="display:none;"></div>
                             <img src="{{asset('mobile/images/fImg1.png')}}" class="abs fImg1" style="display:none;">
                             <div class="mMask" id="mMask"></div>
 
@@ -159,165 +159,41 @@
 
     <div class="line4">
     	<div class="innerDiv">
-        	<div class="cs1">
-                	<div class="innerDiv">
-                    	<div class="abs seledTime">起床2分钟</div>
-                        <a href="javascript:void(0);" class="abs csSelBtn" onClick="showSelTime();"><img src="{{asset('mobile/images/space.gif')}}" width="272" height="58"></a>
-                        <a href="javascript:void(0);" class="abs csBtn1" onClick="goCs2();"><img src="{{asset('mobile/images/csBtn1.png')}}"></a>
-
-                        <div class="selTimeBlock" style="display:none;">
-                        	<ul>
-                            	<li>
-                                	<a href="javascript:void(0);" cst='1' onClick="selTime(this);">起床2分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='2' onClick="selTime(this);">早晨5分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='3' onClick="selTime(this);">早餐6分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='4' onClick="selTime(this);">餐前3分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='5' onClick="selTime(this);">午后9分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='6' onClick="selTime(this);">午后8分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='7' onClick="selTime(this);">晚上10分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='8' onClick="selTime(this);">餐后3分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='9' onClick="selTime(this);">晚上6分钟</a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);" cst='10' onClick="selTime(this);">洗澡8分钟</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        	<a href="javascript:void(0);" onClick="showL3Pop(1);" class="abs l3Btn1"><img src="{{asset('mobile/images/space.gif')}}" width="190" height="190"></a>
+            <a href="javascript:void(0);" onClick="showL3Pop(2);" class="abs l3Btn2"><img src="{{asset('mobile/images/space.gif')}}" width="190" height="190"></a>
+            <a href="javascript:void(0);" onClick="showL3Pop(3);" class="abs l3Btn3"><img src="{{asset('mobile/images/space.gif')}}" width="190" height="190"></a>
+            <a href="javascript:void(0);" onClick="showL3Pop(4);" class="abs l3Btn4"><img src="{{asset('mobile/images/space.gif')}}" width="190" height="190"></a>
+            <a href="javascript:void(0);" onClick="showL3Pop(5);" class="abs l3Btn5"><img src="{{asset('mobile/images/space.gif')}}" width="190" height="190"></a>
+            <div class="abs l3Pop l3Pop1" style="display:none;">
+                <div class="innerDiv">
+                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G1.gif')}}">
+                    <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
-
-			<div class="cs2" style="display:none;">
-                	<div class="innerDiv">
-                    	<div class="csBlock1">
-                        	<div class="innerDiv">
-                            	<div class="swiper-container2">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/00302267/" target="_top"><img src="{{asset('mobile/images/csB1.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/40289952/" target="_top"><img src="{{asset('mobile/images/csB2.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/70158191/" target="_top"><img src="{{asset('mobile/images/csB3.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/60286405/" target="_top"><img src="{{asset('mobile/images/csB4.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/90206884/" target="_top"><img src="{{asset('mobile/images/csB5.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/60208479/" target="_top"><img src="{{asset('mobile/images/csB6.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/20256617/" target="_top"><img src="{{asset('mobile/images/csB7.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/00233962/" target="_top"><img src="{{asset('mobile/images/csB8.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/30167852/" target="_top"><img src="{{asset('mobile/images/csB9.png')}}"></a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="swiper-slide">
-                                            <div class="innerDiv">
-                                                <a href="http://m.ikea.com/cn/zh/catalog/products/art/00264393/" target="_top"><img src="{{asset('mobile/images/csB10.png')}}"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <a href="javascript:void(0);" onClick="backCs1();" class="abs csBtn2"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-								<a href="javascript:void(0);" onClick="viewCs3(1);" class="abs csBtn3"><img src="{{asset('mobile/images/csBtn3.png')}}"></a>
-                            </div>
-                        </div>
-						<a href="javascript:void(0);" class="abs btnLeft2"><img src="{{asset('mobile/images/btnLeft.png')}}"></a>
-						<a href="javascript:void(0);" class="abs btnRight2"><img src="{{asset('mobile/images/btnRight.png')}}"></a>
-                    </div>
+            </div>
+            <div class="abs l3Pop l3Pop2" style="display:none;">
+                <div class="innerDiv">
+                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G2.gif')}}">
+                    <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
-
-			<div class="cs3" style="display:none;">
-                	<div class="innerDiv">
-                    	<div class="csBlock2">
-                        	<div class="swiper-container3">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(1);"><img src="{{asset('mobile/images/csS1.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(2);"><img src="{{asset('mobile/images/csS2.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(3);"><img src="{{asset('mobile/images/csS3.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(4);"><img src="{{asset('mobile/images/csS4.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(5);"><img src="{{asset('mobile/images/csS5.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(6);"><img src="{{asset('mobile/images/csS6.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(7);"><img src="{{asset('mobile/images/csS7.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(8);"><img src="{{asset('mobile/images/csS8.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="innerDiv">
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(9);"><img src="{{asset('mobile/images/csS9.png')}}"></a>
-                                            <a href="javascript:void(0);" onClick="backOnlyCs2(10);"><img src="{{asset('mobile/images/csS10.png')}}"></a>
-                                            <a><img src="{{asset('mobile/images/csS11.png')}}"></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-						<a href="javascript:void(0);" class="abs btnLeft3"><img src="{{asset('mobile/images/btnLeft.png')}}"></a>
-						<a href="javascript:void(0);" class="abs btnRight3"><img src="{{asset('mobile/images/btnRight.png')}}"></a>
-                        <a href="javascript:void(0);" class="abs csBtn2b" onClick="backCs3();"><img src="{{asset('mobile/images/csBtn2.png')}}"></a>
-                    </div>
+            </div>
+            <div class="abs l3Pop l3Pop3" style="display:none;">
+                <div class="innerDiv">
+                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G3.gif')}}">
+                    <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
+            </div>
+            <div class="abs l3Pop l3Pop4" style="display:none;">
+                <div class="innerDiv">
+                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G4.gif')}}">
+                    <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
+                </div>
+            </div>
+            <div class="abs l3Pop l3Pop5" style="display:none;">
+                <div class="innerDiv">
+                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G5.gif')}}">
+                    <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
+                </div>
+            </div>
         </div>
     </div>
     <!--line4 end-->
