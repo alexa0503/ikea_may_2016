@@ -17,25 +17,25 @@
             	<div class="vInit">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn1.jpg')}}" class="moImg"></a>
-                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v1.gif')}}" /></div>
+                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v1.jpg')}}" /></div>
                     </div>
                 </div>
                 <div class="vInit">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn2.jpg')}}" class="moImg"></a>
-                        <video id="v2" src="{{asset('pc/images/v2.mp4?v=1')}}" preload="auto" style="display:none;"></video>
+                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v2.jpg')}}" /></div>
                     </div>
                 </div>
                 <div class="vInit">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn3.jpg')}}" class="moImg"></a>
-                        <div class="vGif" style="display:none;"><img src="{{asset('pc/images/v3.jpg')}}" /></div>
+                        <video id="v3" src="{{asset('pc/images/v3.mp4')}}" preload="auto" style="display:none;"></video>
                     </div>
                 </div>
                 <div class="vInit nomr">
                 	<div class="innerDiv">
                     	<a href="javascript:void(0);"><img src="{{asset('pc/images/vBtn4.jpg')}}" class="moImg"></a>
-                        <video id="v4" src="{{asset('pc/images/v4.mp4?v=1')}}" preload="auto" style="display:none;"></video>
+                        <video id="v4" src="{{asset('pc/images/v4.mp4')}}" preload="auto" style="display:none;"></video>
                     </div>
                 </div>
             </div>

@@ -19,28 +19,28 @@
                             <div class="innerDiv">
                                 <a href="javascript:void(0);" vir='1'><img src="{{asset('mobile/images/l11.jpg')}}"></a>
                                 <div class="vGif vGif1" style="display:none;">
-                                	<img src="{{asset('mobile/images/v1.gif')}}" />
+                                	<img src="{{asset('mobile/images/v1.jpg')}}" />
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
                                 <a href="javascript:void(0);" vir='2'><img src="{{asset('mobile/images/l12.jpg')}}"></a>
-                                <video id="v2" class="v2" src="{{asset('pc/images/v2.mp4?v=1')}}" preload="auto" style="display:none;"></video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="innerDiv">
-                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.jpg')}}"></a>
-                                <div class="vGif vGif3" style="display:none;">
-                                	<img src="{{asset('mobile/images/v3.jpg')}}" />
+                                <div class="vGif vGif2" style="display:none;">
+                                	<img src="{{asset('mobile/images/v2.jpg')}}" />
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="innerDiv">
+                                <a href="javascript:void(0);" vir='3'><img src="{{asset('mobile/images/l13.jpg')}}"></a>
+                                <video id="v3" class="v3" src="{{asset('pc/images/v3.mp4')}}" preload="auto" style="display:none;"></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="innerDiv">
                                 <a href="javascript:void(0);" vir='4'><img src="{{asset('mobile/images/l14.jpg')}}"></a>
-                                <video id="v4" class="v4" src="{{asset('pc/images/v4.mp4?v=1')}}" preload="auto" style="display:none;"></video>
+                                <video id="v4" class="v4" src="{{asset('pc/images/v4.mp4')}}" preload="auto" style="display:none;"></video>
                             </div>
                         </div>
                     </div>

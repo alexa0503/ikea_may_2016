@@ -138,11 +138,11 @@ function backOnlyCs2(e){
 var v1, v2, v3, v4;
 
 function videoInit() {
-    v2 = document.getElementById('v2');
+    v3 = document.getElementById('v3');
 	v4 = document.getElementById('v4');
     $('.vInit').hover(function() {
         var vIndex = $('.vInit').index($(this)) + 1;
-        v2.pause();
+        v3.pause();
 		v4.pause();
         $('.vInit video').hide();
 		$('.vInit .vGif').hide();
@@ -152,12 +152,12 @@ function videoInit() {
 				ga('send','event','UGC Gallery','Click','Featured_UGC_1');
                 break;
             case 2:
-				v2.play();
-				$('#v' + vIndex).show();
+				$('.vInit').eq(1).find('.vGif').show();
 				ga('send','event','UGC Gallery','Click','Featured_UGC_2');
                 break;
             case 3:
-                $('.vInit').eq(2).find('.vGif').show();
+                v3.play();
+				$('#v' + vIndex).show();
 				ga('send','event','UGC Gallery','Play','Featured_UGC_3');
                 break;
             case 4:
@@ -168,7 +168,7 @@ function videoInit() {
         }
 
     }, function() {
-        v2.pause();
+        v3.pause();
 		v4.pause();
         $('.vInit video').hide();
 		$('.vInit .vGif').hide();
