@@ -16,7 +16,7 @@ function randomNumb(minNumb, maxNumb) {
 
 var ffType;
 
-var v2=document.getElementById('v2');
+var v3=document.getElementById('v3');
 var v4=document.getElementById('v4');
 
 function l2Swiper() {
@@ -28,7 +28,7 @@ function l2Swiper() {
         /*autoplay: 2500,
         autoplayDisableOnInteraction: true,*/
 		onSlideChangeStart:function(e){
-			v2.pause();
+			v3.pause();
 			v4.pause();
 			$('.swiper-slide video').hide();
 			$('.swiper-slide .vGif').hide();
@@ -37,7 +37,7 @@ function l2Swiper() {
 
 	$('.sBlock1 a').click(function(){
 		var vIndex = parseInt($(this).attr('vir'));
-        v2.pause();
+        v3.pause();
 		v4.pause();
         $('.swiper-slide video').hide();
 		$('.swiper-slide .vGif').hide();
@@ -48,12 +48,12 @@ function l2Swiper() {
 				ga('send','event','UGC Gallery','Click','Featured_UGC_1');
                 break;
             case 2:
-				v2.play();
-				$('.v' + vIndex).show();
+				$('.vGif'+vIndex).show();
 				ga('send','event','UGC Gallery','Click','Featured_UGC_2');
                 break;
             case 3:
-				$('.vGif'+vIndex).show();
+				v3.play();
+				$('.v' + vIndex).show();
 				ga('send','event','UGC Gallery','Play','Featured_UGC_3');
                 break;
             case 4:
