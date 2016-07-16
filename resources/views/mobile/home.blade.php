@@ -301,8 +301,10 @@
 @section('scripts')
 <script>
 wxData = {};
-var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
+var work_share_desc = '{{env("WORK_SHARE_DESC")}}';
+var work_wehcat_share_desc = '{{env("WORK_WECHAT_SHARE_DESC")}}';
+var noWechatShareTitle='{{env("SHARE_TITLE")}}';
+var noWechatShareTxt='{{env("SHARE_DESC")}}';
 var noWechatShareImg='http://community.ikea.cn/family/2016activity_awgc/public/pc/images/pcShare.png';
 var noWechatSharlUrl='{{url("/")}}';
 </script>

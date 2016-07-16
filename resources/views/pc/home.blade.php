@@ -318,8 +318,10 @@
 @endsection
 @section('scripts')
 <script>
-var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
+var work_share_title = '{{env("WORK_SHARE_TITLE")}}';
+var work_share_desc = '{{env("WORK_SHARE_DESC")}}';
+var noWechatShareTitle='{{env("SHARE_TITLE")}}';
+var noWechatShareTxt='{{env("SHARE_DESC")}}';
 var noWechatShareImg='';
 var noWechatSharlUrl='{{url("/web")}}';
 var youku_client_id='{{env("YOUKU_CLIENT_ID")}}';

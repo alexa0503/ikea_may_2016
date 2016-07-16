@@ -520,7 +520,8 @@ function submitL2() {
             $('.sb1').attr('data-qr', data.qrUrl);
             noWechatShareImg=data.shareImg;
             noWechatSharlUrl=data.shareUrl;
-            noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
+            noWechatShareTxt = work_share_desc;
+            //noWechatShareTxt='#多陪伴1小时#快来为我和宝贝的捣蛋瞬间点赞吧！宜家丰富奖品等你来拿！';
         },
         complete: function(xhr) {
             //alert(xhr.responseText);
@@ -778,12 +779,12 @@ function showRule(){
 		$('.thumb').height(parseInt($('.thumb').height())-10);
 		}
 	}
-	
+
 function showL3Pop(e){
 	$('.l3Pop').hide();
 	$('.l3Pop'+e).fadeIn(500);
 	}
-	
+
 function closeL3Pop(){
 	$('.l3Pop').fadeOut(500);
 	}

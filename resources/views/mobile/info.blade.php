@@ -26,8 +26,8 @@
 @section('scripts')
 <script>
 wxData = {};
-var noWechatShareTitle='多陪伴1小时';
-var noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
+var noWechatShareTitle='{{env("WORK_SHARE_TITLE")}}';
+var noWechatShareTxt='{{env("WORK_SHARE_DESC")}}';
 @if ($info->file_type == 0)
 var noWechatShareImg='{{$info->animation}}';
 @elseif ($info->status == 1)
@@ -53,7 +53,7 @@ $(document).ready(function() {
 		data.imgUrl = '{{$info->thumb}}';
 		@endif
 		wxData = data;
-		wxData.desc = '快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
+		wxData.desc = '{{env("WORK_WEHCAT_SHARE_DESC")}}';
 		wxShare(wxData);
     })
 });

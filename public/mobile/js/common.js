@@ -216,11 +216,13 @@ function submitL2() {
             },
             success: function(data) {
                 changeF4();
-                wxData.link = data.wxUrl;
-                wxData.desc = '快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
+                wxData.link = data.wxUrl
+                wxData.desc = work_wehcat_share_desc;
+                //wxData.desc = '快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
                 wxShare(wxData);
                 noWechatSharlUrl=data.wxUrl;
-                noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
+                noWechatShareTxt = work_share_desc;
+                //noWechatShareTxt='#多陪伴1小时#父亲节就要来咯，快上传爸爸和宝贝一起捣蛋的美好瞬间，宜家丰富奖品等你来拿！';
             }
         });
     }
@@ -817,12 +819,12 @@ function showRule(){
 	$('.ruleBg').show();
 	$('.ruleBlock').show();
 	}
-	
+
 function showL3Pop(e){
 	$('.l3Pop').hide();
 	$('.l3Pop'+e).fadeIn(500);
 	}
-	
+
 function closeL3Pop(){
 	$('.l3Pop').fadeOut(500);
 	}
