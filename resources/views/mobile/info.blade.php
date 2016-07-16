@@ -53,7 +53,7 @@ $(document).ready(function() {
 		data.imgUrl = '{{$info->thumb}}';
 		@endif
 		wxData = data;
-		wxData.desc = '{{env("WORK_WEHCAT_SHARE_DESC")}}';
+		wxData.desc = '{{env("WORK_WECHAT_SHARE_DESC")}}';
 		wxShare(wxData);
     })
 });
