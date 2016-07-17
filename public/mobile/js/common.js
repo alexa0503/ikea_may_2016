@@ -213,6 +213,7 @@ function submitL2() {
             dataType: 'json',
             error: function(xhr) {
                 alert('信息提交失败，请重试~');
+				window.location.reload();
             },
             success: function(data) {
                 changeF4();
@@ -279,6 +280,7 @@ function dedSubmit() {
 
             } else {
                 alert(data.msg);
+				window.location.reload();
             }
         }
     });

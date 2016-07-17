@@ -125,7 +125,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 .l3Pop3{ background:url(../images/l3Pop3.png) 0 0 no-repeat; width:640px; height:795px; left:0; top:70px;}
 .l3Pop4{ background:url(../images/l3Pop4.png) 0 0 no-repeat; width:640px; height:795px; left:0; top:70px;}
 .l3Pop5{ background:url(../images/l3Pop5.png) 0 0 no-repeat; width:640px; height:795px; left:0; top:70px;}
-.l3Gif{ left:96px; top:70px; width:434px;}
+.l3Gif{ left:96px; top:70px;}
+.l3Gif img{ width:434px;}
 .l3CloseBtn{ left:513px; top:84px;}
 
 .line5{ background:url(../images/line5.jpg) 0 0 no-repeat; width:640px; height:1337px;}

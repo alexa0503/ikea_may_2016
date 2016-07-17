@@ -71,7 +71,7 @@
                                 <a href="javascript:void(0);" onClick="ga('send','event','UGC Recruitment','Share','Share_Qzone');" class="abs sb4 qzoneShare"><img src="{{asset('mobile/images/space.gif')}}" width="85" height="85"></a>
                             </div>
                             <a href="http://community.ikea.cn/family/2016activity_awgc/public/#uploadBlock" onClick="ga('send','event','UGC Recruitment','Click','UGC_Replay');" class="abs paBtn"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
-                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
+                            <a href="http://m.ikea.com/cn/zh/pages/activity/2016_awgc/?icid=iba|cn|fy16_awc|201605160903079309_1" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
                         </div>
                     </div>
                     <div class="f4" style="display:none;">
@@ -84,7 +84,7 @@
                             </div>
                             <a href="#galleryBlock" style="position:absolute; left:175px; top:275px;"><img src="{{asset('mobile/images/space.gif')}}" width="294" height="116"></a>
                             <a href="http://community.ikea.cn/family/2016activity_awgc/public/#uploadBlock" onClick="ga('send','event','UGC Recruitment','Click','UGC_Replay');" class="abs paBtn"><img src="{{asset('mobile/images/space.gif')}}" width="238" height="76"></a>
-                            <a href="http://www.ikea.com/cn/zh/campaigns/2016_awgc/index.html" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
+                            <a href="http://m.ikea.com/cn/zh/pages/activity/2016_awgc/?icid=iba|cn|fy16_awc|201605160903079309_1" onClick="ga('send','event','UGC Recruitment','Click','Go_Cooking_With_Children');" target="_top" class="abs moreLink"><img src="{{asset('mobile/images/space.gif')}}" width="120" height="28"></a>
                         </div>
                     </div>
                     <div class="fTop">
@@ -166,31 +166,31 @@
             <a href="javascript:void(0);" onClick="showL3Pop(5);" class="abs l3Btn5"><img src="{{asset('mobile/images/space.gif')}}" width="190" height="190"></a>
             <div class="abs l3Pop l3Pop1" style="display:none;">
                 <div class="innerDiv">
-                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G1.gif')}}">
+                    <a href="http://m.ikea.com/cn/zh/catalog/products/art/10252021/" class="abs l3Gif"><img src="{{asset('mobile/images/l3G1.gif')}}">
                     <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
             </div>
             <div class="abs l3Pop l3Pop2" style="display:none;">
                 <div class="innerDiv">
-                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G2.gif')}}">
+                    <a href="http://m.ikea.com/cn/zh/catalog/products/art/40319973/" class="abs l3Gif"><img src="{{asset('mobile/images/l3G2.gif')}}">
                     <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
             </div>
             <div class="abs l3Pop l3Pop3" style="display:none;">
                 <div class="innerDiv">
-                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G3.gif')}}">
+                    <a href="http://m.ikea.com/cn/zh/catalog/products/art/80296601/" class="abs l3Gif"><img src="{{asset('mobile/images/l3G3.gif')}}">
                     <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
             </div>
             <div class="abs l3Pop l3Pop4" style="display:none;">
                 <div class="innerDiv">
-                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G4.gif')}}">
+                    <a href="http://m.ikea.com/cn/zh/catalog/products/art/90258953/" class="abs l3Gif"><img src="{{asset('mobile/images/l3G4.gif')}}">
                     <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
             </div>
             <div class="abs l3Pop l3Pop5" style="display:none;">
                 <div class="innerDiv">
-                    <img class="abs l3Gif" src="{{asset('mobile/images/l3G5.gif')}}">
+                    <a href="http://m.ikea.com/cn/zh/catalog/products/art/40169450/" class="abs l3Gif"><img src="{{asset('mobile/images/l3G5.gif')}}">
                     <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('mobile/images/l3CloseBtn.png')}}"></a>
                 </div>
             </div>

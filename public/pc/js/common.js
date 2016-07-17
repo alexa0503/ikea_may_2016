@@ -512,6 +512,7 @@ function submitL2() {
                     changeF3(data.url);
                 } else {
                     alert(data.msg);
+					window.location.reload();
                 }
             }
             else{

@@ -19,3 +19,5 @@ public/qrcodes
 .env
 
 app/Helpers/Youku/
+
+.idea/workspace.xml

@@ -161,31 +161,31 @@
                 <a href="javascript:void(0);" onClick="showL3Pop(5);" class="abs l3Btn5"><img src="{{asset('pc/images/space.gif')}}" width="160" height="160"></a>
                 <div class="abs l3Pop l3Pop1" style="display:none;">
                 	<div class="innerDiv">
-                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G1.gif')}}">
+                    	<a href="http://www.ikea.com/cn/zh/catalog/products/40169450/" class="abs l3Gif"><img src="{{asset('pc/images/l3G1.gif')}}"></a>
                         <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
                 <div class="abs l3Pop l3Pop2" style="display:none;">
                 	<div class="innerDiv">
-                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G2.gif')}}">
+                    	<a href="http://www.ikea.com/cn/zh/catalog/products/90258953/" class="abs l3Gif"><img src="{{asset('pc/images/l3G2.gif')}}"></a>
                         <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
                 <div class="abs l3Pop l3Pop3" style="display:none;">
                 	<div class="innerDiv">
-                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G3.gif')}}">
+                    	<a href="http://www.ikea.com/cn/zh/catalog/products/80296601/" class="abs l3Gif"><img src="{{asset('pc/images/l3G3.gif')}}"></a>
                         <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
                 <div class="abs l3Pop l3Pop4" style="display:none;">
                 	<div class="innerDiv">
-                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G4.gif')}}">
+                    	<a href="http://www.ikea.com/cn/zh/catalog/products/40319973/" class="abs l3Gif"><img src="{{asset('pc/images/l3G4.gif')}}"></a>
                         <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>
                 <div class="abs l3Pop l3Pop5" style="display:none;">
                 	<div class="innerDiv">
-                    	<img class="abs l3Gif" src="{{asset('pc/images/l3G5.gif')}}">
+                    	<a href="http://www.ikea.com/cn/zh/catalog/products/10252021/" class="abs l3Gif"><img src="{{asset('pc/images/l3G5.gif')}}"></a>
                         <a href="javascript:void(0);" onClick="closeL3Pop();" class="abs l3CloseBtn"><img src="{{asset('pc/images/l3CloseBtn.png')}}"></a>
                     </div>
                 </div>

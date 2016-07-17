@@ -218,7 +218,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 .l3Pop3{ background:url(../images/l3Pop3.png) 0 0 no-repeat; width:1060px; height:407px; left:0; top:115px;}
 .l3Pop4{ background:url(../images/l3Pop4.png) 0 0 no-repeat; width:1060px; height:407px; left:0; top:115px;}
 .l3Pop5{ background:url(../images/l3Pop5.png) 0 0 no-repeat; width:1060px; height:407px; left:0; top:115px;}
-.l3Gif{ left:224px; top:28px; width:342px;}
+.l3Gif{ left:224px; top:28px;}
+.l3Gif img{ width:342px;}
 .l3CloseBtn{ left:767px; top:52px;}
 
 .line4{ background:url(../images/line4.png) -5px 16px no-repeat; width:1060px; height:800px;}
