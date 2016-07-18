@@ -16,7 +16,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .innerDiv{ width:100%; height:100%; position:relative;}
 .abs{ position:absolute;}
 
-.line1{ background:url(../images/line1.png) 0 0 no-repeat; width:1060px; height:626px;}
+.line1{ background:url(../images/line1.png) 0 0 no-repeat; width:1060px; height:605px/*626px*/;}
 .kvBlock{ width:1060px; height:412px; left:0; top:0; overflow:hidden;}
 .fo1{ left:80px; top:230px;
 -webkit-animation:fo1 3s 0s linear both infinite;
@@ -116,7 +116,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .vGif{ width:252px; height:186px; text-align:center; overflow:hidden; position:absolute; left:0; top:0; background:#000;}
 .vGif img{ width:auto; height:186px;}
 
-.line2{ background:url(../images/line2.jpg) 0 0 no-repeat; width:1060px; height:690px;}
+.line2{ background:url(../images/line2.jpg) 0 0 no-repeat; width:1060px; height:682px/*690px*/;}
 .fBlock{ left:46px; top:71px; width:885px; height:561px; overflow:hidden;}
 .f1{ background:url(../images/f1.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
 .f2{ background:url(../images/f2.png) 0 0 no-repeat; position:absolute; left:0; top:0; width:885px; height:561px;}
@@ -195,7 +195,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .openQc{ background:url(../images/qc2.png) top right no-repeat; width:157px; height:142px; left:212px; top:156px;}
 .qcCloseBtn{ top:0; right:0;}
 
-.line3{ background:url(../images/line3.png) 0 0 no-repeat; width:1060px; height:517px;}
+.line3{ background:url(../images/line3.png) 0 0 no-repeat; width:1060px; height:513px/*517px*/;}
 .sBlock{ left:187px; top:133px; width:707px; height:220px; overflow:hidden;}
 .swiper-wrapper{width:6200px;height:220px;}
 .swiper-slide{background:none; float:left; width:707px; height:220px;}
